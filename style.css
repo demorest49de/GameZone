@@ -1,0 +1,8 @@
+.block__reserves {
+  display: flex;
+}
+
+.block__reserve{
+  display: flex;
+  align-self: center;
+}
