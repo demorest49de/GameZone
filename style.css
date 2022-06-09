@@ -1,8 +1,28 @@
-.block__reserves {
+.block__reservation_section {
   display: flex;
 }
 
-.block__reserve{
+.block__reservation_content {
   display: flex;
   align-self: center;
+  gap: 2px;
+}
+
+.block__reservation_date_time {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block__reservation_date_time_row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.block__reservation_to_reserve {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
