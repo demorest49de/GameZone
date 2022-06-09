@@ -10,7 +10,7 @@
 <body>
 <img src="img/logo.png" alt="GO">
 
-<section class="block__menu">
+<section class="menu">
   <h1>Меню</h1>
   <nav>
     <ul>
@@ -33,7 +33,7 @@
   </nav>
 </section>
 
-<section class="block__equipment"><h2>У нас есть все для классного отдыха с друзьями!</h2>
+<section class="equipment"><h2>У нас есть все для классного отдыха с друзьями!</h2>
   <ul>
     <li>
       <figure>
@@ -74,7 +74,7 @@
   </ul>
 </section>
 
-<section class="block__rooms">
+<section class="rooms">
   <h2 id="rooms">Наши залы</h2>
   <ol>
     <li>80's vibes</li>
@@ -84,33 +84,33 @@
   </ol>
 </section>
 
-<section class="block__reservation">
+<section class="reservation">
 
   <fieldset>
     <h2>Забронировать</h2>
     <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-      <fieldset class="block__reservation_section">
+      <fieldset class="reservation_section">
         <legend>Выбери комнату</legend>
 
-        <label class="block__reservation_content">
-          <input class="block__reservation_content" type="radio"
-                 name="reserved-room" value="80's vibes">
+        <label class="reservation_content">
+          <input class="reservation_content" type="radio"
+                 name="reserved-room" value="80's vibes" checked>
           80's vibes
         </label>
 
-        <label class="block__reservation_content">
-          <input class="block__reservation_content" type="radio"
+        <label class="reservation_content">
+          <input class="reservation_content" type="radio"
                  name="reserved-room" value="Star wars">
           Star wars
         </label>
 
-        <label class="block__reservation_content">
-          <input class="block__reservation_content" type="radio"
+        <label class="reservation_content">
+          <input class="reservation_content" type="radio"
                  name="reserved-room" value="Wild west">
           Wild west
         </label>
-        <label class="block__reservation_content">
-          <input class="block__reservation_content" type="radio"
+        <label class="reservation_content">
+          <input class="reservation_content" type="radio"
                  name="reserved-room" value="Neon style">
           Neon style
         </label>
@@ -119,133 +119,134 @@
       <fieldset>
         <legend>Собери наборы развлечений</legend>
 
-        <fieldset class="block__reservation_section">
+        <fieldset class="reservation_section">
           <legend>Приставка:
           </legend>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="radio"
-                   name="reserved-console" value="Playstation">
+          <label class="reservation_content">
+            <input class="reservation_content" type="radio"
+                   name="reserved-console" value="Playstation" checked>
             Playstation
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="radio"
+          <label class="reservation_content">
+            <input class="reservation_content" type="radio"
                    name="reserved-console" value="Sega Mega Drive">
             Sega Mega Drive
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="radio"
+          <label class="reservation_content">
+            <input class="reservation_content" type="radio"
                    name="reserved-console" value="X-box One S">
             X-box One S
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="radio"
+          <label class="reservation_content">
+            <input class="reservation_content" type="radio"
                    name="reserved-console" value="Dendy">
             Dendy
           </label>
         </fieldset>
 
-        <fieldset class="block__reservation_section">
+        <fieldset class="reservation_section">
           <legend>Настольные игры:
           </legend>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox"
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox"
                    name="reserved-board" value="Jenga">
             Jenga
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox"
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox"
                    name="reserved-board" value="Monopoly">
             Monopoly
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox"
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox"
                    name="reserved-board" value="Манчкин">
             Манчкин
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox"
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox"
                    name="reserved-board" value="Alias">
             Alias
           </label>
         </fieldset>
 
-        <fieldset class="block__reservation_section">
+        <fieldset class="reservation_section">
           <legend>Дополнительно:
           </legend>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox"
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox"
                    name="reserved-additional" value="Караоке">
             Караоке
           </label>
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox"
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox"
                    name="reserved-additional" value="VR">
             VR
           </label>
         </fieldset>
       </fieldset>
 
-      <fieldset class="block__reservation_section block__reservation_date_time">
+      <fieldset class="reservation_section reservation_date_time">
         <legend>Выбери дату и время</legend>
 
-        <div class="block__reservation_date_time_row">
-          <label class="block__reservation_content">
+        <div class="reservation_content_date_time_row">
+          <label class="reservation_content">
             Дата*
-            <input class="block__reservation_content" type="date" name="reserve_date" required>
+            <input class="reservation_content" type="date" name="reserve_date" required>
           </label>
-          <label class="block__reservation_content">
+          <label class="reservation_content">
             Время*
-            <input class="block__reservation_content" type="time" name="reserve_time" required>
+            <input class="reservation_content" type="time" name="reserve_time" required>
           </label>
         </div>
 
-        <div class="block__reservation_date_time_row">
-          <label class="block__reservation_content">
+        <div class="reservation_content_date_time_row">
+          <label class="reservation_content">
             Количество человек*
-            <input class="block__reservation_content" type="number" min="1" max="15" name="persons_amount" required>
+            <input class="reservation_content" type="number" min="1" max="15" name="persons_amount" required>
           </label>
         </div>
 
-        <div class="block__reservation_date_time_row">
-          <label class="block__reservation_content">
+        <div class="reservation_content_date_time_row">
+          <label class="reservation_content">
             Имя*
-            <input class="block__reservation_content" type="text" name="person_name" required>
+            <input class="reservation_content" type="text" name="person_name" required>
           </label>
         </div>
 
-        <div class="block__reservation_date_time_row">
-          <label class="block__reservation_content">
+        <div class="reservation_content_date_time_row">
+          <label class="reservation_content">
             Фамилия*
-            <input class="block__reservation_content" type="text" person_sirname required>
+            <input class="reservation_content" type="text" person_sirname required>
           </label>
         </div>
 
-        <div class="block__reservation_date_time_row">
-          <label class="block__reservation_content">
+        <div class="reservation_content_date_time_row">
+          <label class="reservation_content">
             Номер телефона*
-            <input class="block__reservation_content" type="tel" placeholder="+7 900 123 45 67" name="person_phone" required>
+            <input class="reservation_content" type="tel" placeholder="+7 900 123 45 67" name="person_phone" required>
           </label>
         </div>
 
-        <div class="block__reservation_date_time_row">
-          <label class="block__reservation_content">
-            <input class="block__reservation_content" type="checkbox" name="iAmUnder18">
-            Я старше 18 лет
+        <div class="reservation_content_date_time_row">
+          <label class="reservation_content">
+            <input class="reservation_content" type="checkbox" name="iAmUnder18" required>
+            Я старше 18 лет*
           </label>
         </div>
       </fieldset>
-      <div class="block__reservation_to_reserve">
-        <button class="block__reservation_content" type="submit">Забронировать</button>
-        <label class="block__reservation_content">
-          <input class="block__reservation_content" type="checkbox" name="personal_agriment" required>
-          Согласен на обработку персональных данных
+      <div class="reservation_to_reserve">
+        <button class="reservation_content" type="submit">Забронировать</button>
+        <label class="reservation_content">
+          <input class="reservation_content" type="checkbox" name="personal_agriment" required>
+          Согласен на обработку персональных данных*
         </label>
       </div>
     </form>
   </fieldset>
 </section>
 
-<section class="block__about"><h2 id="about">О нас</h2>
+<section class="block__about">
+  <h2 id="about">О нас</h2>
   <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в
     центральной
     части города.
