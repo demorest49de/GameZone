@@ -1,28 +1,38 @@
-.reservation_section {
-  display: flex;
-}
+/*.reservation {*/
+/*  background-color: #430F4F;*/
+/*  color: white;*/
+/*}*/
 
-.reservation_content {
-  display: flex;
-  align-self: center;
-  gap: 2px;
-}
+/*.reservation__header_h2{*/
+/*  padding: 32px 31px;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+/*.reservation_section {*/
+/*  display: flex;*/
+/*}*/
 
-.reservation_date_time {
-  flex-direction: column;
-  gap: 5px;
-}
+/*.reservation_content {*/
+/*  display: flex;*/
+/*  align-self: center;*/
+/*  gap: 2px;*/
+/*}*/
 
-.reservation_content_date_time_row {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
+/*.reservation_date_time {*/
+/*  flex-direction: column;*/
+/*  gap: 5px;*/
+/*}*/
 
-.reservation_to_reserve {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
+/*.reservation_content_date_time_row {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  gap: 10px;*/
+/*}*/
+
+/*.reservation_to_reserve {*/
+/*  margin-top: 5px;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center;*/
+/*  gap: 10px;*/
+/*}*/

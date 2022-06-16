@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="icon" type="image/png" href="img/logo.png">
+
   <title>GO</title>
 </head>
 <body>
@@ -85,163 +86,150 @@
 
   <section>
 
-    <fieldset>
-      <h2>Забронировать</h2>
-      <form action="https://jsonplaceholder.typicode.com/posts" name="book_form" method="post">
-        <fieldset>
-          <legend>Выбери комнату</legend>
+    <h2>Забронировать зал просто</h2>
 
-          <label>
-            <input type="radio"
-                   name="reserved-room" value="80's vibes" checked>
-            80's vibes
-          </label>
+    <form action="https://jsonplaceholder.typicode.com/posts" name="book_form" method="post">
 
-          <label>
-            <input type="radio"
-                   name="reserved-room" value="Star wars">
-            Star wars
-          </label>
+      <h3>Выбери зал</h3>
 
-          <label>
-            <input type="radio"
-                   name="reserved-room" value="Wild west">
-            Wild west
-          </label>
-          <label>
-            <input type="radio"
-                   name="reserved-room" value="Neon style">
-            Neon style
-          </label>
-        </fieldset>
+      <div>
+        <label>
+          <input type="radio" name="room" value="80's vibes" checked>
+          80's vibes
+        </label>
 
-        <fieldset>
-          <legend>Собери наборы развлечений</legend>
+        <label>
+          <input type="radio" name="room" value="Star wars">
+          Star wars
+        </label>
 
-          <fieldset>
-            <legend>Приставка:
-            </legend>
-            <label>
-              <input type="radio"
-                     name="reserved-console" value="Playstation" checked>
-              Playstation
-            </label>
-            <label>
-              <input type="radio"
-                     name="reserved-console" value="Sega Mega Drive">
-              Sega Mega Drive
-            </label>
-            <label>
-              <input type="radio"
-                     name="reserved-console" value="X-box One S">
-              X-box One S
-            </label>
-            <label>
-              <input type="radio"
-                     name="reserved-console" value="Dendy">
-              Dendy
-            </label>
-          </fieldset>
+        <label>
+          <input type="radio" name="room" value="Wild west">
+          Wild west
+        </label>
 
-          <fieldset>
-            <legend>Настольные игры:
-            </legend>
-            <label>
-              <input type="checkbox"
-                     name="reserved-board" value="Jenga">
-              Jenga
-            </label>
-            <label>
-              <input type="checkbox"
-                     name="reserved-board" value="Monopoly">
-              Monopoly
-            </label>
-            <label>
-              <input type="checkbox"
-                     name="reserved-board" value="Манчкин">
-              Манчкин
-            </label>
-            <label>
-              <input type="checkbox"
-                     name="reserved-board" value="Alias">
-              Alias
-            </label>
-          </fieldset>
+        <label>
+          <input type="radio" name="room" value="Neon style">
+          Neon style
+        </label>
+      </div>
 
-          <fieldset>
-            <legend>Дополнительно:
-            </legend>
-            <label>
-              <input type="checkbox"
-                     name="reserved-additional" value="Караоке">
-              Караоке
-            </label>
-            <label>
-              <input type="checkbox"
-                     name="reserved-additional" value="VR">
-              VR
-            </label>
-          </fieldset>
-        </fieldset>
+      <h3>Собери наборы развлечений</h3>
 
-        <fieldset>
-          <legend>Выбери дату и время</legend>
+      <div>
+        <h4>Приставка:</h4>
+        <label>
+          <input type="radio"
+                 name="console" value="Playstation" checked>
+          Playstation
+        </label>
+        <label>
+          <input type="radio"
+                 name="console" value="Sega Mega Drive">
+          Sega Mega Drive
+        </label>
+        <label>
+          <input type="radio"
+                 name="console" value="X-box One S">
+          X-box One S
+        </label>
+        <label>
+          <input type="radio"
+                 name="console" value="Dendy">
+          Dendy
+        </label>
+      </div>
 
-          <div>
-            <label>
-              Дата*
-              <input type="date" name="reserve_date" required>
-            </label>
-            <label>
-              Время*
-              <input type="time" name="reserve_time" required>
-            </label>
-          </div>
+      <div>
+        <h4>Настольные игры:</h4>
 
-          <div>
-            <label>
-              Количество человек*
-              <input type="number" min="1" max="15" name="persons_amount" required>
-            </label>
-          </div>
+        <label>
+          <input type="checkbox"
+                 name="reserved-board" value="Jenga">
+          Jenga
+        </label>
+        <label>
+          <input type="checkbox"
+                 name="reserved-board" value="Monopoly">
+          Monopoly
+        </label>
+        <label>
+          <input type="checkbox"
+                 name="reserved-board" value="Манчкин">
+          Манчкин
+        </label>
+        <label>
+          <input type="checkbox"
+                 name="reserved-board" value="Alias">
+          Alias
+        </label>
+      </div>
 
-          <div>
-            <label>
-              Имя*
-              <input type="text" name="person_name" required>
-            </label>
-          </div>
+      <div>
+        <h4>Дополнительно:</h4>
 
-          <div>
-            <label>
-              Фамилия*
-              <input type="text" name="person_sirname" required>
-            </label>
-          </div>
+        <label>
+          <input type="checkbox"
+                 name="reserved-additional" value="Караоке">
+          Караоке
+        </label>
+        <label>
+          <input type="checkbox"
+                 name="reserved-additional" value="VR">
+          VR
+        </label>
+      </div>
 
-          <div>
-            <label>
-              Номер телефона*
-              <input type="tel" placeholder="+7 900 123 45 67" name="person_phone" required>
-            </label>
-          </div>
+      <h3>Выбери дату и время</h3>
 
-          <div>
-            <label>
-              <input type="checkbox" name="iAmUnder18" required>
-              Я старше 18 лет*
-            </label>
-          </div>
-        </fieldset>
-        <div>
-          <button type="submit">Забронировать</button>
-          <label>
-            <input type="checkbox" name="personal_agriment" required>
-            Согласен на обработку персональных данных*
-          </label>
-        </div>
-      </form>
-    </fieldset>
+      <div>
+        <label>
+          Дата
+          <input type="date" name="reservation_date" required>
+        </label>
+        <label>
+          Время
+          <input type="time" name="reservation_time" required>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Количество человек
+          <input type="number" min="1" max="15" name="persons_amount" required>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Имя
+          <input type="text" name="name" required>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Фамилия
+          <input type="text" name="sirname" required>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Номер телефона
+          <input type="tel" name="phone" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          E-mail
+          <input type="email" name="email" required>
+        </label>
+      </div>
+      <div>
+        <button type="submit">Забронировать</button>
+      </div>
+    </form>
   </section>
 
   <section>
