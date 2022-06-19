@@ -18,10 +18,10 @@
           <a href="#rooms">Залы</a>
         </li>
         <li>
-          <a href="#about">О нас</a>
+          <a href="#reservation">Бронь</a>
         </li>
         <li>
-          <a href="#reservation">Бронь</a>
+          <a href="#about">О нас</a>
         </li>
         <li>
           <a href="#reviews">Отзывы</a>
@@ -193,57 +193,47 @@
 
             <div>
               <label>
-                Дата*
+                Дата
                 <input type="date" name="reserve_date" required>
               </label>
               <label>
-                Время*
+                Время
                 <input type="time" name="reserve_time" required>
               </label>
             </div>
 
-            <div>
+
               <label>
-                Количество человек*
+                Количество человек
                 <input type="number" min="1" max="15" name="persons_amount" required>
               </label>
-            </div>
+
 
             <div>
               <label>
-                Имя*
-                <input type="text" name="person_name" required>
+                Имя
+                <input type="text" name="name" required>
+              </label>
+              <br>
+              <label>
+                Фамилия
+                <input type="text" name="sirname" required>
               </label>
             </div>
 
             <div>
               <label>
-                Фамилия*
-                <input type="text" name="person_sirname" required>
+                Номер телефона
+                <input type="tel" name="phone" required>
               </label>
-            </div>
-
-            <div>
+              <br>
               <label>
-                Номер телефона*
-                <input type="tel" placeholder="+7 900 123 45 67" name="person_phone" required>
-              </label>
-            </div>
-
-            <div>
-              <label>
-                <input type="checkbox" name="iAmUnder18" required>
-                Я старше 18 лет*
+                E-mail
+                <input type="email" name="e-mail" required>
               </label>
             </div>
           </fieldset>
-          <div>
             <button type="submit">Забронировать</button>
-            <label>
-              <input type="checkbox" name="personal_agriment" required>
-              Согласен на обработку персональных данных*
-            </label>
-          </div>
         </form>
       </fieldset>
     </section>
