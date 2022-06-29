@@ -1,38 +1,18 @@
-/*.reservation {*/
-/*  background-color: #430F4F;*/
-/*  color: white;*/
-/*}*/
+* {
+  box-sizing: border-box;
+}
 
-/*.reservation__header_h2{*/
-/*  padding: 32px 31px;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
-/*.reservation_section {*/
-/*  display: flex;*/
-/*}*/
+body {
+  background-color: #1B1A1B;
+  color: #FFF;
+}
 
-/*.reservation_content {*/
-/*  display: flex;*/
-/*  align-self: center;*/
-/*  gap: 2px;*/
-/*}*/
+q {
+  text-transform: uppercase;
+}
 
-/*.reservation_date_time {*/
-/*  flex-direction: column;*/
-/*  gap: 5px;*/
-/*}*/
-
-/*.reservation_content_date_time_row {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 10px;*/
-/*}*/
-
-/*.reservation_to_reserve {*/
-/*  margin-top: 5px;*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: center;*/
-/*  gap: 10px;*/
-/*}*/
+.wrapper {
+  width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+}
