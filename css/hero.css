@@ -1,0 +1,23 @@
+.hero__content {
+  position: relative;
+}
+
+.hero__title{
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 150px;
+}
+
+.hero__content:after {
+  content: "";
+  background-image: url("../img/rooms/main/vr_glass.png");
+  width: 675px;
+  height: 762px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+

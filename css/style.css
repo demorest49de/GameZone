@@ -11,9 +11,9 @@ q {
   text-transform: uppercase;
 }
 
-.wrapper {
-  width: 1200px;
-  padding: 30px;
+.container {
+  width: 1440px;
+  padding: 130px;
   margin: 0 auto;
 }
 

@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-width: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #1B1A1B;
+  color: #FFF;
+}
+
+ul, ol, h1, h2, h3, h4, p, figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+q {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
