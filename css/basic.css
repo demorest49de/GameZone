@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
   position: relative;
@@ -6,22 +12,24 @@ html {
 
 body {
   min-width: 320px;
-  min-width: 100vh;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   font-size: 16px;
   background-color: #1B1A1B;
   color: #FFF;
 }
 
-ul, ol, h1, h2, h3, h4, p, figure {
+ul, ol, h1, h2, h3, h4, p, figure, fieldset {
   margin: 0;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
 ul, ol {
+  padding: 0;
   list-style: none;
 }
 
@@ -30,7 +38,24 @@ q {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 130px;
+}
+
+section:not(:nth-last-child(1)) {
+  padding-bottom: 100px;
+}
+
+.subtitle{
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main{
+  padding-bottom: 100px;
 }

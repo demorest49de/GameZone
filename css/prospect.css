@@ -1,0 +1,16 @@
+.prospect__subtitle {
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+}
+
+.prospect__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  row-gap: 30px;
+}
+
+.prospect__text{
+  position: absolute;
+}

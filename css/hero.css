@@ -1,11 +1,16 @@
+
 .hero__content {
   position: relative;
+  height: 823px;
 }
 
 .hero__title{
   font-size: 150px;
   font-weight: 900;
   line-height: 150px;
+  letter-spacing: -13px;
+  z-index: 0;
+  margin-bottom: 20px;
 }
 
 .hero__content:after {
@@ -14,10 +19,16 @@
   width: 675px;
   height: 762px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 1;
 }
 
+.hero__text{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-left: 100px;
+}

@@ -1,4 +1,11 @@
+@import "css/header.css";
 @import "css/basic.css";
-@import "css/style.css";
-@import "css/faq.css";
 @import "css/hero.css";
+@import "css/prospect.css";
+@import "css/rooms.css";
+@import "css/reservation.css";
+@import "css/about.css";
+@import "css/faq.css";
+@import "css/contacts.css";
+@import "css/reviews.css";
+@import "css/footer.css";
