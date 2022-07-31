@@ -1,7 +1,11 @@
+.booking{
+  max-width: 100%;
+}
+
 .booking__subtitle {
   margin-bottom: 50px;
 }
 
-.booking__form-title{
+.booking__form-title {
   display: none;
 }

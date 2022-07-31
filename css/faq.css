@@ -22,11 +22,11 @@
 }
 
 .item:nth-child(odd):after {
-  background-image: url("../img/open-purple.svg");
+  background-image: url("../img/faq/open-purple.svg");
 }
 
 .item:nth-child(even):after {
-  background-image: url("../img/open.svg");
+  background-image: url("../img/faq/open.svg");
 }
 
 .item:after {

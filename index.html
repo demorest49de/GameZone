@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="icon" type="image/svg+xml" href="img/logo/logo.svg">
+  <link rel="icon" type="image/png" href="img/logo/logo.png">
   <link rel="stylesheet" href="index.css">
   <title>GAME OVER - игровые залы виртуальной реальности</title>
 </head>
@@ -11,7 +11,7 @@
 
   <header class="header">
     <div class="container header__container">
-      <img class="header__logo" src="img/logo.svg" alt="GO">
+      <img class="header__logo" src="img/logo/logo.svg" alt="GO">
       <nav class="header__navigation">
         <ul class="header__menu">
           <li class="header__item">
@@ -50,41 +50,43 @@
 
     <section class="prospect" aria-label="У нас есть все для классного отдыха с друзьями!">
       <div class="container">
-        <h2 class="subtitle prospect__subtitle">У нас есть все для классного&nbsp;отдыха с друзьями!</h2>
+        <h2 class="subtitle prospect__subtitle">У нас есть все для классного <span class="span-brake-word">отдыха с друзьями!</span>
+        </h2>
         <ul class="prospect__list">
           <li class="prospect__item">
             <figure>
-              <img class="prospect__img" src="img/vr.jpg" alt="VR очки">
+              <img class="prospect__img" src="img/prospect/vr.jpg" alt="VR очки">
               <figcaption class="prospect__text">VR очки</figcaption>
             </figure>
           </li>
           <li class="prospect__item">
             <figure>
-              <img class="prospect__img" src="img/audio.jpg" alt="Аудио-система 5.1 с отличным звуком">
+              <img class="prospect__img" src="img/prospect/audio.jpg" alt="Аудио-система 5.1 с отличным звуком">
               <figcaption class="prospect__text">Аудио-система 5.1 с отличным звуком</figcaption>
             </figure>
           </li>
           <li class="prospect__item">
             <figure>
-              <img class="prospect__img" src="img/micro.jpg" alt="Караоке (4 микрофона)">
+              <img class="prospect__img" src="img/prospect/micro.jpg" alt="Караоке (4 микрофона)">
               <figcaption class="prospect__text">Караоке (4 микрофона)</figcaption>
             </figure>
           </li>
           <li class="prospect__item">
             <figure>
-              <img class="prospect__img" src="img/game.jpg" alt="Настольные игры">
+              <img class="prospect__img" src="img/prospect/game.jpg" alt="Настольные игры">
               <figcaption class="prospect__text">Настольные игры</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img class="prospect__img" src="img/netflix.jpg" alt="Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko">
+              <img class="prospect__img" src="img/prospect/netflix.jpg"
+                   alt="Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko">
               <figcaption class="prospect__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img class="prospect__img" src="img/sony.jpg" alt="PlayStation 5">
+              <img class="prospect__img" src="img/prospect/sony.jpg" alt="PlayStation 5">
               <figcaption class="prospect__text">PlayStation 5</figcaption>
             </figure>
           </li>
@@ -270,18 +272,26 @@
     <section class="about">
       <div class="container">
         <h2 class="subtitle about__subtitle" id="about">О нас</h2>
-        <div>
-          <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в
+        <div class="about__block-text">
+          <p class="about__text">Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной
+            реальности</i> в
             центральной
             части города.
           </p>
-          <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+          <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
+            Вас топовыми игровыми
             разработками со всего мира.
           </p>
         </div>
-        <blockquote>
-          <p><q><strong>GAME OVER</strong> &mdash; это место незабываемых впечатлений</q></p>
-          <p><cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
+        <blockquote class="about__blockquote">
+          <p class="about__big-text about__big-text-before about__doublequote">GAME OVER &mdash;</p>
+          <p class="about__big-text about__big-text-after"> это место незабываемых впечатлений</p>
+          <figure class="about__figure-boss">
+            <img class="about__boss-img" src="img/about/boss.png" alt="Основватель Аркадий Абакшин">
+            <figcaption class="about__boss-descr">Аркадий Абакшин,
+              <span class="span-brake-word">создатель игровой
+                <span class="span-brake-word">территории GAME OVER</span></span></figcaption>
+          </figure>
         </blockquote>
       </div>
     </section>
@@ -292,12 +302,12 @@
           Отзывы посетителей
         </h2>
 
-        <div>
-          <ul>
-            <li>
-              <article>
-                <figure>
-                  <img src="img/blank-avatar.png" width="150" alt="Имя">
+        <div class="reviews__block-container">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <figure class="reviews__figure">
+                  <img src="img/reviews/blank-avatar.png" width="150" alt="Имя">
                   <figcaption>Имя</figcaption>
                 </figure>
                 <p>
@@ -305,10 +315,10 @@
                 </p>
               </article>
             </li>
-            <li>
-              <article>
-                <figure>
-                  <img src="img/blank-avatar.png" width="150" alt="Имя">
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <figure class="reviews__figure">
+                  <img src="img/reviews/blank-avatar.png" width="150" alt="Имя">
                   <figcaption>Имя</figcaption>
                 </figure>
                 <p>
@@ -316,10 +326,10 @@
                 </p>
               </article>
             </li>
-            <li>
-              <article>
-                <figure>
-                  <img src="img/blank-avatar.png" width="150" alt="Имя">
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <figure class="reviews__figure">
+                  <img src="img/reviews/blank-avatar.png" width="150" alt="Имя">
                   <figcaption>Имя</figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet.</p>
