@@ -1,7 +1,78 @@
-.footer__subtitle {
+.contacts__subtitle {
   margin-bottom: 54px;
 }
 
-.footer{
+.contacts {
   padding-bottom: 51px;
+}
+
+.contacts__address {
+  padding-left: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+}
+
+.contacts__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+a .contacts__text {
+  display: none;
+}
+
+.contacts__text:nth-child(1) {
+  padding-bottom: 40px;
+}
+
+.contacts__list {
+  display: flex;
+  gap: 26px;
+}
+
+.contacts__location {
+  position: relative;
+}
+
+.contacts__phone {
+  position: relative;
+}
+
+.contacts__email {
+  position: relative;
+}
+
+.contacts__location:before, .contacts__phone:before, .contacts__email:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+.contacts__phone {
+  padding-bottom: 11px;
+}
+
+.contacts__location:before {
+  background-image: url("../img/rooms/contacts/location.svg");
+  left: -55px;
+  top: 18px;
+}
+
+.contacts__phone:before {
+  background-image: url("../img/rooms/contacts/phone.svg");
+  left: -55px;
+  top: -1px;
+}
+
+.contacts__email:before {
+  background-image: url("../img/rooms/contacts/envelope.svg");
+  left: -55px;
+  top: -2px;
 }

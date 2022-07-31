@@ -9,22 +9,23 @@
   row-gap: 60px;
 }
 
-.rooms__img {
-  max-width: 1180px;
+.rooms__figure {
+  position: relative;
 }
 
-.rooms__item {
-  position: relative;
+.rooms__img {
+  width: 100%;
 }
 
 .rooms__text {
   position: absolute;
+  width: 100%;
+  max-width: 250px;
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
   text-transform: uppercase;
   z-index: 1;
-  top: 37.8%;
   left: 42%;
-  max-width: 250px;
+  bottom: 38.9%;
 }
