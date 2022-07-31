@@ -6,6 +6,18 @@
   margin-bottom: 50px;
 }
 
-.booking__form-title {
-  display: none;
+.booking__reg-date-time{
+  display: inline-block;
+}
+
+.booking__reg-people{
+  display: inline-block;
+}
+
+.booking__reg-name{
+  display: inline-block;
+}
+
+.booking__reg-contacts{
+  display: inline-block;
 }
