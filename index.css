@@ -1,5 +1,7 @@
-@import "css/header.css";
+@import "css/normalize.css";
+@import "css/global.css";
 @import "css/basic.css";
+@import "css/header.css";
 @import "css/hero.css";
 @import "css/prospect.css";
 @import "css/rooms.css";

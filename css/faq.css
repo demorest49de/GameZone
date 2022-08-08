@@ -6,8 +6,6 @@
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
-  position: relative;
-  list-style-type: none;
   line-height: 30px;
 }
 
@@ -31,12 +29,12 @@
 
 .faq__item:after {
   content: "";
-  display: inline-block;
   width: 30px;
   height: 30px;
   background-size: contain;
   float: right;
-  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .faq__item:not(:last-child) {
