@@ -21,19 +21,19 @@
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
-  position:relative;
+  position: relative;
 }
 
-.about__quotes{
+.about__quotes {
   margin-bottom: 42px;
   margin-left: 50px;
   line-height: 0;
 }
+
 .about__quotes:before, :after {
   color: #6C0287;
   font-weight: 900;
   font-size: 44px;
-  text-transform: uppercase;
 }
 
 .about__quotes:before {
@@ -48,18 +48,18 @@
   content: "”";
   position: relative;
   float: right;
-  left: 20px;
+  right: 100px;
   bottom: 26px;
 }
 
-.about__figure-boss{
+.about__figure-boss {
   display: flex;
   justify-content: right;
   align-items: center;
 }
 
 
-.about__boss-descr{
+.about__boss-descr {
   display: inline-block;
   width: 280px;
   font-weight: 400;
@@ -67,7 +67,7 @@
   line-height: 28px;
 }
 
-.about__boss-img{
+.about__boss-img {
   border-radius: 50px;
   width: 80px;
   height: 80px;
