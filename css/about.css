@@ -21,33 +21,35 @@
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
-  padding-left: 50px;
   position:relative;
 }
 
-.about__big-text:not(:nth-child(1)){
-  margin-bottom: 40px;
+.about__quotes{
+  margin-bottom: 42px;
+  margin-left: 50px;
+  line-height: 0;
 }
-
-.about__doublequote:before, :after {
+.about__quotes:before, :after {
   color: #6C0287;
   font-weight: 900;
   font-size: 44px;
-  line-height: 50px;
   text-transform: uppercase;
 }
 
-.about__big-text-before:before {
+.about__quotes:before {
   content: "“";
-  position: absolute;
-  left: 12px;
-  top: -14px;
+  position: relative;
+  float: left;
+  left: -50px;
+  top: 18px;
 }
 
-.about__big-text-after:after {
+.about__quotes:after {
   content: "”";
   position: relative;
-  left: 17px;
+  float: right;
+  left: 20px;
+  bottom: 26px;
 }
 
 .about__figure-boss{
