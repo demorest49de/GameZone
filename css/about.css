@@ -16,18 +16,20 @@
   margin-bottom: 70px;
 }
 
+.about__quotes {
+  padding-left: 52px;
+  padding-bottom: 42px;
+  margin-left: 0px;
+  position: relative;
+  left: 31px;
+}
+
 .about__big-text {
   font-weight: 400;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
-  position: relative;
-}
-
-.about__quotes {
-  margin-bottom: 42px;
-  margin-left: 50px;
-  line-height: 0;
+  display: block;
 }
 
 .about__quotes:before, :after {
@@ -40,16 +42,16 @@
   content: "“";
   position: relative;
   float: left;
-  left: -50px;
-  top: 18px;
+  left: -32px;
+  bottom: 8px;
 }
 
 .about__quotes:after {
   content: "”";
   position: relative;
   float: right;
-  right: 100px;
-  bottom: 26px;
+  right: 140px;
+  bottom: 52px;
 }
 
 .about__figure-boss {
