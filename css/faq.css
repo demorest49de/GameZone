@@ -29,12 +29,12 @@
 
 .faq__item:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 46px;
+  height: 46px;
   background-size: contain;
   float: right;
   background-repeat: no-repeat;
-  position: relative;
+
 }
 
 .faq__item:not(:last-child) {

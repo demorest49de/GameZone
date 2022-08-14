@@ -17,10 +17,9 @@
 }
 
 .about__quotes {
-  padding-bottom: 42px;
-  margin-left: 0px;
+  margin-bottom: 42px;
+  padding-left: 31px;
   position: relative;
-  left: 31px;
 }
 
 .about__big-text {
@@ -39,18 +38,17 @@
 
 .about__quotes:before {
   content: "“";
-  position: relative;
-  float: left;
-  left: -32px;
-  bottom: 8px;
+  position: absolute;
+  left: 0;
+  top: -9px;
 }
 
 .about__quotes:after {
   content: "”";
-  position: relative;
-  float: right;
-  right: 140px;
-  bottom: 52px;
+  margin-left: 9px;
+  position: absolute;
+  right: 110px;
+  bottom: 0;
 }
 
 .about__figure-boss {
