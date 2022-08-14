@@ -7,6 +7,9 @@
   font-size: 24px;
   padding: 30px 70px;
   line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .faq__item:nth-child(odd) {
@@ -34,7 +37,6 @@
   background-size: contain;
   float: right;
   background-repeat: no-repeat;
-
 }
 
 .faq__item:not(:last-child) {
