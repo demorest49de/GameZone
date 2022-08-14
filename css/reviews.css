@@ -1,3 +1,32 @@
-.reviews__subtitle{
+.reviews__container {
+  width: 980px;
+}
+
+.reviews__img {
+  width: 280px;
+  height: 319px;
+  margin-bottom: 12px;
+}
+
+.reviews__article {
+  display: flex;
+}
+
+.reviews__subtitle {
   margin-bottom: 50px;
+}
+
+.reviews__item {
+  margin-bottom: 50px;
+}
+
+.reviews__figure {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.reviews__review-text {
+  width: 680px;
+  height: 320px;
+  padding-top: 53px;
 }
