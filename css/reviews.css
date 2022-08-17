@@ -1,7 +1,8 @@
 .reviews__img {
-  width: 280px;
-  height: 280px;
   margin-bottom: 12px;
+  border-radius: 50%;
+  min-width: 280px;
+  min-height: 280px;
 }
 
 .reviews__article {
