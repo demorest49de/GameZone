@@ -56,7 +56,7 @@
   bottom: 0;
 }
 
-.about__figure-boss{
+.about__figure-boss {
   height: 84px;
 }
 
@@ -74,9 +74,9 @@
   content: "";
   position: absolute;
   left: -112px;
-  background-image: url("../img/about/boss.png");
+  background-image: url("https://s3-alpha-sig.figma.com/img/eb3c/907a/1407fc21edd4f173453640ea12d321db?Expires=1661731200&Signature=bNbe1g2oHaPfvgxbKkXThgi9zZr2PfNOhMKS2XVb-cRsa3B9bb8VKJx0taa7354nikn9QZSyLWKC4nh8pLHZN6n314BpCGllpKA1oC~UyoT9BSAwd6NnbBuvnZjXkU3rbOKeFKtHMjJ19G8KQG4dTdTlN2ilHC8x8Di0BKNS-Q19yG1e68oiwvxcBgJ41tFf3GvOFYfIXLpomhkFxB3qIFB8s1qD8iIA95a8bx4w~w99ko8REdGKriFFW8Gi1X8BtFrVnln8U~8TvNplm06J9fpNQvP90VGpW5g0RBtaK7i5lt3iOYPV1X5rdtDH-Ioajwsom3TqRwP8JnjtY0rMxA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 80px;
   height: 80px;
   border-radius: 50%;
