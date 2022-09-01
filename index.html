@@ -10,6 +10,19 @@
 <body>
 
   <header class="header">
+    <div class="container">
+      <nav class="header__navigation">
+        <img class="header__logo" src="img/logo/logo.svg" alt=лого>
+        <ul class="header__menu">
+          <li class="header__item"><a href="#rooms" class="header__link">залы</a></li>
+          <li class="header__item"><a href="#about" class="header__link">о нас</a></li>
+          <li class="header__item"><a href="#booking" class="header__link">бронь</a></li>
+          <li class="header__item"><a href="#reviews" class="header__link">отзывы</a></li>
+          <li class="header__item"><a href="#contacts" class="header__link">контакты</a></li>
+        </ul>
+        <button type="button" class="header__call-button">заказать звонок</button>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -19,7 +32,94 @@
         <div class="hero__content">
           <h1 class="hero__title">GAME OVER</h1>
           <p class="hero__text">Новый формат игр и отдыха</p>
+          <div class="hero__block">
+            <div class="hero__underblock-1">
+              <p class="hero__big-number">4</p>
+              <p class="hero__text-block">Тематических зала</p>
+            </div>
+            <div class="hero__underblock-2">
+              <p class="hero__big-text">new</p>
+              <p class="hero__text-block">Новейшая аппаратура</p>
+            </div>
+          </div>
+          <button class="hero__button" type="submit">забронировать</button>
+          <a href="#preview" class="hero__link"></a>
         </div>
+
+      </div>
+    </section>
+
+    <section class="preview" id="preview">
+      <div class="container">
+        <h2 class="subtitle preview__subtitle">
+          У нас есть все для классного отдыха с друзьями!
+        </h2>
+        <ul class="preview__list">
+          <li class="preview__item">
+            <figure class="preview__content">
+              <img class="preview__image" src="img/preview/vr.jpg" alt="VR очки"/>
+              <figcaption class="preview__text">VR очки</figcaption>
+            </figure>
+          </li>
+          <li class="preview__item card">
+            <figure class="preview__content">
+              <img
+                class="preview__image"
+                src="img/preview/audio.jpg"
+                alt="Аудио-система 5.1 с отличным звуком"
+              />
+              <figcaption class="preview__text">
+                Аудио-система 5.1 с&nbsp;отличным&nbsp;звуком
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="preview__item card">
+            <figure class="preview__content">
+              <img
+                class="preview__image"
+                src="img/preview/micro.jpg"
+                alt="Караоке (4 микрофона)"
+              />
+              <figcaption class="preview__text">
+                Караоке (4 микрофона)
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="preview__item card">
+            <figure class="preview__content">
+              <img class="preview__image" src="img/preview/game.jpg"
+                alt="Настольные игры"
+              />
+              <figcaption class="preview__text">Настольные игры</figcaption>
+            </figure>
+          </li>
+
+          <li class="preview__item card">
+            <figure class="preview__content">
+              <img
+                class="preview__image"
+                src="img/preview/netflix.jpg"
+                alt="Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko"
+              />
+              <figcaption class="preview__text">
+                Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="preview__item card">
+            <figure class="preview__content">
+              <img
+                class="preview__image"
+                src="img/preview/sony.jpg"
+                alt="PlayStation 5"
+              />
+              <figcaption class="preview__text">PlayStation 5</figcaption>
+            </figure>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -186,9 +286,9 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
-        <h2 class="subtitle about__subtitle" id="about">О нас</h2>
+        <h2 class="subtitle about__subtitle">О нас</h2>
 
         <div class="about__container">
           <div class="about__image-block">
@@ -225,13 +325,13 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
 
         <div class="reviews__container">
-          <h2 class="subtitle reviews__subtitle" id="reviews">
-          Отзывы посетителей
-        </h2>
+          <h2 class="subtitle reviews__subtitle">
+            Отзывы посетителей
+          </h2>
 
           <div class="reviews__block-container">
             <ul class="reviews__list">
@@ -243,7 +343,8 @@
                     </figcaption>
                   </figure>
                   <p class="reviews__review-text">
-                    Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+                    Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
+                    никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
                   </p>
                 </article>
               </li>
@@ -254,7 +355,8 @@
                     <figcaption>Оксана Григорьева</figcaption>
                   </figure>
                   <p class="reviews__review-text">
-                    Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
+                    Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
+                    больше нет подобных заведений
                   </p>
                 </article>
               </li>
@@ -265,7 +367,8 @@
                     <figcaption>Никита Ященко</figcaption>
                   </figure>
                   <p class="reviews__review-text">
-                    Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
+                    Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
+                    попал в атмосферу космоса
                   </p>
                 </article>
               </li>
@@ -276,9 +379,9 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
       <div class="container">
-        <h2 class="subtitle faq__subtitle" id="faq">
+        <h2 class="subtitle faq__subtitle">
           Частые вопросы
         </h2>
 
@@ -293,9 +396,9 @@
     </section>
   </main>
 
-  <footer class="contacts">
+  <footer class="contacts" id="contacts">
     <div class="container">
-      <h2 class="subtitle contacts__subtitle" id="contacts">Контакты</h2>
+      <h2 class="subtitle contacts__subtitle">Контакты</h2>
       <address class="contacts__address">
         <p class="contacts__text contacts__location">г. Москва <span class="brake-word"> ул. Аквамарина, 16</span></p>
         <a class="contacts__text contacts__phone" href="tel:+79509302893">8(950)930-28-93</a>

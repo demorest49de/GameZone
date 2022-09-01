@@ -1,0 +1,23 @@
+.preview__subtitle {
+  margin: 0 160px 40px 160px;
+}
+
+.preview__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 40px;
+}
+
+.preview__content{
+  position: relative;
+}
+
+.preview__text{
+  position: absolute;
+  left: 40px;
+  top: 166px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
