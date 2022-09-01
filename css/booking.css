@@ -1,23 +1,97 @@
-.booking{
+.booking {
   max-width: 100%;
+  background-color: #440F51;
+  padding-top: 75px;
 }
 
 .booking__subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.booking__reg-date-time{
-  display: inline-block;
+.booking__legend {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.booking__reg-people{
-  display: inline-block;
+.booking__room {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
-.booking__reg-name{
-  display: inline-block;
+.booking__room > .booking__label {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  width: 250px;
+  padding: 7px 5px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
 }
 
-.booking__reg-contacts{
+.booking__input {
+  display: none;
+}
+
+.booking__set {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 115px;
+}
+
+.booking__subset {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__subset:nth-of-type(1) {
+  margin-left: 100px;
+}
+
+.booking__subset > .booking__legend {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.booking__subset > .booking__label {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.booking__game-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.booking__game-input + .booking__text {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.booking__game-input + .booking__text:before {
+  content: '';
   display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.booking__game-input+.booking__text_radio:before {
+  border-radius: 50%;
 }

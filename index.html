@@ -146,11 +146,12 @@
 
     <section class="booking" id="booking">
       <div class="container">
-        <h2 class="subtitle booking__subtitle">Забронировать</h2>
+        <h2 class="subtitle booking__subtitle">Забронировать зал просто</h2>
+
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" name="booking_form"
               method="post">
           <fieldset class="booking__room">
-            <legend class="booking__legend">Выбери комнату</legend>
+            <legend class="booking__legend">Выбери зал</legend>
             <label class="booking__label">
               <input class="booking__input" type="radio"
                      name="room-type" value="80's vibes" checked>
@@ -180,28 +181,28 @@
               <legend class="booking__legend">Приставка:
               </legend>
               <label class="booking__label">
-                <input class="booking__input" type="radio"
+                <input class="booking__game-input booking__game-input_width_radio" type="radio"
                        name="console-type" value="Playstation" checked>
-                Playstation
+                <span class="booking__text booking__text_radio">Playstation</span>
               </label>
               <label class="booking__label">
-                <input class="booking__input" type="radio"
+                <input class="booking__game-input" type="radio"
                        name="console-type" value="Sega Mega Drive">
-                Sega Mega Drive
+                <span class="booking__text booking__text_radio">Sega Mega Drive</span>
               </label>
               <label class="booking__label">
-                <input class="booking__input" type="radio"
+                <input class="booking__game-input" type="radio"
                        name="console-type" value="X-box One S">
-                X-box One S
+                <span class="booking__text booking__text_radio">X-box One S</span>
               </label>
               <label class="booking__label">
-                <input class="booking__input" type="radio"
+                <input class="booking__game-input" type="radio"
                        name="console-type" value="Dendy">
-                Dendy
+                <span class="booking__text booking__text_radio">Dendy</span>
               </label>
             </fieldset>
 
-            <fieldset class="booking__console">
+            <fieldset class="booking__subset">
               <legend class="booking__legend">
                 Настольные игры:
               </legend>
@@ -227,7 +228,7 @@
               </label>
             </fieldset>
 
-            <fieldset class="booking__additional">
+            <fieldset class="booking__subset">
               <legend class="booking__legend">Дополнительно:
               </legend>
               <label class="booking__label">
