@@ -90,7 +90,7 @@
           <li class="preview__item card">
             <figure class="preview__content">
               <img class="preview__image" src="img/preview/game.jpg"
-                alt="Настольные игры"
+                   alt="Настольные игры"
               />
               <figcaption class="preview__text">Настольные игры</figcaption>
             </figure>
@@ -247,40 +247,44 @@
           <fieldset class="booking__reg">
             <legend class="booking__legend">Выбери дату и время</legend>
 
-            <div class="booking__reg-date-time">
-              <label class="booking__label">
-                Дата*
-                <input class="booking__input" type="date" name="date" required>
-              </label>
-              <label class="booking__label">
-                Время*
-                <input class="booking__input" type="time" name="time" required>
-              </label>
-            </div>
-            <div class="booking__reg-people">
-              <label class="booking__label">
-                Количество человек*
-                <input class="booking__input" type="number" min="1" max="15" name="persons_amount" required>
-              </label>
+            <div class="booking__reg-set">
+              <div class="booking__reg-subset">
+                <div class="booking__reg-date-time">
+                  <label class="booking__label">
+                    Дата*
+                    <input class="booking__input" type="date" name="date" required>
+                  </label>
+                  <label class="booking__label">
+                    Время*
+                    <input class="booking__input" type="time" name="time" required>
+                  </label>
+                </div>
+                <div class="booking__reg-people-amount">
+                  <label class="booking__label">
+                    Количество человек*
+                    <input class="booking__input" type="number" min="1" max="15" name="persons_amount" required>
+                  </label>
+                </div>
+              </div>
+              <div class="booking__reg-subset">
+                <label class="booking__label">
+                  Имя*
+                  <input class="booking__input" type="text" name="name" required>
+                </label>
+                <label class="booking__label">
+                  Фамилия*
+                  <input class="booking__input" type="text" name="sirname" required>
+                </label>
+              </div>
+              <div class="booking__reg-subset">
+                <label class="booking__label">
+                  Номер телефона*
+                  <input class="booking__input" type="tel" name="phone" required>
+                </label>
+              </div>
             </div>
 
-            <div class="booking__reg-name">
-              <label class="booking__label">
-                Имя*
-                <input class="booking__input" type="text" name="name" required>
-              </label>
-              <label class="booking__label">
-                Фамилия*
-                <input class="booking__input" type="text" name="sirname" required>
-              </label>
-            </div>
 
-            <div class="booking__reg-contacts">
-              <label class="booking__label">
-                Номер телефона*
-                <input class="booking__input" type="tel" name="phone" required>
-              </label>
-            </div>
           </fieldset>
           <button class="booking__submit-button" type="submit">Забронировать</button>
         </form>

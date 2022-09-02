@@ -38,10 +38,6 @@
   cursor: pointer;
 }
 
-/*.booking__input {*/
-/*  display: none;*/
-/*}*/
-
 .booking__set {
   display: flex;
   margin-bottom: 60px;
@@ -95,4 +91,18 @@
 
 .booking__input + .booking__text_radio:before {
   border-radius: 50%;
+}
+
+.booking__reg {
+  margin-bottom: 40px;
+}
+
+.booking__reg-set{
+  display: flex;
+  justify-content: center;
+}
+
+.booking__reg-date-time {
+  display: flex;
+  gap: 50px;
 }
