@@ -110,12 +110,18 @@ section.booking {
 .booking__reg-subset {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 14px;
+}
+
+.booking__reg-date {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding-top: 20px;
 }
 
 .booking__reg-date-time {
   display: flex;
-  justify-content: left;
   gap: 32px;
 }
 
@@ -129,7 +135,7 @@ section.booking {
   padding: 12px 0px 12px 20px;
 }
 
-.booking__reg-input-datetime{
+.booking__reg-input-datetime {
   width: 134px;
 }
 
@@ -140,7 +146,7 @@ section.booking {
   line-height: 28px;
 }
 
-.booking__reg-text:after{
+.booking__reg-text:after {
   content: '';
   background-image: url("../img/booking/down_arrow.svg");
   position: absolute;
@@ -157,7 +163,7 @@ section.booking {
   right: 27px;
 }
 
-.booking__reg-text_top:after{
+.booking__reg-text_top:after {
   top: 6px;
 }
 
@@ -165,4 +171,7 @@ section.booking {
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
