@@ -4,6 +4,10 @@
   padding-top: 75px;
 }
 
+section.booking {
+  padding-bottom: 85px;
+}
+
 .booking__subtitle {
   margin-bottom: 40px;
 }
@@ -59,11 +63,12 @@
   text-align: left;
 }
 
-.booking__subset > .booking__label {
+.booking__label {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
   text-align: left;
+  position: relative;
 }
 
 .booking__input {
@@ -97,12 +102,67 @@
   margin-bottom: 40px;
 }
 
-.booking__reg-set{
+.booking__reg-set {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.booking__reg-subset {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .booking__reg-date-time {
   display: flex;
-  gap: 50px;
+  justify-content: left;
+  gap: 32px;
+}
+
+.booking__reg-input {
+  height: 52px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  width: 300px;
+  padding: 12px 0px 12px 20px;
+}
+
+.booking__reg-input-datetime{
+  width: 134px;
+}
+
+.booking__reg-input::placeholder {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.booking__reg-text:after{
+  content: '';
+  background-image: url("../img/booking/down_arrow.svg");
+  position: absolute;
+  display: inline-block;
+  width: 21px;
+  height: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  top: 18px;
+  right: 27px;
+}
+
+.booking__reg-text_top:after{
+  top: 6px;
+}
+
+.booking__reg-label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
 }
