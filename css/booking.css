@@ -76,7 +76,6 @@ section.booking {
 .booking__input + .booking__text {
   display: inline-flex;
   align-items: center;
-  user-select: none;
 }
 
 .booking__input + .booking__text:before {
@@ -205,7 +204,6 @@ section.booking {
   color: #6C0287;
   padding: 16px 50px;
   border-style: none;
-
   /*position: absolute;*/
   /*right: 80px;*/
 }

@@ -24,6 +24,10 @@ img {
   height: auto;
 }
 
+img, label, input, button {
+  user-select: none;
+}
+
 button {
   cursor: pointer;
   padding: 0;
