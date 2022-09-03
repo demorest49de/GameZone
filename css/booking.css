@@ -182,9 +182,31 @@ section.booking {
   gap: 5px;
 }
 
+/*.booking__form{*/
+/*  position: relative;*/
+/*}*/
+
+.booking__submit-block {
+  display: flex;
+  justify-content: right;
+  max-width: 1000px;
+  margin-left: 100px;
+}
+
 .booking__submit-button {
   background-color: #FFFFFF;
   border-radius: 10px;
   width: 300px;
   height: 60px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+  padding: 16px 50px;
+  border-style: none;
+
+  /*position: absolute;*/
+  /*right: 80px;*/
 }
+
