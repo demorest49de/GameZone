@@ -11,10 +11,10 @@
 }
 
 .reviews__subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.reviews__item {
+.reviews__item:not(:nth-last-child(1)) {
   margin-bottom: 50px;
 }
 

@@ -1,13 +1,9 @@
 .contacts__subtitle {
-  margin-bottom: 54px;
-}
-
-.contacts {
-  padding-bottom: 51px;
+  margin-bottom: 40px;
 }
 
 .contacts__address {
-  padding-left: 70px;
+  padding-left: 67px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -75,4 +71,27 @@ a .contacts__text {
   background-image: url("../img/rooms/contacts/envelope.svg");
   left: -55px;
   top: -2px;
+}
+
+.contacts__block {
+  margin-bottom: 156px;
+  display: flex;
+  gap: 170px;
+}
+
+.contacts__text-small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contacts__block-text {
+  display: flex;
+  flex-direction: column;
 }
