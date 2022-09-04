@@ -1,7 +1,7 @@
 
 .hero__content {
   position: relative;
-  height: 823px;
+  min-height: 823px;
 }
 
 .hero__title {
@@ -16,8 +16,8 @@
 .hero__content:after {
   content: "";
   background-image: url("../img/rooms/main/vr_glass.png");
-  width: 675px;
-  height: 762px;
+  min-width: 675px;
+  min-height: 762px;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -86,8 +86,8 @@
 }
 
 .hero__link {
-  width: 97px;
-  height: 97px;
+  min-width: 97px;
+  min-height: 97px;
   background-image: url("../img/hero/down.svg");
   background-size: cover;
   z-index: 2;

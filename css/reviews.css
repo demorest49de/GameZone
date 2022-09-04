@@ -1,8 +1,8 @@
 .reviews__img {
   margin-bottom: 12px;
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
+  min-width: 280px;
+  min-height: 280px;
   object-fit: cover;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .reviews__review-text {
-  width: 680px;
-  height: 320px;
+  min-width: 680px;
+  min-height: 320px;
   padding-top: 53px;
 }

@@ -81,8 +81,8 @@ section.booking {
 .booking__input + .booking__text:before {
   content: '';
   display: inline-block;
-  width: 27px;
-  height: 27px;
+  min-width: 27px;
+  min-height: 27px;
   margin-right: 12px;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ section.booking {
 }
 
 .booking__reg-input {
-  height: 52px;
+  min-height: 52px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -156,8 +156,8 @@ section.booking {
   background-image: url("../img/booking/down_arrow.svg");
   position: absolute;
   display: inline-block;
-  width: 21px;
-  height: 15px;
+  min-width: 21px;
+  min-height: 15px;
   background-size: cover;
   background-repeat: no-repeat;
   font-weight: 400;
@@ -195,8 +195,8 @@ section.booking {
 .booking__submit-button {
   background-color: #FFFFFF;
   border-radius: 10px;
-  width: 300px;
-  height: 60px;
+  min-width: 300px;
+  min-height: 60px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;

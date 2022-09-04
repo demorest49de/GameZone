@@ -47,8 +47,8 @@ a .contacts__text {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  width: 32px;
-  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .contacts__phone {

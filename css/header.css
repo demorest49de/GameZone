@@ -4,6 +4,11 @@
   padding-top: 30px;
 }
 
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__navigation {
   display: flex;
   justify-content: space-between;
