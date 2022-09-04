@@ -1,3 +1,7 @@
+.contacts {
+  padding-bottom: 10px;
+}
+
 .contacts__subtitle {
   margin-bottom: 40px;
 }
@@ -21,17 +25,16 @@ a .contacts__text {
   display: none;
 }
 
-.contacts__text:nth-child(1) {
-  padding-bottom: 40px;
-}
-
 .contacts__list {
   display: flex;
   gap: 26px;
+  max-width: 280px;
+  max-height: 49px;
 }
 
 .contacts__location {
   position: relative;
+  padding-bottom: 40px;
 }
 
 .contacts__phone {
@@ -88,7 +91,6 @@ a .contacts__text {
 .contacts__copyright {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .contacts__block-text {

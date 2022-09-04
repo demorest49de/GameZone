@@ -74,11 +74,15 @@
   text-align: start;
 }
 
+.about__text-boss{
+  margin-right: 30px;
+}
+
 .about__boss-description:before {
   content: "";
   position: absolute;
   left: -112px;
-  background-image: url("https://s3-alpha-sig.figma.com/img/eb3c/907a/1407fc21edd4f173453640ea12d321db?Expires=1662940800&Signature=PnYKhDvywu7R7SJoCPy5pphWx7RToHkLjshpUmYTlr1UPUXKUKStTPLJpVLJBZfA~s75X2kK-5RIdBYNOP~rwB8jkaxzJ1Oq9NeKJRWzmVcK8GuJAFAysKAt8WWy0UEH4AWRGD~thmjFnSUOGOmv3zT2ghd3ZsVHVXTgO~DW6b9o6KGFGhOxImE1Vgh-Zn94RFViQnnJvXuIuMgtHpV0NCCfTeiQLFKG7Ns5E3wI06l0LLlPxzjh6WpTkkTrXDzsJZg-D0iPnnVjbjD-QTr7DSNeZxXAA29WS--nPfQmhilNdm8y76uqZFHAxCAMc0nV0jdKvIlKUfn2KPOA5EPXog__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-image: url("../img/about/boss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 80px;

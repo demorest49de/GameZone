@@ -40,12 +40,12 @@
   margin-bottom: 150px;
 }
 
-.hero__underblock-1 {
+.hero__underblock-number {
   width: 209px;
   margin-right: 40px;
 }
 
-.hero__underblock-2 {
+.hero__underblock-text {
   width: 166px;
   display: flex;
   flex-direction: column;
