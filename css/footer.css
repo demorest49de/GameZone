@@ -32,6 +32,10 @@ a .contacts__text {
   max-height: 49px;
 }
 
+.contacts__link {
+  display: flex;
+}
+
 .contacts__location {
   position: relative;
   padding-bottom: 40px;

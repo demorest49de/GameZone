@@ -91,7 +91,7 @@
 
 .about__text-boss{
  text-align: left;
-  /*width: 280px;*/
+  max-width: 280px;
 }
 
 .about__container {
