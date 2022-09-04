@@ -61,33 +61,37 @@
 }
 
 .about__figure-boss {
+  min-width: 389px;
   min-height: 84px;
+  display: flex;
+  padding-left: 110px;
+  padding-right: 20px;
 }
 
 .about__boss-description {
   float: right;
-  width: 280px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  position: relative;
-  text-align: start;
-}
-
-.about__text-boss{
-  margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
 }
 
 .about__boss-description:before {
   content: "";
-  position: absolute;
-  left: -112px;
   background-image: url("../img/about/boss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 80px;
   min-height: 80px;
   border-radius: 50%;
+}
+
+.about__text-boss{
+ text-align: left;
+  /*width: 280px;*/
 }
 
 .about__container {
