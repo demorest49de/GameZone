@@ -85,6 +85,10 @@
   border-style: none;
 }
 
+.hero__button:hover {
+
+}
+
 .hero__link {
   min-width: 97px;
   min-height: 97px;
