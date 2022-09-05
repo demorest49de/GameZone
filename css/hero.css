@@ -86,7 +86,17 @@
 }
 
 .hero__button:hover {
+  background-color: #840AA3;
+}
 
+.hero__button:active {
+  background-color: #640AA3;
+}
+
+.hero__button:focus {
+  border: 0;
+  outline: none;
+  background-color: #840AA3;
 }
 
 .hero__link {

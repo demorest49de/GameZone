@@ -67,6 +67,22 @@ section.booking {
   position: relative;
 }
 
+.booking__label:hover {
+  outline: 3px solid #640AA3;
+  background-color: #EADEED;
+}
+
+.booking__label:active {
+  outline: 3px solid #fff;
+  background-color: #6C0287;
+  color: #fff;
+}
+
+.booking__label:focus {
+  outline: 3px solid #640AA3;
+  background-color: #fff;
+}
+
 .booking__input {
   position: absolute;
   z-index: -1;
@@ -208,3 +224,17 @@ section.booking {
   /*right: 80px;*/
 }
 
+.booking__submit-button:hover {
+  outline: 3px solid #6C0287;
+  background-color: #EADEED;
+}
+
+.booking__submit-button:active {
+  outline: none;
+  background-color: #EADEED;
+}
+
+.booking__submit-button:focus {
+  outline: 3px solid #6C0287;
+  background-color: #fff;
+}
