@@ -44,14 +44,13 @@
   transition: background-color .8s ease;
 }
 
-.header__call-button:active {
-  border-style: none;
-  background-color: #640AA3;
-  outline: 1px solid #000;
-}
-
 .header__call-button:focus {
   border-style: none;
   background-color: #6C0287;
   outline: none;
+}
+
+.header__call-button:active {
+  background-color: #640AA3;
+  border: 1px solid #000;
 }

@@ -27,21 +27,6 @@ section.booking {
   margin-bottom: 60px;
 }
 
-.booking__room > .booking__label {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 40px;
-  text-transform: uppercase;
-
-  width: 250px;
-  padding: 7px 5px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  color: #000;
-  text-align: center;
-  cursor: pointer;
-}
-
 .booking__set {
   display: flex;
   margin-bottom: 60px;
@@ -59,7 +44,44 @@ section.booking {
   text-align: left;
 }
 
-.booking__label {
+.booking__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.booking__label-room {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  width: 250px;
+  padding: 7px 5px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.booking__label-room:hover {
+  outline: 3px solid #640AA3;
+  background-color: #EADEED;
+}
+
+.booking__label-room:focus {
+  outline: 3px solid #640AA3;
+  background-color: #fff;
+}
+
+.booking__label-room:active {
+  outline: 3px solid #fff;
+  background-color: #6C0287;
+  color: #fff;
+}
+
+.booking__label-set {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
@@ -67,26 +89,8 @@ section.booking {
   position: relative;
 }
 
-.booking__label:hover {
-  outline: 3px solid #640AA3;
-  background-color: #EADEED;
-}
-
-.booking__label:active {
-  outline: 3px solid #fff;
-  background-color: #6C0287;
-  color: #fff;
-}
-
-.booking__label:focus {
-  outline: 3px solid #640AA3;
-  background-color: #fff;
-}
-
-.booking__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+.booking__input:focus + .booking__text_radio:before {
+  outline: 3px solid #CD06FF;
 }
 
 .booking__input + .booking__text {
@@ -139,6 +143,7 @@ section.booking {
 }
 
 .booking__reg-input {
+  border-style: none;
   min-height: 52px;
   font-weight: 400;
   font-size: 18px;
@@ -146,6 +151,10 @@ section.booking {
   color: #000;
   width: 300px;
   padding: 12px 0px 12px 20px;
+}
+
+.booking__reg-input:focus {
+  outline: 2px solid #CD06FF;
 }
 
 .booking__subset:nth-of-type(1) {
@@ -188,7 +197,7 @@ section.booking {
   top: 6px;
 }
 
-.booking__reg-label {
+.booking__label-reg_flex {
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
@@ -196,10 +205,6 @@ section.booking {
   flex-direction: column;
   gap: 5px;
 }
-
-/*.booking__form{*/
-/*  position: relative;*/
-/*}*/
 
 .booking__submit-block {
   display: flex;
@@ -229,12 +234,13 @@ section.booking {
   background-color: #EADEED;
 }
 
-.booking__submit-button:active {
-  outline: none;
-  background-color: #EADEED;
-}
-
 .booking__submit-button:focus {
   outline: 3px solid #6C0287;
   background-color: #fff;
+}
+
+
+.booking__submit-button:active {
+  outline: none;
+  background-color: #EADEED;
 }
