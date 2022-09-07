@@ -46,7 +46,6 @@ section.booking {
 
 .booking__input {
   position: absolute;
-  z-index: -1;
   opacity: 0;
 }
 
@@ -70,7 +69,7 @@ section.booking {
   background-color: #EADEED;
 }
 
-.booking__label-room:focus {
+.booking__input:checked + .booking__label-room{
   outline: 3px solid #640AA3;
   background-color: #fff;
 }
@@ -89,8 +88,10 @@ section.booking {
   position: relative;
 }
 
-.booking__input:focus + .booking__text_radio:before {
+.booking__input:focus + .booking__text_radio:before,
+.booking__input:focus + .booking__text:before {
   outline: 3px solid #CD06FF;
+  outline-offset: 3px;
 }
 
 .booking__input + .booking__text {
