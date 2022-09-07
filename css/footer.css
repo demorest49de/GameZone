@@ -36,6 +36,20 @@ a .contacts__text {
   display: flex;
 }
 
+.contacts__link:hover {
+  color: #EADEED;
+  transition: all .8s ease;
+}
+
+.contacts__link:focus {
+    color: #EADEED;
+  outline: 1px solid #CD06FF;
+}
+
+.contacts__link:active {
+  color: #CD06FF;
+}
+
 .contacts__location {
   position: relative;
   padding-bottom: 40px;
