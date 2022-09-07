@@ -67,23 +67,17 @@ section.booking {
 .booking__label-room:hover {
   outline: 3px solid #640AA3;
   background-color: #EADEED;
-  transition: background-color .8s ease;
 }
 
-/*.booking__input:focus {*/
-/*  outline: 3px solid #640AA3;*/
-/*  background-color: #fff;*/
-/*}*/
-
-.booking__input:checked + .booking__label-room {
+.booking__input:focus + .booking__label-room {
   outline: 3px solid #640AA3;
   background-color: #fff;
 }
 
-.booking__label-room:focus {
+.booking__label-room:active {
   outline: 3px solid #fff;
   background-color: #6C0287;
-  color: #fff;
+  color: #ffffff;
 }
 
 .booking__label-set {
@@ -94,16 +88,10 @@ section.booking {
   position: relative;
 }
 
-.booking__input:focus + .booking__text_radio:before,
 .booking__input:focus + .booking__text:before {
-  outline: 3px solid #CD06FF;
+  outline: 1px solid #CD06FF;
   outline-offset: 3px;
 }
-
-/*.booking__input:checked + .booking__text_radio:before {*/
-/*  outline: 3px solid #CD06FF;*/
-/*  outline-offset: 3px;*/
-/*}*/
 
 .booking__input + .booking__text {
   display: inline-flex;
