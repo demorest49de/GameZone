@@ -69,12 +69,17 @@ section.booking {
   background-color: #EADEED;
 }
 
-.booking__input:checked + .booking__label-room{
+/*.booking__input:focus {*/
+/*  outline: 3px solid #640AA3;*/
+/*  background-color: #fff;*/
+/*}*/
+
+.booking__input:checked + .booking__label-room {
   outline: 3px solid #640AA3;
   background-color: #fff;
 }
 
-.booking__label-room:active {
+.booking__label-room:focus {
   outline: 3px solid #fff;
   background-color: #6C0287;
   color: #fff;
@@ -93,6 +98,11 @@ section.booking {
   outline: 3px solid #CD06FF;
   outline-offset: 3px;
 }
+
+/*.booking__input:checked + .booking__text_radio:before {*/
+/*  outline: 3px solid #CD06FF;*/
+/*  outline-offset: 3px;*/
+/*}*/
 
 .booking__input + .booking__text {
   display: inline-flex;
