@@ -67,6 +67,7 @@ section.booking {
 .booking__label-room:hover {
   outline: 3px solid #640AA3;
   background-color: #EADEED;
+  transition: background-color .8s ease;
 }
 
 /*.booking__input:focus {*/
@@ -236,13 +237,12 @@ section.booking {
   color: #6C0287;
   padding: 16px 50px;
   border-style: none;
-  /*position: absolute;*/
-  /*right: 80px;*/
 }
 
 .booking__submit-button:hover {
   outline: 3px solid #6C0287;
   background-color: #EADEED;
+  transition: background-color .8s ease;
 }
 
 .booking__submit-button:focus {

@@ -87,6 +87,7 @@
 
 .hero__button:hover {
   background-color: #840AA3;
+  transition: background-color .8s ease;
 }
 
 .hero__button:focus {
