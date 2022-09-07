@@ -109,3 +109,15 @@
   left: 539px;
   bottom: 90px;
 }
+
+.hero__link:hover {
+  background-image: url("../img/hero/down-hover.svg");
+}
+
+.hero__link:focus {
+  outline: 1px solid #CD06FF;
+}
+
+.hero__link:active {
+  background-image: url("../img/hero/down-active.svg");
+}
