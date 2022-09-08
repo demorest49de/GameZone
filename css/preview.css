@@ -2,18 +2,27 @@
   margin: 0 160px 40px 160px;
 }
 
-.preview__list{
+.preview__list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   row-gap: 40px;
 }
 
-.preview__content{
+.preview__content {
   position: relative;
 }
 
-.preview__text{
+.preview__item {
+  transition: all .8s ease;
+}
+
+.preview__item:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.preview__text {
   position: absolute;
   left: 40px;
   top: 166px;
