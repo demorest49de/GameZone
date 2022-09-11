@@ -19,6 +19,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  width: max-content;
 }
 
 a .contacts__text {
@@ -57,10 +58,25 @@ a .contacts__text {
 
 .contacts__phone {
   position: relative;
+  padding-bottom: 11px;
 }
 
 .contacts__email {
   position: relative;
+}
+
+.contacts-effects:hover{
+  color: #CD06FF;
+  transition: color .5s ease;
+}
+
+.contacts-effects:focus{
+  outline: 1px solid #CD06FF;
+}
+
+.contacts-effects:active{
+  color: #CD06FF;
+  outline: none;
 }
 
 .contacts__location:before, .contacts__phone:before, .contacts__email:before {
@@ -73,7 +89,6 @@ a .contacts__text {
 }
 
 .contacts__phone {
-  padding-bottom: 11px;
 }
 
 .contacts__location:before {
@@ -104,6 +119,21 @@ a .contacts__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  width: max-content;
+}
+
+.contacts__link-small:hover {
+  color: #CD06FF;
+  transition: color .5s ease;
+}
+
+.contacts__link-small:focus {
+  outline: 1px solid #CD06FF;
+}
+
+.contacts__link-small:active {
+  color: #CD06FF;
+  outline: none;
 }
 
 .contacts__copyright {

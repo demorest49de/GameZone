@@ -54,3 +54,17 @@
   background-color: #640AA3;
   border: 1px solid #000;
 }
+
+.header__link:hover {
+  color: #CD06FF;
+  transition: color .5s ease;
+}
+
+.header__link:focus {
+  outline: 1px solid #CD06FF;
+}
+
+.header__link:active {
+  color: #CD06FF;
+  outline: none;
+}
