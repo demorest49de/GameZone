@@ -53,7 +53,7 @@
 }
 
 .hero__big-text {
-  color: #CD06FF;
+  color: var(--color-CD06FF);
   font-weight: 900;
   font-size: 75px;
   line-height: 106px;
@@ -61,7 +61,7 @@
 }
 
 .hero__big-number {
-  color: #CD06FF;
+  color: var(--color-CD06FF);
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
@@ -76,27 +76,27 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
-  background-color: #6c0287;
+  background-color: var(--color-6C0287);
   padding: 25px 69px;
   color: inherit;
   text-transform: uppercase;
   border-radius: 10px;
-  box-shadow: 0 0 10px #6c0287;
+  box-shadow: 0 0 10px var(--color-6C0287);
   border-style: none;
 }
 
 .hero__button:hover {
-  background-color: #840AA3;
+  background-color: var(--color-840AA3);
   transition: background-color .8s ease;
 }
 
 .hero__button:focus {
   outline: none;
-  background-color: #840AA3;
+  background-color: var(--color-840AA3);
 }
 
 .hero__button:active {
-  background-color: #640AA3;
+  background-color: var(--color-640AA3);
 }
 
 .hero__link {
@@ -115,7 +115,7 @@
 }
 
 .hero__link:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--color-CD06FF);
 }
 
 .hero__link:active {

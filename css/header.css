@@ -28,7 +28,7 @@
   padding-top: 2px;
   min-width: 280px;
   max-height: 55px;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--color-CD06FF);
   border-radius: 10px;
   background-color: inherit;
   color: inherit;
@@ -40,31 +40,31 @@
 
 .header__call-button:hover {
   border-style: none;
-  background-color: #6C0287;
+  background-color: var(--color-6C0287);
   transition: background-color .8s ease;
 }
 
 .header__call-button:focus {
   border-style: none;
-  background-color: #6C0287;
+  background-color: var(--color-6C0287);
   outline: none;
 }
 
 .header__call-button:active {
-  background-color: #640AA3;
-  border: 1px solid #000;
+  background-color: var(--color-640AA3);
+  border: 1px solid var(--color-000000);
 }
 
 .header__link:hover {
-  color: #CD06FF;
+  color: var(--color-CD06FF);
   transition: color .5s ease;
 }
 
 .header__link:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--color-CD06FF);
 }
 
 .header__link:active {
-  color: #CD06FF;
+  color: var(--color-CD06FF);
   outline: none;
 }
