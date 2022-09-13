@@ -1,6 +1,6 @@
 .booking {
   max-width: 100%;
-  background-color: #440F51;
+  background-color: var(--color-440F51);
   padding-top: 75px;
 }
 
@@ -57,7 +57,7 @@ section.booking {
 
   width: 250px;
   padding: 7px 5px;
-  background: #FFFFFF;
+  background: var(--color-FFFFFF);
   border-radius: 8px;
   color: #000;
   text-align: center;
@@ -113,7 +113,7 @@ section.booking {
   min-width: 27px;
   min-height: 27px;
   margin-right: 12px;
-  background-color: #ffffff;
+  background-color: var(--color-ffffff);
   background-repeat: no-repeat;
   background-position: center center;
 }
