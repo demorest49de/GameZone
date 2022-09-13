@@ -98,7 +98,7 @@ section.booking {
 }
 
 .booking__input:focus + .booking__text:before {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--color-CD06FF);
   outline-offset: 3px;
 }
 
@@ -123,14 +123,14 @@ section.booking {
 }
 
 .booking__input:checked + .booking__text:before {
-  border-color: #cd06ff;
-  background-color: #cd06ff;
+  border-color: var(--color-CD06FF);
+  background-color: var(--color-CD06FF);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
 .booking__input:checked + .booking__text_radio:before {
-  border-color: #cd06ff;
-  background-color: #cd06ff;
+  border-color: var(--color-CD06FF);
+  background-color: var(--color-CD06FF);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
@@ -175,7 +175,7 @@ section.booking {
 }
 
 .booking__reg-input:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--color-CD06FF);
 }
 
 .booking__subset:nth-of-type(1) {

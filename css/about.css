@@ -40,7 +40,7 @@
 }
 
 .about__quotes:before, :after {
-  color: #6C0287;
+  color: var(--color-6C0287);
   font-weight: 900;
   font-size: 44px;
 }

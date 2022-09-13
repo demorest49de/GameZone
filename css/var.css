@@ -1,10 +1,7 @@
 :root {
   --main-color: #1B1A1B;
   --main-text-color: #fff;
-
-}
-
-.contacts {
-  --color-biege: #EADEED;
-  --color-pink: #CD06FF;
+  --color-EADEED: #EADEED;
+  --color-CD06FF: #CD06FF;
+  --color-6C0287: #6C0287;
 }
