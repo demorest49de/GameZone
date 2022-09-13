@@ -38,17 +38,17 @@ a .contacts__text {
 }
 
 .contacts__link:hover {
-  color: #EADEED;
+  color: var(--color-biege);
   transition: all .8s ease;
 }
 
 .contacts__link:focus {
-    color: #EADEED;
-  outline: 1px solid #CD06FF;
+    color: var(--color-biege);
+  outline: 1px solid var(--color-pink);
 }
 
 .contacts__link:active {
-  color: #CD06FF;
+  color: var(--color-pink);
 }
 
 .contacts__location {
@@ -66,16 +66,16 @@ a .contacts__text {
 }
 
 .contacts-effects:hover{
-  color: #CD06FF;
+  color: var(--color-pink);
   transition: color .5s ease;
 }
 
 .contacts-effects:focus{
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--color-pink);
 }
 
 .contacts-effects:active{
-  color: #CD06FF;
+  color: var(--color-pink);
   outline: none;
 }
 
@@ -123,16 +123,16 @@ a .contacts__text {
 }
 
 .contacts__link-small:hover {
-  color: #CD06FF;
+  color: var(--color-pink);
   transition: color .5s ease;
 }
 
 .contacts__link-small:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--color-pink);
 }
 
 .contacts__link-small:active {
-  color: #CD06FF;
+  color: var(--color-pink);
   outline: none;
 }
 
