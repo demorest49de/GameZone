@@ -1,8 +1,25 @@
-.reviews__img {
+.reviews__block-img {
+  position: relative;
   margin-bottom: 12px;
   border-radius: 50%;
   min-width: 280px;
   min-height: 280px;
+  overflow: hidden;
+}
+
+.reviews__block-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%,
+  rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+}
+
+.reviews__img {
+  width: 100%;
   object-fit: cover;
 }
 
@@ -24,7 +41,6 @@
 }
 
 .reviews__review-text {
-  min-width: 680px;
-  min-height: 320px;
   padding-top: 53px;
+  width: 680px;
 }

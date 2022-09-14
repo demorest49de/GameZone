@@ -5,16 +5,24 @@
 .preview__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  row-gap: 40px;
-}
-
-.preview__content {
-  position: relative;
+  column-gap: 20px;
 }
 
 .preview__item {
   transition: all .8s ease;
+}
+
+.preview__item:nth-child(2){
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.preview__item:nth-child(2n + 4){
+  margin-top: -70px;
+}
+
+.preview__content {
+  position: relative;
 }
 
 .preview__item:hover {
