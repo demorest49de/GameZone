@@ -68,3 +68,15 @@
   color: var(--color-CD06FF);
   outline: none;
 }
+
+@media (max-width: 1180px) {
+  .header__navigation {
+    display: none;
+  }
+
+  /*.header__link {*/
+  /*  width: calc(var(--section-size) - var(--call-button-size));*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*}*/
+}

@@ -1,5 +1,6 @@
 .contacts {
   padding-bottom: 10px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .contacts__subtitle {
@@ -43,7 +44,7 @@ a .contacts__text {
 }
 
 .contacts__link:focus {
-    color: var(--color-EADEED);
+  color: var(--color-EADEED);
   outline: 1px solid var(--color-CD06FF);
 }
 
@@ -65,16 +66,16 @@ a .contacts__text {
   position: relative;
 }
 
-.contacts-effects:hover{
+.contacts-effects:hover {
   color: var(--color-CD06FF);
   transition: color .5s ease;
 }
 
-.contacts-effects:focus{
+.contacts-effects:focus {
   outline: 1px solid var(--color-CD06FF);
 }
 
-.contacts-effects:active{
+.contacts-effects:active {
   color: var(--color-CD06FF);
   outline: none;
 }

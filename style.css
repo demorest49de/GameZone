@@ -1,6 +1,7 @@
 @import "css/normalize.css";
 @import "css/global.css";
 @import "css/basic.css";
+@import "css/var.css";
 @import "css/header.css";
 @import "css/hero.css";
 @import "css/preview.css";
@@ -10,4 +11,3 @@
 @import "css/faq.css";
 @import "css/reviews.css";
 @import "css/footer.css";
-@import "css/var.css";
