@@ -23,3 +23,10 @@ section:not(:nth-last-child(1)) {
 fieldset{
   border-style: none;
 }
+
+@media (max-width: 1280px) {
+  .container{
+    max-width: 1200px;
+    padding: 0 60px;
+  }
+}
