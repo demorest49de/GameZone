@@ -146,3 +146,8 @@ a .contacts__text {
   display: flex;
   flex-direction: column;
 }
+
+.contacts__block-map{
+  max-width: 680px;
+  max-height: 274px;
+}
