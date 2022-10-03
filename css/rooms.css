@@ -24,17 +24,17 @@
 }
 
 .rooms__item_80 {
-  background-image: url("../img/rooms/main/80s_vibes.jpg");
+  background-image: url("../img/rooms/80s_vibes.jpg");
 }
 
 .rooms__item_starwars {
-background-image: url("../img/rooms/main/star_wars.jpg");
+background-image: url("../img/rooms/star_wars.jpg");
 }
 
 .rooms__item_wildwest {
-  background-image: url("../img/rooms/main/wild_west.jpg");
+  background-image: url("../img/rooms/wild_west.jpg");
 }
 
 .rooms__item_neonstyle {
-background-image: url("../img/rooms/main/neon_style.jpg");
+background-image: url("../img/rooms/neon_style.jpg");
 }
