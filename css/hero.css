@@ -200,7 +200,6 @@
 }
 
 @media (max-width: 960px) {
-
   .hero__container {
     min-height: 537px;
 
@@ -252,6 +251,86 @@
     font-size: 16px;
     line-height: 24px;
     padding: 11px 35px;
+    border-radius: 4px;
+  }
+
+  .hero__button:hover {
+    background-color: var(--color-840AA3);
+    transition: background-color .8s ease;
+  }
+
+  .hero__button:focus {
+    outline: none;
+    background-color: var(--color-840AA3);
+  }
+
+  .hero__button:active {
+    background-color: var(--color-640AA3);
+  }
+
+  .hero__link {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero__container {
+    min-height: 204px;
+
+  }
+
+  .hero__title {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: -0.08em;
+    margin-bottom: 6px;
+  }
+
+  .hero__container:after {
+    min-width: 161px;
+    min-height: 179px;
+    right: 20px;
+  }
+
+  .hero__text {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 0 10px 20px;
+  }
+
+  .hero__block {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  .hero__underblock-number {
+    max-width: 65px;
+  }
+
+  .hero__underblock-text{
+    max-width: 54px;
+  }
+
+  .hero__big-number {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .hero__big-text {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .hero__text-block {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .hero__button {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 13px;
+
   }
 
   .hero__button:hover {

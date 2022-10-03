@@ -109,6 +109,7 @@
 
   .header__navigation {
     background-image: url("../img/header/menu.svg");
+    background-repeat: no-repeat;
     width: 54px;
     height: 29px;
     cursor: pointer;
@@ -120,5 +121,32 @@
 
   .header__call-button{
     order: 2;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .header {
+    padding: 20px 0 10px 0;
+  }
+
+  .header__link {
+    width: 66px;
+    height: 42px;
+    order: 1;
+  }
+
+  .header__navigation {
+    width: 39px;
+    height: 29px;
+
+  }
+
+  .header__menu{
+    display: none;
+  }
+
+  .header__call-button{
+    display: none;
   }
 }

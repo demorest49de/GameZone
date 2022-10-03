@@ -31,10 +31,17 @@ fieldset{
   }
 }
 
-
 @media (max-width: 960px) {
   .container{
     max-width: 960px;
     padding: 0 40px;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .container{
+    max-width: 750px;
+    padding: 0 20px;
   }
 }
