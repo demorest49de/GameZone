@@ -3,13 +3,14 @@
   .hero__container {
     position: relative;
     min-height: 823px;
+    margin: 0 auto;
   }
 
   .hero__title {
     font-size: 150px;
     font-weight: 900;
     line-height: 150px;
-    letter-spacing: -13px;
+    letter-spacing: -15px;
     z-index: 0;
     margin-bottom: 20px;
   }
@@ -38,16 +39,17 @@
     display: flex;
     gap: 40px;
     text-align: center;
+    max-width: 600px;
     margin-bottom: 150px;
   }
 
   .hero__underblock-number {
-    width: 209px;
+    max-width: 209px;
     margin-right: 40px;
   }
 
   .hero__underblock-text {
-    width: 166px;
+    max-width: 166px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -101,13 +103,13 @@
   }
 
   .hero__link {
-    min-width: 97px;
-    min-height: 97px;
+    width: 97px;
+    height: 97px;
     background-image: url("../img/hero/down.svg");
     background-size: cover;
-    z-index: 2;
     position: absolute;
-    left: 539px;
+    z-index: 2;
+    left: 675px;
     bottom: 90px;
   }
 
@@ -124,14 +126,20 @@
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1310px) {
 
-  .hero__container{
-    min-height: 400px;
+  .hero__container {
+    min-height: 583px;
   }
+
+  .hero__container:after {
+    right: 72px;
+  }
+
   .hero__title {
     font-size: 120px;
     line-height: 120px;
+    letter-spacing: -13px;
   }
 
   .hero__container:after {
@@ -150,48 +158,28 @@
   }
 
   .hero__underblock-number {
-    width: 209px;
-    margin-right: 40px;
-  }
-
-  .hero__underblock-text {
-    width: 166px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .hero__big-text {
-    color: var(--color-CD06FF);
-    font-weight: 900;
-    font-size: 75px;
-    line-height: 106px;
-    font-variant: small-caps;
+    max-width: 168px;
   }
 
   .hero__big-number {
-    color: var(--color-CD06FF);
-    font-weight: 900;
-    font-size: 100px;
-    line-height: 141px;
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .hero__big-text {
+    font-size: 60px;
+    line-height: 85px;
   }
 
   .hero__text-block {
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 30px;
   }
 
   .hero__button {
-    font-weight: 700;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 30px;
-    background-color: var(--color-6C0287);
-    padding: 25px 69px;
-    color: inherit;
-    text-transform: uppercase;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--color-6C0287);
-    border-style: none;
+    padding: 17px 48px;
   }
 
   .hero__button:hover {
