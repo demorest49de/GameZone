@@ -1,4 +1,7 @@
 @media (max-width: 4096px) {
+  .hero {
+    padding-bottom: 50px;
+  }
 
   .hero__container {
     position: relative;
@@ -125,6 +128,9 @@
 }
 
 @media (max-width: 1310px) {
+  .hero {
+    padding-bottom: 42px;
+  }
 
   .hero__container {
     min-height: 583px;
@@ -200,6 +206,10 @@
 }
 
 @media (max-width: 960px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
   .hero__container {
     min-height: 537px;
 
@@ -274,9 +284,12 @@
 }
 
 @media (max-width: 750px) {
+  .hero{
+    padding-bottom: 23px;
+  }
+
   .hero__container {
     min-height: 204px;
-
   }
 
   .hero__title {
@@ -307,7 +320,7 @@
     max-width: 65px;
   }
 
-  .hero__underblock-text{
+  .hero__underblock-text {
     max-width: 54px;
   }
 

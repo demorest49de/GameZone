@@ -8,10 +8,6 @@ q {
   padding: 0 130px;
 }
 
-section:not(:nth-last-child(1)) {
-  padding-bottom: 100px;
-}
-
 .subtitle {
   font-weight: 700;
   font-size: 40px;
