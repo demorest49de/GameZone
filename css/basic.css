@@ -30,3 +30,11 @@ fieldset{
     padding: 0 60px;
   }
 }
+
+
+@media (max-width: 960px) {
+  .container{
+    max-width: 960px;
+    padding: 0 40px;
+  }
+}
