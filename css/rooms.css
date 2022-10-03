@@ -6,35 +6,38 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  row-gap: 20px;
 }
 
 .rooms__item {
   min-height: 349px;
   min-width: 580px;
   display: flex;
-  text-align: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
   text-transform: uppercase;
-  padding-top: 135px;
-  background-size: 100%;
+  background-size: cover;
 }
 
-.rooms__item_80 {
+.rooms__item:nth-child(1) {
   background-image: url("../img/rooms/80s_vibes.jpg");
 }
 
-.rooms__item_starwars {
+.rooms__item:nth-child(2) {
 background-image: url("../img/rooms/star_wars.jpg");
 }
 
-.rooms__item_wildwest {
+.rooms__item:nth-child(3) {
   background-image: url("../img/rooms/wild_west.jpg");
 }
 
-.rooms__item_neonstyle {
+.rooms__item:nth-child(4) {
 background-image: url("../img/rooms/neon_style.jpg");
+}
+
+.rooms__text{
+  max-width: 250px;
+  text-align: center;
 }
