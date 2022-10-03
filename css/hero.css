@@ -3,7 +3,6 @@
   .hero__container {
     position: relative;
     min-height: 823px;
-    margin: 0 auto;
   }
 
   .hero__title {
@@ -45,7 +44,6 @@
 
   .hero__underblock-number {
     max-width: 209px;
-    margin-right: 40px;
   }
 
   .hero__underblock-text {
@@ -132,10 +130,6 @@
     min-height: 583px;
   }
 
-  .hero__container:after {
-    right: 72px;
-  }
-
   .hero__title {
     font-size: 120px;
     line-height: 120px;
@@ -145,6 +139,7 @@
   .hero__container:after {
     min-width: 453px;
     min-height: 520px;
+    right: 72px;
   }
 
   .hero__text {
@@ -204,61 +199,59 @@
   }
 }
 
-
 @media (max-width: 960px) {
 
   .hero__container {
-    min-height: 583px;
-  }
+    min-height: 537px;
 
-  .hero__container:after {
-    right: 72px;
   }
 
   .hero__title {
-    font-size: 120px;
-    line-height: 120px;
-    letter-spacing: -13px;
+    font-size: 86px;
+    line-height: 86px;
+    letter-spacing: -9px;
   }
 
   .hero__container:after {
-    min-width: 453px;
-    min-height: 520px;
+    min-width: 409px;
+    min-height: 479px;
+    right: 44px;
   }
 
   .hero__text {
     font-size: 22px;
     line-height: 30px;
-    margin: 0 0 30px 100px;
+    margin: 0 0 50px 70px;
   }
 
   .hero__block {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    gap: 30px;
   }
 
   .hero__underblock-number {
-    max-width: 168px;
+    max-width: 103px;
   }
 
   .hero__big-number {
-    font-size: 80px;
-    line-height: 113px;
+    font-size: 50px;
+    line-height: 71px;
   }
 
   .hero__big-text {
-    font-size: 60px;
-    line-height: 85px;
+    font-size: 40px;
+    line-height: 56px;
   }
 
   .hero__text-block {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .hero__button {
-    font-size: 22px;
-    line-height: 30px;
-    padding: 17px 48px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 35px;
   }
 
   .hero__button:hover {
@@ -276,9 +269,6 @@
   }
 
   .hero__link {
-    min-width: 67px;
-    min-height: 67px;
-    left: 44.3%;
-    bottom: 46px;
+    display: none;
   }
 }
