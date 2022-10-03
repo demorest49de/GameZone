@@ -67,8 +67,6 @@
 
   .preview__subtitle {
     margin: 0 160px 36px 160px;
-    font-size: 30px;
-    line-height: 40px;
   }
 
   .preview__list {
@@ -115,8 +113,6 @@
   .preview__subtitle {
     margin: 0 auto 30px auto;
     max-width: 527px;
-    font-size: 24px;
-    line-height: 36px;
   }
 
   .preview__list {
@@ -173,8 +169,6 @@
   .preview__subtitle {
     margin: 0 auto 15px auto;
     max-width: 257px;
-    font-size: 14px;
-    line-height: 18px;
   }
 
   .preview__list {
