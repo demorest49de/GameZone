@@ -159,6 +159,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .preview__container {
+    padding: 0 20px;
+  }
+}
+
 @media (max-width: 750px) {
   .preview {
     padding: 23px 0 15px;
@@ -175,21 +181,14 @@
     gap: 10px;
   }
 
-  .preview__item{
-    max-width: 334px;
-  }
-
-  .preview__text {
-  }
-
   .preview__item:nth-child(5) .preview__text {
     max-width: 115px;
   }
 }
 
-@media (max-width: 390px){
+@media (max-width: 390px) {
 
-  .preview__item{
+  .preview__item {
     max-width: 135px;
   }
 
