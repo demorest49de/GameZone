@@ -16,12 +16,24 @@ q {
   text-transform: uppercase;
 }
 
-fieldset{
+fieldset {
   border-style: none;
 }
 
+section:not(:nth-child(1)) {
+  padding: 50px 0;
+}
+
+section:nth-child(1) {
+  padding-bottom: 50px;
+}
+
+section:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
 @media (max-width: 1280px) {
-  .container{
+  .container {
     max-width: 1200px;
     padding: 0 60px;
   }
@@ -33,7 +45,7 @@ fieldset{
 }
 
 @media (max-width: 960px) {
-  .container{
+  .container {
     max-width: 960px;
     padding: 0 40px;
   }
@@ -46,7 +58,7 @@ fieldset{
 
 
 @media (max-width: 767px) {
-  .container{
+  .container {
     max-width: 767px;
     padding: 0 20px;
   }
