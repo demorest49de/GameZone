@@ -1,3 +1,7 @@
+.rooms {
+  padding: 50px 0;
+}
+
 .rooms__subtitle {
   margin-bottom: 40px;
 }
@@ -44,6 +48,10 @@
 }
 
 @media (max-width: 1439px) {
+  .rooms {
+    padding: 50px 0;
+  }
+
   .rooms__item {
     min-width: 443px;
     min-height: 267px;
@@ -57,6 +65,10 @@
 
 
 @media (max-width: 1040px) {
+  .rooms {
+    padding: 50px 0;
+  }
+
   .rooms__list {
     gap: 18px
   }
@@ -73,6 +85,10 @@
 }
 
 @media (max-width: 390px) {
+  .rooms {
+    padding: 50px 0;
+  }
+
   .rooms__list {
     gap: 10px
   }
