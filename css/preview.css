@@ -155,12 +155,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .preview__container {
-    padding: 0 20px;
-  }
-}
-
 @media (max-width: 750px) {
   .preview {
     padding: 23px 0 15px;
