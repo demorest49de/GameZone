@@ -487,27 +487,32 @@
     justify-content: center;
   }
 
-  .booking__reg-people-width {
-    width: 280px;
-    min-width: unset;
-  }
-
-  .booking__reg-name-width{
-    min-width: unset;
-    width: 280px;
-  }
+  /*.booking__reg-people-width {*/
+  /*  width: 280px;*/
+  /*  min-width: unset;*/
+  /*}*/
 
   .booking__reg-communication-width {
     min-width: unset;
     width: 280px;
   }
 
-  .booking__reg-input{
+  .booking__reg-input {
     max-width: unset;
+    min-width: unset;
   }
-}
 
-@media (max-width: 320px) {
-  .booking__reg-date-time {
+  .booking__reg-name-width {
+    min-width: 280px;
+    /*width: 280px;*/
+  }
+
+  .booking__label-people {
+    display: flex;
+    justify-content: center;
+  }
+
+  .booking__label-people > .booking__reg-input {
+    min-width: 280px;
   }
 }
