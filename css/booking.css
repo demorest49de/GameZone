@@ -174,6 +174,7 @@
 .booking__reg-date-time {
   display: flex;
   gap: 32px;
+  max-height: 52px;
 }
 
 
@@ -199,49 +200,44 @@
 }
 
 .booking__reg-date-time-width {
-  max-width: 134px;
+  width: 134px;
+  padding: 12px 0px 12px 10px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .booking__reg-people-width {
   min-width: 300px;
 }
 
-.booking__reg-phone-width {
-
-}
-
-.booking__reg-email-width {
-
+.booking__reg-communication-width {
+  min-width: 300px;
 }
 
 .booking__reg-name-width {
-
-}
-
-.booking__reg-sirname-width {
-
+  min-width: 280px;
 }
 
 .booking__reg-text, .booking__reg-text_top {
   position: relative;
 }
 
-.booking__reg-text:after {
-  content: '';
-  background-image: url("../img/booking/down_arrow.svg");
-  position: absolute;
-  display: inline-block;
-  min-width: 21px;
-  min-height: 15px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--color-000000);
-  top: 18px;
-  right: 27px;
-}
+/*.booking__reg-text:after {*/
+/*  content: '';*/
+/*  background-image: url("../img/booking/down_arrow.svg");*/
+/*  position: absolute;*/
+/*  display: inline-block;*/
+/*  min-width: 21px;*/
+/*  min-height: 15px;*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  font-weight: 400;*/
+/*  font-size: 18px;*/
+/*  line-height: 28px;*/
+/*  color: var(--color-000000);*/
+/*  top: 18px;*/
+/*  right: 27px;*/
+/*}*/
 
 .booking__reg-text_top:after {
   top: 6px;
@@ -259,8 +255,9 @@
 .booking__submit-block {
   display: flex;
   justify-content: right;
-  max-width: 1000px;
-  margin-left: 100px;
+  max-width: 1180px;
+  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .booking__submit-button {
