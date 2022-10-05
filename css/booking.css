@@ -148,7 +148,7 @@
   justify-content: center;
 }
 
-.booking__above-block{
+.booking__above-block {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -168,7 +168,7 @@
   gap: 14px;
 }
 
-.booking__reg-above-subset{
+.booking__reg-above-subset {
   display: flex;
   gap: 50px;
 }
@@ -225,7 +225,7 @@
   min-width: 280px;
 }
 
-.booking__reg-text{
+.booking__reg-text {
   position: relative;
 }
 
@@ -336,6 +336,7 @@
 
 
 @media (max-width: 1024px) {
+
   .booking__game-set {
     justify-content: left;
   }
@@ -363,7 +364,7 @@
     display: block;
   }
 
-  .booking__above-block{
+  .booking__above-block {
     justify-content: space-between;
     max-width: unset;
   }
@@ -392,27 +393,60 @@
     margin-bottom: 42px;
   }
 
-  .booking__reg-above-subset{
+  .booking__reg-above-subset {
     justify-content: space-between;
   }
 
-  .booking__reg-date-time{
+  .booking__reg-date-time {
     gap: 14px;
   }
 
-  .booking__reg-name-width{
+  .booking__reg-name-width {
     min-width: 280px;
   }
 
-  .booking__reg-communication-width{
+  .booking__reg-communication-width {
     min-width: 300px;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
+  .booking__room {
+    justify-content: space-around;
+    column-gap: 29px;
+  }
 
+  .booking__room-label{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 20px;
+  }
 }
 
+@media (max-width: 760px) {
+  .booking__room{
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin: auto auto 30px;
+    gap: 14px 20px;
+  }
+
+  .booking__room-label{
+    min-width: 130px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 20px;
+  }
+
+  .booking__subtitle{
+    margin-bottom: 13px;
+  }
+
+  .booking__legend{
+    margin-bottom: 15px;
+  }
+}
 
 @media (max-width: 320px) {
   .booking__legend {
