@@ -358,6 +358,7 @@
   .booking__above-set {
     flex-wrap: wrap;
     justify-content: start;
+    row-gap: 32px;
   }
 
   .booking__reg {
@@ -420,6 +421,14 @@
     font-size: 16px;
     line-height: 20px;
     padding: 9px 20px;
+  }
+
+  .booking__above-set{
+    column-gap: 133px;
+  }
+
+  .booking__game-set{
+    margin-bottom: 50px;
   }
 }
 
