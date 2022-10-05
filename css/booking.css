@@ -303,7 +303,7 @@
   }
 
   .booking__room {
-    justify-content: center;
+    justify-content: space-between;
     gap: 60px;
   }
 
@@ -359,6 +359,15 @@
     justify-content: start;
   }
 
+  .booking__reg {
+    display: block;
+  }
+
+  .booking__above-block{
+    justify-content: space-between;
+    max-width: unset;
+  }
+
   .booking__reg-block {
     display: block;
     max-width: 904px;
@@ -399,6 +408,11 @@
     min-width: 300px;
   }
 }
+
+@media (max-width: 960px) {
+
+}
+
 
 @media (max-width: 320px) {
   .booking__legend {
