@@ -184,126 +184,137 @@
           <fieldset class="booking__game-set">
             <legend class="booking__legend">Собери наборы развлечений</legend>
 
-            <fieldset class="booking__subset">
-              <legend class="booking__legend">Приставка:
-              </legend>
-              <label class="booking__set-label">
-                <input class="booking__input" type="radio"
-                       name="console-type" value="Playstation" checked>
-                <span class="booking__text booking__text_radio">Playstation</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="radio"
-                       name="console-type" value="Sega Mega Drive">
-                <span class="booking__text booking__text_radio">Sega Mega Drive</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="radio"
-                       name="console-type" value="X-box One S">
-                <span class="booking__text booking__text_radio">X-box One S</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="radio"
-                       name="console-type" value="Dendy">
-                <span class="booking__text booking__text_radio">Dendy</span>
-              </label>
-            </fieldset>
+            <div class="booking__above-set">
 
-            <fieldset class="booking__subset">
-              <legend class="booking__legend">
-                Настольные игры:
-              </legend>
-              <label class="booking__set-label">
-                <input class="booking__input" type="checkbox"
-                       name="board-type" value="Jenga">
-                <span class="booking__text">Jenga</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="checkbox"
-                       name="board-type" value="Monopoly">
-                <span class="booking__text">Monopoly</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="checkbox"
-                       name="board-type" value="Manchkin">
-                <span class="booking__text">Манчкин</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="checkbox"
-                       name="board-type" value="Alias">
-                <span class="booking__text">Alias</span>
-              </label>
-            </fieldset>
+              <fieldset class="booking__subset">
+                <legend class="booking__legend">Приставка:
+                </legend>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="radio"
+                         name="console-type" value="Playstation" checked>
+                  <span class="booking__text booking__text_radio">Playstation</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="radio"
+                         name="console-type" value="Sega Mega Drive">
+                  <span class="booking__text booking__text_radio">Sega Mega Drive</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="radio"
+                         name="console-type" value="X-box One S">
+                  <span class="booking__text booking__text_radio">X-box One S</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="radio"
+                         name="console-type" value="Dendy">
+                  <span class="booking__text booking__text_radio">Dendy</span>
+                </label>
+              </fieldset>
 
-            <fieldset class="booking__subset">
-              <legend class="booking__legend">Дополнительно:
-              </legend>
-              <label class="booking__set-label">
-                <input class="booking__input" type="checkbox"
-                       name="additional-type" value="Karaoke">
-                <span class="booking__text">Караоке</span>
-              </label>
-              <label class="booking__set-label">
-                <input class="booking__input" type="checkbox"
-                       name="additional-type" value="VR">
-                <span class="booking__text">VR</span>
-              </label>
-            </fieldset>
+              <fieldset class="booking__subset">
+                <legend class="booking__legend">
+                  Настольные игры:
+                </legend>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="checkbox"
+                         name="board-type" value="Jenga">
+                  <span class="booking__text">Jenga</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="checkbox"
+                         name="board-type" value="Monopoly">
+                  <span class="booking__text">Monopoly</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="checkbox"
+                         name="board-type" value="Manchkin">
+                  <span class="booking__text">Манчкин</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="checkbox"
+                         name="board-type" value="Alias">
+                  <span class="booking__text">Alias</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="booking__subset">
+                <legend class="booking__legend">Дополнительно:
+                </legend>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="checkbox"
+                         name="additional-type" value="Karaoke">
+                  <span class="booking__text">Караоке</span>
+                </label>
+                <label class="booking__set-label">
+                  <input class="booking__input" type="checkbox"
+                         name="additional-type" value="VR">
+                  <span class="booking__text">VR</span>
+                </label>
+              </fieldset>
+            </div>
           </fieldset>
 
           <fieldset class="booking__reg">
             <legend class="booking__legend">Выбери дату и время</legend>
+            <div class="booking__above-block">
+              <div class="booking__reg-block">
 
-            <div class="booking__reg-block">
-              <div class="booking__reg-subblock">
-                <div class="booking__reg-date-time">
-                  <label class="booking__reg-label">
-                    <input class="booking__reg-input booking__reg-date-time-width" type="date" name="date"
-                           placeholder="Дата" required>
-                    <span class="booking__reg-text"></span>
-                  </label>
-                  <label class="booking__reg-label">
-                    <input class="booking__reg-input booking__reg-date-time-width" type="time" name="time"
-                           placeholder="Время" required>
-                    <span class="booking__reg-text"></span>
-                  </label>
+                <div class="booking__reg-subblock">
+                  <div class="booking__reg-date-time">
+                    <label class="booking__reg-label">
+                      <input class="booking__reg-input booking__reg-date-time-width" type="date" name="date"
+                             placeholder="Дата" required>
+                      <span class="booking__reg-text"></span>
+                    </label>
+                    <label class="booking__reg-label">
+                      <input class="booking__reg-input booking__reg-date-time-width" type="time" name="time"
+                             placeholder="Время" required>
+                      <span class="booking__reg-text"></span>
+                    </label>
+                  </div>
+                  <div class="booking__reg-label">
+                    <label class="booking__label-people">
+                      <input class="booking__reg-input booking__reg-people-width" type="number" min="1" max="15"
+                             name="persons_amount"
+                             placeholder="Сколько человек" required>
+                      <span class="booking__reg-text"></span>
+                    </label>
+                  </div>
                 </div>
-                <div class="booking__reg-label">
-                  <label class="booking__label-people">
-                    <input class="booking__reg-input booking__reg-people-width" type="number" min="1" max="15"
-                           name="persons_amount"
-                           placeholder="Сколько человек" required>
-                    <span class="booking__reg-text booking__reg-text_top"></span>
-                  </label>
-                </div>
-              </div>
 
-              <div class="booking__reg-subset">
-                <label class="booking__reg-label">
-                  Имя
-                  <input class="booking__reg-input booking__reg-name-width" type="text" name="name" required>
-                </label>
-                <label class="booking__reg-label">
-                  Фамилия
-                  <input class="booking__reg-input booking__reg-name-width" type="text" name="sirname" required>
-                </label>
+                <div class="booking__reg-above-subset">
+                  <div class="booking__reg-subset">
+                    <label class="booking__reg-label">
+                      Имя
+                      <input class="booking__reg-input booking__reg-name-width" type="text" name="name" required>
+                    </label>
+                    <label class="booking__reg-label">
+                      Фамилия
+                      <input class="booking__reg-input booking__reg-name-width" type="text" name="sirname" required>
+                    </label>
+                  </div>
+
+                  <div class="booking__reg-subset">
+                    <label class="booking__reg-label">
+                      Телефон
+                      <input class="booking__reg-input booking__reg-communication-width" type="tel" name="phone"
+                             required>
+                    </label>
+                    <label class="booking__reg-label">
+                      E-mail
+                      <input class="booking__reg-input booking__reg-communication-width" type="email" name="email"
+                             required>
+                    </label>
+                  </div>
+                </div>
+
               </div>
-              <div class="booking__reg-subset">
-                <label class="booking__reg-label">
-                  Телефон
-                  <input class="booking__reg-input booking__reg-communication-width" type="tel" name="phone" required>
-                </label>
-                <label class="booking__reg-label">
-                  E-mail
-                  <input class="booking__reg-input booking__reg-communication-width" type="email" name="email" required>
-                </label>
+              <div class="booking__submit-block">
+                <button class="booking__submit-button" type="submit">Забронировать</button>
               </div>
             </div>
-
           </fieldset>
-          <div class="booking__submit-block">
-            <button class="booking__submit-button" type="submit">Забронировать</button>
-          </div>
+
         </form>
       </div>
     </section>

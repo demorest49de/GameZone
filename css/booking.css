@@ -10,7 +10,7 @@
 .booking__room {
   display: flex;
   gap: 60px;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 60px;
 }
 
@@ -34,7 +34,7 @@
   text-transform: uppercase;
 
   min-width: 250px;
-  padding: 7px 5px;
+  padding: 7px 15px;
   background: var(--color-FFFFFF);
   border-radius: 8px;
   color: var(--color-000000);
@@ -109,7 +109,7 @@
 .booking__game-set {
   display: flex;
   margin-bottom: 60px;
-  margin-left: 100px;
+  justify-content: center;
 }
 
 
@@ -122,6 +122,12 @@
   width: max-content;
 }
 
+.booking__above-set {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+}
+
 .booking__subset {
   display: flex;
   flex-direction: column;
@@ -130,15 +136,7 @@
 
 .booking__subset > .booking__legend {
   margin-bottom: 24px;
-  text-align: left;
-}
-
-.booking__subset:nth-of-type(1) {
-  margin-right: 170px;
-}
-
-.booking__subset:nth-of-type(2) {
-  margin-right: 183px;
+  text-align: center;
 }
 
 /*endregion */
@@ -146,22 +144,33 @@
 /*region booking__reg*/
 
 .booking__reg {
-  margin-bottom: 40px;
   display: flex;
+  justify-content: center;
+}
+
+.booking__above-block{
+  display: flex;
+  flex-direction: column;
   justify-content: start;
+  max-width: fit-content;
 }
 
 .booking__reg-block {
   display: flex;
   justify-content: flex-start;
   gap: 50px;
-  margin-left: 100px;
+  margin-bottom: 50px;
 }
 
 .booking__reg-subset {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.booking__reg-above-subset{
+  display: flex;
+  gap: 50px;
 }
 
 .booking__reg-subblock {
@@ -202,8 +211,6 @@
 .booking__reg-date-time-width {
   width: 134px;
   padding: 12px 0px 12px 10px;
-  -webkit-appearance: none;
-  appearance: none;
 }
 
 .booking__reg-people-width {
@@ -218,7 +225,7 @@
   min-width: 280px;
 }
 
-.booking__reg-text, .booking__reg-text_top {
+.booking__reg-text{
   position: relative;
 }
 
@@ -239,10 +246,6 @@
 /*  right: 27px;*/
 /*}*/
 
-.booking__reg-text_top:after {
-  top: 6px;
-}
-
 .booking__reg-label {
   font-size: 14px;
   font-weight: 700;
@@ -254,10 +257,7 @@
 
 .booking__submit-block {
   display: flex;
-  justify-content: right;
-  max-width: 1180px;
-  margin-right: 300px;
-  margin-right: 100px;
+  justify-content: end;
 }
 
 .booking__submit-button {
@@ -293,3 +293,116 @@
 }
 
 /*endregion*/
+
+@media (max-width: 1430px) {
+  .booking__room-label {
+    min-width: 180px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 20px;
+  }
+
+  .booking__room {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .booking__legend {
+    margin-bottom: 30px;
+  }
+
+  .booking__game-set {
+    margin-left: 0;
+  }
+
+  .booking__above-set {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .booking__reg-block {
+    margin-bottom: 50px;
+  }
+
+  .booking__reg-communication-width {
+    min-width: 254px;
+  }
+
+  .booking__reg-name-width {
+    min-width: 251px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .booking__game-set {
+    justify-content: left;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .booking__room {
+    margin-bottom: 50px;
+  }
+
+  .booking__room-label {
+    min-width: 150px;
+    padding: 10px 20px;
+  }
+
+  .booking__above-set {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .booking__reg-block {
+    display: block;
+    max-width: 904px;
+    /*grid-template-columns: repeat(1, 280px) repeat(1, 300px);*/
+    /*grid-template-rows: repeat(3, 52px);*/
+    /*max-width: 904px;*/
+    /*justify-content: space-between;*/
+    /*column-gap: 106px;*/
+    /*row-gap: 42px;*/
+    /*grid-template-areas:*/
+    /*"subblock subblock"*/
+    /*"subset1 subset2"*/
+    /*". .";*/
+  }
+
+  .booking__reg-subblock {
+    display: flex;
+    justify-content: space-between;
+    gap: 106px;
+    padding: 0;
+    flex-direction: row;
+    margin-bottom: 42px;
+  }
+
+  .booking__reg-above-subset{
+    justify-content: space-between;
+  }
+
+  .booking__reg-date-time{
+    gap: 14px;
+  }
+
+  .booking__reg-name-width{
+    min-width: 280px;
+  }
+
+  .booking__reg-communication-width{
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .booking__legend {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
