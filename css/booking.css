@@ -436,7 +436,6 @@
 
   .booking__reg-people {
     display: flex;
-    /*justify-content: center;*/
   }
 
   .booking__reg-subset {
@@ -452,7 +451,7 @@
   }
 
   .subset-name, .subset-comm, .booking__reg-people {
-    justify-content:center;
+    justify-content: center;
     align-items: center;
   }
 
@@ -465,7 +464,7 @@
     min-width: 280px;
   }
 
-  .booking__submit-block{
+  .booking__submit-block {
     justify-content: center;
   }
 
@@ -474,5 +473,25 @@
     line-height: 26px;
     padding: 17px 59px;
     min-width: 280px;
+  }
+
+  .booking__set-label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .booking__reg-input {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 17px 0px 17px 20px;
+  }
+
+  .booking__reg-input::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .booking__reg-above-subset{
+    row-gap: 35px;
   }
 }
