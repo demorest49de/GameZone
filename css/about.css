@@ -22,7 +22,7 @@
   grid-template-areas:
   "image promo"
   "image qoute";
-  gap: 50px 80px;
+  gap: 68px 80px;
 }
 
 /*endregion RIGHT TEXT*/
