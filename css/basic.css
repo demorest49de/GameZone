@@ -81,7 +81,6 @@ section#booking {
   }
 }
 
-
 @media (max-width: 767px) {
   .container {
     max-width: 767px;
@@ -91,5 +90,11 @@ section#booking {
   .subtitle {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  section#booking {
+    padding: 30px 0;
   }
 }
