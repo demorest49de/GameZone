@@ -17,12 +17,12 @@
 .about__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 0fr;
 
   grid-template-areas:
   "image promo"
   "image qoute";
-  gap: 30px;
+  gap: 50px 80px;
 }
 
 /*endregion RIGHT TEXT*/
@@ -40,12 +40,12 @@
 
 /*endregion LEFT IMAGE*/
 
-/*region BIG QOUTE LOGO*/
+/*region BIG QUOTE LOGO*/
 
 .about__content-block-promo {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-height: 203px;
   grid-area: promo;
 }
 
@@ -65,6 +65,7 @@
   line-height: 50px;
   text-transform: uppercase;
   display: block;
+  max-width: 420px;
 }
 
 .about__quotes:before, :after {
@@ -93,7 +94,6 @@
   min-height: 84px;
   display: flex;
   padding-left: 110px;
-  padding-right: 20px;
 }
 
 .about__boss-description {
@@ -122,10 +122,10 @@
   max-width: 280px;
 }
 
-/*endregion BIG QOUTE LOGO*/
+/*endregion BIG QUOTE LOGO*/
 
 @media (max-width: 1390px) {
-
+  /*region image*/
   .about__image-block {
     margin-right: 39.54px;
   }
@@ -135,6 +135,7 @@
     max-height: 418px;
   }
 
+  /*endregion image*/
   .about__text {
     font-size: 18px;
     line-height: 24px;
