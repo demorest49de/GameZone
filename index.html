@@ -153,6 +153,7 @@
 
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" name="booking_form"
               method="post">
+
           <fieldset class="booking__room">
             <legend class="booking__legend">Выбери зал</legend>
 
@@ -262,17 +263,17 @@
                 <div class="booking__reg-subblock">
                   <div class="booking__reg-date-time">
                     <label class="booking__reg-label">
-                      <input class="booking__reg-input booking__reg-date-time-width" type="date" name="date"
+                      <input class="booking__reg-input" type="date" name="date"
                              placeholder="Дата" required>
                     </label>
                     <label class="booking__reg-label">
-                      <input class="booking__reg-input booking__reg-date-time-width" type="time" name="time"
+                      <input class="booking__reg-input" type="time" name="time"
                              placeholder="Время" required>
                     </label>
                   </div>
-                  <div class="booking__reg-label">
-                    <label class="booking__label-people">
-                      <input class="booking__reg-input booking__reg-people-width" type="number" min="1" max="15"
+                  <div class="booking__reg-people">
+                    <label class="booking__reg-label">
+                      <input class="booking__reg-input" type="number" min="1" max="15"
                              name="persons_amount"
                              placeholder="Сколько человек" required>
                     </label>
@@ -280,26 +281,26 @@
                 </div>
 
                 <div class="booking__reg-above-subset">
-                  <div class="booking__reg-subset">
-                    <label class="booking__reg-label">
+                  <div class="booking__reg-subset subset-name">
+                    <label class="booking__reg-label reg__label-name">
                       Имя
-                      <input class="booking__reg-input booking__reg-name-width" type="text" name="name" required>
+                      <input class="booking__reg-input" type="text" name="name" required>
                     </label>
-                    <label class="booking__reg-label">
+                    <label class="booking__reg-label reg__label-name">
                       Фамилия
-                      <input class="booking__reg-input booking__reg-name-width" type="text" name="sirname" required>
+                      <input class="booking__reg-input" type="text" name="sirname" required>
                     </label>
                   </div>
 
-                  <div class="booking__reg-subset">
-                    <label class="booking__reg-label">
+                  <div class="booking__reg-subset subset-comm">
+                    <label class="booking__reg-label reg__label-comm">
                       Телефон
-                      <input class="booking__reg-input booking__reg-communication-width" type="tel" name="phone"
+                      <input class="booking__reg-input" type="tel" name="phone"
                              required>
                     </label>
-                    <label class="booking__reg-label">
+                    <label class="booking__reg-label reg__label-comm">
                       E-mail
-                      <input class="booking__reg-input booking__reg-communication-width" type="email" name="email"
+                      <input class="booking__reg-input" type="email" name="email"
                              required>
                     </label>
                   </div>
