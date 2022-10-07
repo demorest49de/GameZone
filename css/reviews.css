@@ -26,10 +26,6 @@
   display: flex;
 }
 
-.reviews__subtitle {
-  margin-bottom: 40px;
-}
-
 .reviews__item:not(:nth-last-child(1)) {
   margin-bottom: 50px;
 }

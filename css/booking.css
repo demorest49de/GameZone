@@ -2,10 +2,6 @@
   background-color: var(--color-440F51);
 }
 
-.booking__subtitle {
-  margin-bottom: 40px;
-}
-
 /*region booking__room*/
 .booking__room {
   display: flex;
@@ -311,11 +307,6 @@
     justify-content: left;
   }
 
-  .subtitle {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
   .booking__room {
     margin-bottom: 50px;
   }
@@ -404,10 +395,6 @@
     font-size: 14px;
     line-height: 18px;
     padding: 6px 20px;
-  }
-
-  .booking__subtitle {
-    margin-bottom: 13px;
   }
 
   .booking__legend {

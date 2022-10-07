@@ -3,7 +3,8 @@
 }
 
 .preview__subtitle {
-  margin: 0 160px 40px 160px;
+  margin-left: 160px;
+  margin-right: 160px;
 }
 
 .preview__list {
@@ -64,7 +65,8 @@
   }
 
   .preview__subtitle {
-    margin: 0 160px 36px 160px;
+    margin-left: 160px;
+    margin-right: 160px;
   }
 
   .preview__list {
@@ -109,8 +111,9 @@
   }
 
   .preview__subtitle {
-    margin: 0 auto 30px auto;
     max-width: 527px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .preview__list {
@@ -159,8 +162,9 @@
   }
 
   .preview__subtitle {
-    margin: 0 auto 15px auto;
-    max-width: 257px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .preview__list {

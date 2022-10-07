@@ -3,10 +3,6 @@
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
-.contacts__subtitle {
-  margin-bottom: 40px;
-}
-
 .contacts__address {
   padding-left: 67px;
   margin-bottom: 40px;
