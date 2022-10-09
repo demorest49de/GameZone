@@ -272,7 +272,7 @@
 
   .about__container {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 127px 1fr 1fr;
+    grid-template-rows: 127px 1fr 280px;
     grid-template-areas:
   "promo"
   "image"
@@ -284,7 +284,7 @@
     padding-top: 0;
   }
 
-  .about__big-text{
+  .about__big-text {
     font-size: 18px;
     line-height: 26px;
   }
@@ -301,5 +301,45 @@
   .about__img {
     max-height: 380px;
     max-width: 382px;
+  }
+
+  .about__figure-boss {
+    justify-content: center;
+    min-width: unset;
+    min-height: unset;
+  }
+
+  .about__text-boss {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 163px;
+  }
+
+  .about__quotes {
+    max-width: 275px;
+  }
+
+  .about__quotes:after {
+    right: 92px;
+  }
+
+  .about__figure-boss {
+    justify-content: end;
+  }
+
+  .about__boss-description {
+    gap: 11px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .about__img {
+    max-height: 280px;
+    max-width: 280px;
+  }
+
+  .about__boss-description {
+    min-width: 280px;
   }
 }
