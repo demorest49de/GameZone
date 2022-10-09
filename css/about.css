@@ -190,7 +190,7 @@
 
   .about__container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr) 184px;
     grid-template-areas:
   "image promo"
   "qoute qoute";
@@ -272,7 +272,7 @@
 
   .about__container {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 127px 1fr 280px;
+    grid-template-rows: 127px 1fr 175px;
     grid-template-areas:
   "promo"
   "image"
