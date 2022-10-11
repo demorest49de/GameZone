@@ -3,7 +3,7 @@
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
-.contacts__address {
+.contacts__info {
   padding-left: 67px;
   margin-bottom: 40px;
   display: flex;
@@ -145,5 +145,15 @@ a .contacts__text {
 
 .contacts__block-map{
   max-width: 680px;
-  max-height: 274px;
+  max-height: fit-content;
+}
+
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
 }

@@ -17,6 +17,10 @@ q {
   margin-bottom: 26px;
 }
 
+.contacts__subtitle {
+  margin-bottom: 40px;
+}
+
 fieldset {
   border-style: none;
 }
@@ -46,6 +50,11 @@ section#about {
 }
 
 @media (max-width: 1430px) {
+
+  .contacts__subtitle {
+    margin-bottom: 26px;
+  }
+
   section:not(:nth-child(1)) {
     padding: 35px 0;
   }
@@ -60,6 +69,10 @@ section#about {
 
   section#booking {
     padding: 60px 0;
+  }
+
+  section:nth-last-child(1) {
+    padding-bottom: 0;
   }
 }
 
@@ -109,6 +122,10 @@ section#about {
   section#about {
     padding: 60px 0 30px 0;
   }
+
+  section:nth-last-child(1) {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -145,6 +162,10 @@ section#about {
 
   section#about {
     padding: 30px 0 15px 0;
+  }
+
+  section:nth-last-child(1) {
+    padding-bottom: 0;
   }
 }
 
