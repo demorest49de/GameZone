@@ -221,13 +221,6 @@ a .contacts__text {
     justify-content: center;
     align-items: center;
   }
-}
-
-
-@media (max-width: 360px) {
-  .contacts {
-    padding: 15px 0 24px 0;
-  }
 
   .contacts__info{
     margin-bottom: 35px;
@@ -248,5 +241,12 @@ a .contacts__text {
   .contacts__block-text{
     justify-content: center;
     align-items: center;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .contacts {
+    padding: 15px 0 24px 0;
   }
 }
