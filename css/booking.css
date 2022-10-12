@@ -88,6 +88,29 @@
   outline-offset: 2px;
 }
 
+/*рамка круглая*/
+.booking__input:focus + .booking__icon_radio:before {
+  outline: none;
+}
+
+.booking__icon_radio:after{
+  position: absolute;
+}
+
+/*рамка круглая*/
+.booking__input:focus + .booking__icon_radio:after {
+  content: '';
+  display: inline-block;
+  min-width: 27px;
+  min-height: 27px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline:  1px solid var(--color-CD06FF);
+  outline-offset: 2px;
+  left: 0px;
+}
+
 /*галочка*/
 .booking__input:checked + .booking__icon:before {
   border-color: var(--color-CD06FF);
