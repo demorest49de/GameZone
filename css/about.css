@@ -9,8 +9,6 @@
   gap: 68px 80px;
 }
 
-/*region RIGHT TEXT*/
-
 .about__text {
   font-weight: 400;
   font-size: 20px;
@@ -21,10 +19,6 @@
   padding-bottom: 35px;
 }
 
-/*endregion RIGHT TEXT*/
-
-/*region LEFT IMAGE*/
-
 .about__img {
   max-width: 600px;
   max-height: 596px;
@@ -33,11 +27,6 @@
 .about__image-block {
   grid-area: image;
 }
-
-/*endregion LEFT IMAGE*/
-
-
-/*region BIG QUOTE LOGO*/
 
 .about__content-block-promo {
   display: flex;
@@ -118,21 +107,16 @@
   max-width: 280px;
 }
 
-/*endregion BIG QUOTE LOGO*/
-
 @media (max-width: 1436px) {
   .about__container {
     gap: 49px 39.54px;
   }
 
-  /*region image*/
   .about__img {
     max-width: 420px;
     max-height: 418px;
   }
 
-  /*endregion image*/
-  /*region text*/
   .about__text {
     font-size: 18px;
     line-height: 24px;
@@ -183,7 +167,6 @@
     min-height: 70px;
   }
 
-  /* endregion text */
 }
 
 @media (max-width: 960px) {
