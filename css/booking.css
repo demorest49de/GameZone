@@ -225,11 +225,11 @@
   min-width: 300px;
 }
 
-.reg__label-name .booking__reg-input {
+.booking__reg-name .booking__reg-input {
   min-width: 280px;
 }
 
-.reg__label-comm .booking__reg-input {
+.booking__reg-comm .booking__reg-input {
   min-width: 300px;
 }
 
@@ -441,7 +441,7 @@
     justify-content: center;
   }
 
-  .reg__label-name, .reg__label-comm {
+  .booking__reg-name, .booking__reg-comm {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -457,8 +457,8 @@
     min-width: 280px;
   }
 
-  .reg__label-name .booking__reg-input,
-  .reg__label-comm .booking__reg-input {
+  .booking__reg-name .booking__reg-input,
+  .booking__reg-comm .booking__reg-input {
     min-width: 280px;
   }
 
