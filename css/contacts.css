@@ -106,12 +106,6 @@ a .contacts__text {
   top: -2px;
 }
 
-.contacts__block {
-  margin-bottom: 156px;
-  display: flex;
-  gap: 170px;
-}
-
 .contacts__text-small {
   font-weight: 400;
   font-size: 14px;
@@ -143,17 +137,116 @@ a .contacts__text {
   flex-direction: column;
 }
 
-.contacts__block-map{
-  max-width: 680px;
-  max-height: fit-content;
+.contacts__block {
+  margin-bottom: 156px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 170px;
+}
+
+.contacts__block-map {
+  min-width: 542px;
+  min-height: fit-content;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1180px) {
+  .contacts__block {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    padding: 35px 0 21px 0;
+  }
+
+  .contacts__block {
+    margin-bottom: 92px;
+  }
+
+  .contacts__item svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contacts {
+    padding: 35px 0 28px 0;
+  }
+
+  .contacts__block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__navigation {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .contacts__list {
+    justify-content: center;
+  }
+
+  .contacts__block-map {
+    min-width: 280px;
+    min-height: fit-content;
+  }
+
+  .contacts__block-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .contacts__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts__text-small {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contacts__copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
-@media (max-width: 1024px) {
-}
+@media (max-width: 360px) {
+  .contacts {
+    padding: 15px 0 24px 0;
+  }
 
-@media (max-width: 1024px) {
-}
+  .contacts__info{
+    margin-bottom: 35px;
+  }
 
-@media (max-width: 1024px) {
+  .contacts__block-info {
+    margin-bottom: 62px;
+  }
+
+  .contacts__text-small:not(:nth-last-child(1)) {
+    margin-bottom: 19px;
+  }
+
+  .contacts__block-text .contacts__text-small:nth-child(1) {
+    margin-bottom: 5px;
+  }
+
+  .contacts__block-text{
+    justify-content: center;
+    align-items: center;
+  }
 }
