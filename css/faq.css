@@ -13,13 +13,32 @@
   border-style: none;
   max-height: 28px;
   text-align: start;
-  padding-bottom: 86px;
+  padding-bottom: 30px;
   position: relative;
+  color: inherit;
 }
 
-.faq__text-block{
-  padding-bottom: 70px;
+.faq__text{
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
+
+.faq__text-wrapper{
+  height: 0;
+  overflow: hidden;
+}
+
+.faq__button:after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-size: contain;
+  right: 1px;
+  bottom: -7px;
+  background-repeat: no-repeat;
+}
+
 
 .faq__item:nth-child(odd) {
   background-color: var(--color-FFFFFF);
@@ -31,8 +50,7 @@
   color: var(--color-FFFFFF);
 }
 
-
-.faq__button:nth-child(odd):after {
+.faq__button:nth-of-type(odd):after {
   background-image: url("../img/faq/open-purple.svg");
 }
 
@@ -46,7 +64,7 @@
   transition: all .8s ease;
 }
 
-.faq__button:nth-child(even):after {
+.faq__button:nth-of-type(even):after {
   background-image: url("../img/faq/open.svg");
 }
 
@@ -57,17 +75,6 @@
 
 .faq__button:nth-child(even):active:after {
   background-image: url("../img/faq/open-active.svg");
-}
-
-.faq__button:after {
-  content: "";
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  background-size: contain;
-  right: 1px;
-  bottom: 47px;
-  background-repeat: no-repeat;
 }
 
 .faq__item:not(:last-child) {
