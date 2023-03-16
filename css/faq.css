@@ -26,6 +26,11 @@
 .faq__text-wrapper{
   height: 0;
   overflow: hidden;
+  transition: height .4s ease-in-out;
+}
+
+.faq__item_active .faq__text-wrapper{
+  height: auto;
 }
 
 .faq__button:after {
