@@ -54,12 +54,12 @@
   background-image: url("../img/faq/open-purple.svg");
 }
 
-.faq__button:nth-child(odd):hover:after {
+.faq__button:nth-of-type(odd):hover:after {
   background-image: url("../img/faq/open-purple-hover.svg");
   transition: all .8s ease;
 }
 
-.faq__button:nth-child(odd):active:after {
+.faq__button:nth-of-type(odd):active:after {
   background-image: url("../img/faq/open-purple-active.svg");
   transition: all .8s ease;
 }
@@ -68,19 +68,18 @@
   background-image: url("../img/faq/open.svg");
 }
 
-.faq__button:nth-child(even):hover:after {
+.faq__button:nth-of-type(even):hover:after {
   background-image: url("../img/faq/open-hover.svg");
   transition: all .8s ease;
 }
 
-.faq__button:nth-child(even):active:after {
+.faq__button:nth-of-type(even):active:after {
   background-image: url("../img/faq/open-active.svg");
 }
 
 .faq__item:not(:last-child) {
   margin-bottom: 32px;
 }
-
 
 
 @media (max-width: 1024px) {
