@@ -50,31 +50,31 @@
   color: var(--color-FFFFFF);
 }
 
-.faq__button:nth-of-type(odd):after {
+.faq__item:nth-child(odd) .faq__button:after{
   background-image: url("../img/faq/open-purple.svg");
 }
 
-.faq__button:nth-of-type(odd):hover:after {
-  background-image: url("../img/faq/open-purple-hover.svg");
-  transition: all .8s ease;
-}
-
-.faq__button:nth-of-type(odd):active:after {
-  background-image: url("../img/faq/open-purple-active.svg");
-  transition: all .8s ease;
-}
-
-.faq__button:nth-of-type(even):after {
+.faq__item:nth-child(even) .faq__button:after {
   background-image: url("../img/faq/open.svg");
 }
 
-.faq__button:nth-of-type(even):hover:after {
+.faq__item:nth-child(even) .faq__button:hover:after {
   background-image: url("../img/faq/open-hover.svg");
   transition: all .8s ease;
 }
 
-.faq__button:nth-of-type(even):active:after {
+.faq__item:nth-child(even) .faq__button:active:after {
   background-image: url("../img/faq/open-active.svg");
+}
+
+.faq__item:nth-child(odd) .faq__button:hover:after {
+  background-image: url("../img/faq/open-purple-hover.svg");
+  transition: all .8s ease;
+}
+
+.faq__item:nth-child(odd) .faq__button:active:after {
+  background-image: url("../img/faq/open-purple-active.svg");
+  transition: all .8s ease;
 }
 
 .faq__item:not(:last-child) {
