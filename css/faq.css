@@ -82,6 +82,22 @@
   transition: all .8s ease;
 }
 
+.faq__item_active:nth-child(odd) .faq__button:after,
+.faq__item_active:nth-child(odd) .faq__button:hover:after,
+.faq__item_active:nth-child(odd) .faq__button:active:after
+{
+  background-image: url("../img/faq/open-purple-active.svg");
+  transition: all .8s ease;
+}
+
+.faq__item_active:nth-child(even) .faq__button:after,
+.faq__item_active:nth-child(even) .faq__button:hover:after,
+.faq__item_active:nth-child(even) .faq__button:active:after
+{
+  background-image: url("../img/faq/open-active.svg");
+  transition: all .8s ease;
+}
+
 .faq__item:not(:last-child) {
   margin-bottom: 32px;
 }

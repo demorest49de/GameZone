@@ -18,7 +18,6 @@ buttons.forEach((btn, index) => {
       if (index === i) {
         textWrappers[i].style.height =
           items[i].classList.contains('faq__item_active') ?
-            // '' : `${heightWrapper}px`;
             '' : `${textWrappers[i].scrollHeight}px`;
         items[i].classList.toggle('faq__item_active');
       } else {
