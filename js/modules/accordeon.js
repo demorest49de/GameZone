@@ -1,30 +1,26 @@
-const items = document.querySelectorAll('.faq__item');
-const buttons = document.querySelectorAll('.faq__button');
-const textWrappers = document.querySelectorAll('.faq__text-wrapper');
-
-
+const list = document.querySelector('.faq__list');
+const itemActive = document.getElementsByClassName('faq__item_active');
+const txtWrappers = document.querySelectorAll('.faq__text-wrapper');
 let heightWrapper = 0;
 
-textWrappers.forEach(item => {
+txtWrappers.forEach(item => {
   if (item.scrollHeight > heightWrapper) {
     heightWrapper = item.scrollHeight;
   }
 });
 
+list.addEventListener('click', ({target}) => {
+  if (itemActive[0] && itemActive[0] !== target.closest('.faq__item')) {
+    itemActive[0].querySelector('.faq__text-wrapper').style.height = '0';
 
-buttons.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    for (let i = 0; i < items.length; i++) {
-      if (index === i) {
-        textWrappers[i].style.height =
-          items[i].classList.contains('faq__item_active') ?
-            '' : `${textWrappers[i].scrollHeight}px`;
-        items[i].classList.toggle('faq__item_active');
-      } else {
-        items[i].classList.remove('faq__item_active');
-        textWrappers[i].style.height = '';
-      }
-    }
-  });
+    itemActive[0].classList.remove('faq__item_active');
+  }
+  if (target.closest('.faq__button')) {
+    const item = target.closest('.faq__item');
+    const isActive = item.classList.toggle('faq__item_active');
+
+    const txtWrapper = item.querySelector('.faq__text-wrapper');
+    txtWrapper.style.height = isActive ? `${heightWrapper}px` : '0';
+
+  }
 });
-

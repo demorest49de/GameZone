@@ -6,7 +6,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  padding: 30px 70px;
+  padding: 11px 70px;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +22,7 @@
   align-items: start;
   color: inherit;
   padding-right: 94px;
-  min-height: 70px;
+  min-height: 65px;
 }
 
 .faq__item:nth-child(odd) {
@@ -57,7 +57,7 @@
   width: 46px;
   height: 46px;
   right: 1px;
-  bottom: 32px;
+  bottom: 27px;
 }
 
 .faq__item:nth-child(odd) .faq__button:after {
