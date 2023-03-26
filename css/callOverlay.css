@@ -1,0 +1,27 @@
+.call-overlay{
+  /*display: none;*/
+  background: rgba(27, 26, 27, 0.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.call{
+  background-color: #440F51;
+  position: absolute;
+  max-width: 600px;
+  max-height: 498px;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: 140px;
+  /*top: 190px;*/
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
