@@ -1,14 +1,28 @@
-.call-overlay{
-  /*display: none;*/
+.call-overlay {
   background: rgba(27, 26, 27, 0.7);
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: .6s ease-in-out;
+  z-index: 1;
 }
 
-.call{
+.call-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.call-overlay.is-visible .call {
+  opacity: 1;
+  top: 145px;
+}
+
+.call {
   background-color: #440F51;
   position: absolute;
   max-width: 600px;
@@ -16,12 +30,82 @@
   left: 0;
   margin: 0 auto;
   right: 0;
-  top: 140px;
-  /*top: 190px;*/
+  top: 0;
   bottom: 0;
-  z-index: 2;
   display: flex;
   justify-content: center;
   align-self: center;
+  transition: .5s ease-in-out top, opacity;
 }
 
+.call__container {
+  padding: 60px 0;
+}
+
+.call__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.call__block {
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.call__block:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.call__label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.call__input {
+  height: 52px;
+  padding: 0 10px;
+  outline-style: none;
+  border-style: none;
+}
+
+.call_fieldset {
+  margin-bottom: 39px;
+}
+
+.call__submit {
+  border-style: none;
+  background-color: #fff;
+  color: #6C0287;
+  min-width: 300px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 16px 54px 16px 50px;
+  border-radius: 10px;
+  box-shadow: #ffffff 0px 0px 15px 0px;
+}
+
+@media (max-width: 768px) {
+
+  .call {
+    margin: 0 84px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .call {
+    margin: 0 84px;
+  }
+}
