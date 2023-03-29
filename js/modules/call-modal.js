@@ -1,5 +1,4 @@
 const modal = document.querySelector('.header__call-button');
-const call = document.querySelector('.call');
 const callOverlay = document.querySelector('.call-overlay');
 const body = document.body;
 
@@ -23,5 +22,5 @@ callOverlay.addEventListener('click', ({target}) => {
 
 window.addEventListener('resize', () => {
   toggleModalVisible(callOverlay.classList.contains('is-visible') && screen.width > 768);
-  console.log(' : ', screen.width, callOverlay.classList.contains('is-visible'));
+  // console.log(' : ', screen.width, callOverlay.classList.contains('is-visible'));
 });
