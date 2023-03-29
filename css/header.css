@@ -148,3 +148,9 @@
     display: none;
   }
 }
+
+@media (max-width: 530px) {
+  .header{
+    z-index: 1;
+  }
+}

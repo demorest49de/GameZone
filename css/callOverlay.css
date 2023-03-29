@@ -34,7 +34,6 @@
   bottom: 0;
   display: flex;
   justify-content: center;
-  align-self: center;
   transition: .5s ease-in-out top, opacity;
 }
 
@@ -107,5 +106,42 @@
 
   .call {
     margin: 0 84px;
+  }
+}
+
+@media (max-width: 530px) {
+  .call__input {
+    width: 220px;
+  }
+
+  .call__submit {
+    min-width: unset;
+    max-width: 243px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 12px 39px 12px 41px;
+  }
+
+  .call-overlay.is-visible .call {
+    margin: 0 20px;
+    top: 20px;
+  }
+
+  .call__container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .call__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call__form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
