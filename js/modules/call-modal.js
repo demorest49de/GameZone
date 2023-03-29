@@ -1,7 +1,8 @@
 const modalBtn = document.querySelector('.header__call-button');
 const callOverlay = document.querySelector('.call-overlay');
 const body = document.body;
-const callFrom = callOverlay.querySelector('.call__form');
+// const callFrom = callOverlay.querySelector('.call__form');
+const closeBtn = callOverlay.querySelector('.call__close-btn');
 
 callOverlay.style.display = 'block';
 
@@ -15,7 +16,8 @@ modalBtn.addEventListener("click", () => {
 });
 
 callOverlay.addEventListener('click', ({target}) => {
-  if (!target.closest('.call')) {
+  console.log(' : ',closeBtn.className);
+  if (!target.closest('.call') || target === closeBtn) {
     callOverlay.classList.remove('is-visible');
     toggleModalVisible(false);
   }
@@ -25,11 +27,3 @@ window.addEventListener('resize', () => {
   toggleModalVisible(callOverlay.classList.contains('is-visible') && screen.width > 768);
   // console.log(' : ', screen.width, callOverlay.classList.contains('is-visible'));
 });
-
-// callFrom.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   const formData = new FormData(e.target);
-//   const data = Object.fromEntries(formData);
-//
-//
-// });
