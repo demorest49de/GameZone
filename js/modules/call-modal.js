@@ -11,7 +11,7 @@ const toggleModalVisible = (isActive) => {
 
 modal.addEventListener("click", () => {
   const isActive = callOverlay.classList.toggle('is-visible');
-  toggleModalVisible(isActive)
+  toggleModalVisible(isActive && screen.width > 768);
 });
 
 callOverlay.addEventListener('click', ({target}) => {
@@ -19,4 +19,9 @@ callOverlay.addEventListener('click', ({target}) => {
     callOverlay.classList.remove('is-visible');
     toggleModalVisible(false);
   }
+});
+
+window.addEventListener('resize', () => {
+  toggleModalVisible(callOverlay.classList.contains('is-visible') && screen.width > 768);
+  console.log(' : ', screen.width, callOverlay.classList.contains('is-visible'));
 });
