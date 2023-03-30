@@ -3,26 +3,24 @@
 }
 
 .faq__item {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  padding: 18px 70px;
-  display: flex;
-  flex-direction: column;
+  height: 87px;
 }
 
 .faq__button {
-  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   background-color: inherit;
-  font-weight: inherit;
   border-style: none;
-  max-height: 28px;
   text-align: start;
-  display: flex;
-  align-items: start;
   color: inherit;
-  padding-right: 94px;
-  min-height: 65px;
+  width: 100%;
+  height: 100%;
+  padding-left: 70px;
+  background-image: url("../img/faq/open-purple.svg");
+  background-repeat: no-repeat;
+  background-size: 46px;
+  background-position: center right 70px;
 }
 
 .faq__item:nth-child(odd) {
@@ -49,57 +47,40 @@
   padding: 30px 0 40px 0;
 }
 
-.faq__button:after {
-  content: "";
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 46px;
-  height: 46px;
-  right: 1px;
-  bottom: 27px;
-}
-
-.faq__item:nth-child(odd) .faq__button:after {
-  background-image: url("../img/faq/open-purple.svg");
-}
-
-.faq__item:nth-child(even) .faq__button:after {
+.faq__item:nth-child(even) .faq__button {
   background-image: url("../img/faq/open.svg");
 }
 
 
-.faq__item:nth-child(odd) .faq__button:hover:after {
+.faq__item:nth-child(odd) .faq__button:hover {
   background-image: url("../img/faq/open-purple-hover.svg");
   transition: all .8s ease;
 }
 
-.faq__item:nth-child(even) .faq__button:hover:after {
+.faq__item:nth-child(even) .faq__button:hover {
   background-image: url("../img/faq/open-hover.svg");
   transition: all .8s ease;
 }
 
-.faq__item:nth-child(odd) .faq__button:active:after {
+.faq__item:nth-child(odd) .faq__button:active {
   background-image: url("../img/faq/open-purple-active.svg");
   transition: all .8s ease;
 }
 
-.faq__item:nth-child(even) .faq__button:active:after {
+.faq__item:nth-child(even) .faq__button:active {
   background-image: url("../img/faq/open-active.svg");
   transition: all .8s ease;
 }
 
-.faq__item.faq__item_active:nth-child(odd) .faq__button:after{
+.faq__item.faq__item_active:nth-child(odd) .faq__button{
     background-image: url("../img/faq/open-purple-active.svg");
     transition: all .8s ease;
 }
 
-.faq__item.faq__item_active:nth-child(even) .faq__button:after{
+.faq__item.faq__item_active:nth-child(even) .faq__button{
     background-image: url("../img/faq/open-active.svg");
     transition: all .8s ease;
 }
-
-
 
 @media (max-width: 1024px) {
   .faq__item:not(:last-child) {
