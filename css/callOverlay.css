@@ -103,7 +103,12 @@
   background-image: url("../img/call/closeBtn.svg");
   top: 15px;
   right: 15px;
+  border-style: none;
+  background-color: inherit;
+}
 
+.call__close-btn:active{
+  background-color: inherit;
 }
 
 @media (max-width: 768px) {
