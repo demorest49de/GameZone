@@ -38,7 +38,6 @@ list.addEventListener('click', ({target}) => {
     const item = target.closest('.faq__item');
     const isActive = item.classList.toggle('faq__item_active');
     const txtWrapper = item.querySelector('.faq__item-wrapper');
-    updateHeightWrapper();
     txtWrapper.style.height = isActive ? `${heightWrapper}px` : '0';
   }
 });

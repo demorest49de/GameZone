@@ -38,8 +38,8 @@
 
 .faq__item-wrapper {
   height: 0;
-  overflow: hidden;
   transition: height .4s ease-in-out;
+  overflow: hidden;
 }
 
 .faq__text {
@@ -54,7 +54,7 @@
 }
 
 .faq__item_active .faq__item-wrapper {
-  height: auto;
+  height: unset;
 }
 
 
