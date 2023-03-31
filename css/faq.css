@@ -157,9 +157,6 @@
   .faq__text {
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .faq__item_active .faq__text {
     padding: 25px 43px 50px 10px;
   }
 }
