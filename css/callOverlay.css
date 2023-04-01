@@ -50,12 +50,17 @@
   text-align: center;
 }
 
-.call__block {
+.call__input {
+  margin-bottom: 39px;
+}
+
+.call_fieldset {
   min-width: 280px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 
 .call__block:nth-child(1) {
   margin-bottom: 40px;
@@ -70,18 +75,18 @@
   text-transform: capitalize;
 }
 
+.call__label,
 .call__input {
-  height: 52px;
-  padding: 0 10px;
-  outline-style: none;
-  border-style: none;
   width: 280px;
   display: flex;
   align-self: center;
 }
 
-.call_fieldset {
-  margin-bottom: 39px;
+.call__input {
+  height: 52px;
+  padding: 0 10px;
+  outline-style: none;
+  border-style: none;
 }
 
 .call__submit {
@@ -110,7 +115,7 @@
   background-color: inherit;
 }
 
-.call__close-btn:active{
+.call__close-btn:active {
   background-color: inherit;
 }
 
