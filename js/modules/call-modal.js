@@ -5,14 +5,14 @@ const body = document.body;
 const closeBtn = callOverlay.querySelector('.call__close-btn');
 
 callOverlay.style.display = 'block';
-
+const screenWidthForScroll =  960;
 const toggleModalVisible = (isActive) => {
   body.style.overflow = isActive ? 'hidden' : 'visible';
 };
 
 modalBtn.addEventListener("click", () => {
   const isActive = callOverlay.classList.toggle('is-visible');
-  toggleModalVisible(isActive && screen.width > 768);
+  toggleModalVisible(isActive && screen.width > screenWidthForScroll);
 });
 
 callOverlay.addEventListener('click', ({target}) => {
@@ -24,6 +24,6 @@ callOverlay.addEventListener('click', ({target}) => {
 });
 
 window.addEventListener('resize', () => {
-  toggleModalVisible(callOverlay.classList.contains('is-visible') && screen.width > 768);
+  toggleModalVisible(callOverlay.classList.contains('is-visible') && screen.width > screenWidthForScroll);
   // console.log(' : ', screen.width, callOverlay.classList.contains('is-visible'));
 });
