@@ -1,12 +1,13 @@
 const modalBtn = document.querySelector('.header__call-button');
 const callOverlay = document.querySelector('.call-overlay');
 const body = document.body;
-// const callFrom = callOverlay.querySelector('.call__form');
 const closeBtn = callOverlay.querySelector('.call__close-btn');
 
 callOverlay.style.display = 'block';
 const screenWidthForScroll =  1024;
-const toggleModalVisible = (isActive) => {
+
+
+export const toggleModalVisible = (isActive) => {
   body.style.overflow = isActive ? 'hidden' : 'visible';
 };
 

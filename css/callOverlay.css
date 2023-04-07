@@ -134,6 +134,10 @@
 }
 
 @media (max-width: 530px) {
+  .call-overlay{
+    z-index: 3;
+  }
+
   .call__input {
     width: 220px;
   }
@@ -172,7 +176,8 @@
   }
 
   .call__label {
+    width: 220px;
     display: flex;
-    align-self: start;
+    align-self: center;
   }
 }

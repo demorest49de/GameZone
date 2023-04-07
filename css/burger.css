@@ -1,0 +1,92 @@
+.burger.burger-visible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.burger{
+  /*display: none;*/
+}
+
+@media (max-width: 960px) {
+  .burger {
+    background: rgba(27, 26, 27, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: .6s ease-in-out;
+    z-index: 2;
+  }
+
+  .burger.burger-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .burger__container {
+    position: absolute;
+    background-color: #1B1A1B;
+    text-align: center;
+    padding: 58px 15px;
+    top: 100px;
+    width: 100%;
+  }
+
+  .burger__list {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  .burger__item {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .burger__call-button {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .burger__call-button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    min-width: 230px;
+    border: 3px solid var(--color-CD06FF);
+    background-color: inherit;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .burger__nav{
+    margin-bottom: 39px;
+  }
+
+
+
+  .burger__call-button:hover {
+    border-style: none;
+    background-color: var(--color-6C0287);
+    transition: background-color .8s ease;
+  }
+
+  .burger__call-button:focus {
+    border-style: none;
+    background-color: var(--color-6C0287);
+    outline: none;
+  }
+
+  .burger__call-button:active {
+    background-color: var(--color-640AA3);
+    border: 1px solid var(--color-000000);
+  }
+}
