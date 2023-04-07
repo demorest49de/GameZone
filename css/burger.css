@@ -1,10 +1,6 @@
-.burger.burger-visible {
+.burger{
   opacity: 0;
   visibility: hidden;
-}
-
-.burger{
-  /*display: none;*/
 }
 
 @media (max-width: 960px) {
