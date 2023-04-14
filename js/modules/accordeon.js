@@ -13,7 +13,6 @@ const updateHeightWrapper = () => {
       heightWrapper = heightNumber;
     }
   });
-  console.log(' : ', heightWrapper);
 };
 
 updateHeightWrapper();
