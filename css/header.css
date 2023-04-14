@@ -120,6 +120,8 @@
     width: 54px;
     height: 55px;
     background-image: url("../img/header/menu.svg");
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
   }

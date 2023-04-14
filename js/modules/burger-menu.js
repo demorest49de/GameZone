@@ -7,25 +7,38 @@ const header = document.querySelector('.header');
 
 const toggleMenu = () => {
   const visible = burgerOverlay.classList.toggle('burger-visible');
-  if (!visible) {
-    burgerBtn.style.opacity = 1;
-  } else {
-    burgerBtn.style.opacity = 0;
-  }
+  isBurgeMenuVisible();
+};
 
+const isBurgeMenuVisible = () => {
+  const visible = burgerOverlay.classList.contains('burger-visible');
+  burgerBtn.style.backgroundSize = `contain`;
+  burgerBtn.style.backgroundRepeat = `no-repeat`;
+  burgerBtn.style.backgroundPosition = `center`;
+
+  if (visible) {
+    burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
+  } else {
+    burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
+  }
 };
 
 burgerBtn.addEventListener('click', toggleMenu);
 
 const burgerMenuClick = ({target}) => {
-  if (target === burgerOverlay) {
+  if (target === target.closest('.burger__link') ||
+    target === burgerOverlay) {
+    console.log(' : ',target);
     burgerOverlay.classList.remove('burger-visible');
+    console.log(' : overlay',);
+    isBurgeMenuVisible();
   }
 };
 
 const headerClick = ({target}) => {
   if (target !== target.closest('.header__burger-button')) {
     burgerOverlay.classList.remove('burger-visible');
+    isBurgeMenuVisible();
   }
 };
 
