@@ -16,6 +16,8 @@ const isBurgeMenuVisible = () => {
   burgerBtn.style.backgroundRepeat = `no-repeat`;
   burgerBtn.style.backgroundPosition = `center`;
 
+  burgerBtn.style.transition = `all .5s ease-in-out`;
+
   if (visible) {
     burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
   } else {
