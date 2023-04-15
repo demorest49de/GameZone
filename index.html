@@ -8,6 +8,11 @@
   <link rel="icon" type="image/png" href="img/header/logo.png">
   <link rel="stylesheet" href="index.css">
   <script type="module" src="js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      goInit('#app');
+    });
+  </script>
   <title>GAME OVER - игровые залы виртуальной реальности</title>
 </head>
 <body>
@@ -501,10 +506,10 @@
           <h2 class="call__title">заказать звонок</h2>
           <form class="call__form" name="call__form" id="call__form" method="post">
             <fieldset class="call_fieldset">
-                <label class="call__label">имя</label>
-                <input class="call__input" name="call__name" id="call__name" required type="text">
-                <label class="call__label">телефон</label>
-                <input class="call__input" name="call__phone" id="call__phone" required type="tel">
+              <label class="call__label">имя</label>
+              <input class="call__input" name="call__name" id="call__name" required type="text">
+              <label class="call__label">телефон</label>
+              <input class="call__input" name="call__phone" id="call__phone" required type="tel">
             </fieldset>
             <button class="call__submit" type="submit" form="call__form">позвонить мне</button>
           </form>
@@ -588,5 +593,6 @@
     </div>
   </footer>
 
+  <div id="app" style="display: none"></div>
 </body>
 </html>

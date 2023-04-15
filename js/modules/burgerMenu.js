@@ -5,6 +5,10 @@ const burgerOverlay = document.querySelector('.burger');
 const callBtn = document.querySelector('.header__call-button');
 const header = document.querySelector('.header');
 
+let startTime = NaN;
+const durationOpening = 1500;
+const durationOpacity = 300;
+
 const toggleMenu = () => {
   const visible = burgerOverlay.classList.toggle('burger-visible');
   isBurgeMenuVisible();
@@ -16,7 +20,7 @@ const isBurgeMenuVisible = () => {
   burgerBtn.style.backgroundRepeat = `no-repeat`;
   burgerBtn.style.backgroundPosition = `center`;
 
-  burgerBtn.style.transition = `all .5s ease-in-out`;
+  burgerBtn.style.transition = `all .3s ease-in-out`;
 
   if (visible) {
     burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
