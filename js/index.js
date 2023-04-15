@@ -1,17 +1,18 @@
 import {accordeonHelper} from './modules/accordeon.js';
 import {renderGO} from './modules/renderGO.js';
 import {vars} from './modules/mainVars.js';
-
-// import './modules/callModal.js';
-// import './modules/burgerMenu.js';
+import {callModalHandler} from './modules/callModal.js';
+import {burgerHandler} from './modules/burgerMenu.js';
 
 
 {
   const init = (selectorApp) => {
     const $ = vars(selectorApp);
     renderGO($);
-    // accordeon
-    accordeonHelper($);
+
+    accordeonHelper();
+    callModalHandler();
+    burgerHandler();
   };
 
   window.goInit = init;

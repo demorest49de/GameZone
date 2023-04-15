@@ -1,4 +1,4 @@
-export const accordeonHelper = ($) => {
+export const accordeonHelper = () => {
 
   const updateHeightWrapper = () => {
     let heightWrapper = 0;
