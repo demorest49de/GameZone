@@ -1,4 +1,4 @@
-import {toggleModalVisible} from './call-modal.js';
+import {toggleModalVisible} from './callModal.js';
 
 const burgerBtn = document.querySelector('.header__burger-button');
 const burgerOverlay = document.querySelector('.burger');

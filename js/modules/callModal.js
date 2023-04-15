@@ -3,9 +3,6 @@ const callOverlay = document.querySelector('.call-overlay');
 const body = document.body;
 const closeBtn = callOverlay.querySelector('.call__close-btn');
 
-
-
-// callOverlay.style.display = 'block';
 const screenWidthForScroll =  1024;
 
 

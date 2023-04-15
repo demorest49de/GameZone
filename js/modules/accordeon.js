@@ -2,7 +2,7 @@ export const accordeonHelper = ($) => {
 
   const updateHeightWrapper = () => {
     let heightWrapper = 0;
-    const textWrapper = $.faq.querySelectorAll('.faq__item-wrapper');
+    const textWrapper = document.querySelectorAll('.faq__item-wrapper');
 
 
     textWrapper.forEach(item => {
@@ -17,7 +17,7 @@ export const accordeonHelper = ($) => {
   };
 
   const faqWrapperResize = () => {
-    const itemActive = $.faq.getElementsByClassName('faq__item_active');
+    const itemActive = document.getElementsByClassName('faq__item_active');
     window.addEventListener('resize', () => {
       const heightWrapper = updateHeightWrapper();
       if (itemActive[0]) {
@@ -27,8 +27,8 @@ export const accordeonHelper = ($) => {
   };
 
   const accordeonClick = () => {
-    const list = $.faq.querySelector('.faq__list');
-    const itemActive = $.faq.getElementsByClassName('faq__item_active');
+    const list = document.querySelector('.faq__list');
+    const itemActive = document.getElementsByClassName('faq__item_active');
     list.addEventListener('click', ({target}) => {
 
       if (itemActive[0] && itemActive[0] !== target.closest('.faq__item')) {

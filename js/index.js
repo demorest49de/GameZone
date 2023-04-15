@@ -1,18 +1,15 @@
-import {
-  accordeonHelper
-} from './modules/accordeon.js';
-import './modules/call-modal.js';
-import './modules/control.js';
-import './modules/burgerMenu.js';
-import '../temp/temp.js';
+import {accordeonHelper} from './modules/accordeon.js';
+import {renderGO} from './modules/renderGO.js';
 import {vars} from './modules/mainVars.js';
 
+// import './modules/callModal.js';
+// import './modules/burgerMenu.js';
 
 
 {
   const init = (selectorApp) => {
-
-    const $ = vars();
+    const $ = vars(selectorApp);
+    renderGO($);
     // accordeon
     accordeonHelper($);
   };
