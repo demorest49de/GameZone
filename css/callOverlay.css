@@ -120,14 +120,6 @@
 }
 
 @media (max-width: 768px) {
-
-  .call {
-    margin: 0 84px;
-  }
-}
-
-@media (max-width: 768px) {
-
   .call {
     margin: 0 84px;
   }
@@ -136,6 +128,10 @@
 @media (max-width: 530px) {
   .call-overlay{
     z-index: 3;
+  }
+
+  .call {
+    margin: 0 24px;
   }
 
   .call__input {
@@ -179,5 +175,27 @@
     width: 220px;
     display: flex;
     align-self: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .call__close-btn{
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+  }
+}
+@media (max-width: 360px) {
+  .call-overlay.is-visible .call{
+    margin: 0;
+  }
+  .call {
+    margin: 0;
+    left: 20px;
+    right: 20px;
+    max-width: unset;
+  }
+  .call__container{
+    padding: 60px 0;
   }
 }

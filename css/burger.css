@@ -91,9 +91,3 @@
     border: 1px solid var(--color-000000);
   }
 }
-
-@media (max-width: 320px) {
-  .burger {
-    width: 100%;
-  }
-}
