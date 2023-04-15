@@ -1,10 +1,12 @@
-.burger{
+.burger {
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 960px) {
   .burger {
+    display: block;
     background: rgba(27, 26, 27, 0.7);
     position: absolute;
     left: 0;
@@ -48,7 +50,11 @@
 }
 
 @media (max-width: 750px) {
-  .burger__call-button{
+  .burger__container {
+    top: 80px;
+  }
+
+  .burger__call-button {
     display: block;
     margin: 0 auto;
     padding: 10px 15px;
@@ -63,10 +69,9 @@
     line-height: 24px;
   }
 
-  .burger__nav{
+  .burger__nav {
     margin-bottom: 39px;
   }
-
 
 
   .burger__call-button:hover {
@@ -84,5 +89,11 @@
   .burger__call-button:active {
     background-color: var(--color-640AA3);
     border: 1px solid var(--color-000000);
+  }
+}
+
+@media (max-width: 320px) {
+  .burger {
+    width: 100%;
   }
 }

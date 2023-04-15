@@ -3,15 +3,25 @@ export const callModalHandler = () => {
     document.body.style.overflow = isActive ? 'hidden' : 'visible';
   };
 
-  const modalBtn = document.querySelector('.header__call-button');
+  const modalCalllBtn = document.querySelector('.header__call-button');
+  const burgerCalllBtn = document.querySelector('.burger__call-button');
+
   const callOverlay = document.querySelector('.call-overlay');
   const closeBtn = callOverlay.querySelector('.call__close-btn');
   const screenWidthForScroll = 1024;
 
-  modalBtn.addEventListener("click", () => {
+  modalCalllBtn.addEventListener("click", () => {
+    handleCallBtns();
+  });
+
+  burgerCalllBtn.addEventListener("click", () => {
+    handleCallBtns();
+  });
+
+  const handleCallBtns = () => {
     const isActive = callOverlay.classList.toggle('is-visible');
     toggleModalVisible(isActive && screen.width > screenWidthForScroll);
-  });
+  };
 
   callOverlay.addEventListener('click', ({target}) => {
     console.log(' : ', closeBtn.className);

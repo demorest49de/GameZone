@@ -15,8 +15,7 @@ export const renderGO = ($) => {
   const footer = createFooter();
   const call = createCallModal();
   const burger = createBurgerMenu();
-  main.prepend(burger);
-  main.append(call);
+  main.append(call, burger);
 
   app.append(header, main, footer);
 };

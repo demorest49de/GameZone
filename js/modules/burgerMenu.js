@@ -1,5 +1,6 @@
 export const burgerHandler = () => {
   const burgerBtn = document.querySelector('.header__burger-button');
+  const burgerCalllBtn = document.querySelector('.burger__call-button');
   const burgerOverlay = document.querySelector('.burger');
   const callBtn = document.querySelector('.header__call-button');
   const header = document.querySelector('.header');
@@ -32,7 +33,8 @@ export const burgerHandler = () => {
 
   const burgerMenuClick = ({target}) => {
     if (target === target.closest('.burger__link') ||
-      target === burgerOverlay) {
+      target === burgerOverlay ||
+      target === burgerCalllBtn) {
       burgerOverlay.classList.remove('burger-visible');
       isBurgeMenuVisible();
     }
