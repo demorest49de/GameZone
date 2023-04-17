@@ -1,4 +1,4 @@
-export const accordeonHelper = () => {
+export const accordionHelper = () => {
 
   const updateHeightWrapper = () => {
     let heightWrapper = 0;
@@ -26,7 +26,7 @@ export const accordeonHelper = () => {
     });
   };
 
-  const accordeonClick = () => {
+  const accordionClick = () => {
     const list = document.querySelector('.faq__list');
     const itemActive = document.getElementsByClassName('faq__item_active');
     list.addEventListener('click', ({target}) => {
@@ -57,7 +57,7 @@ export const accordeonHelper = () => {
 
   updateTextWrapperHeight();
   faqWrapperResize();
-  accordeonClick();
+  accordionClick();
 };
 
 

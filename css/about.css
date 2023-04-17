@@ -190,20 +190,13 @@
     max-height: 380px;
   }
 
-  .about__block-text {
-    min-height: unset;
-    max-width: unset;
-    padding-top: 66px;
-    gap: 30px 28px;
-  }
-
   .about__text {
     font-size: 18px;
     line-height: 24px;
   }
 
   .about__text:not(:nth-last-child(1)) {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .about__quotes:before, :after {
@@ -254,13 +247,15 @@
 @media (max-width: 700px) {
 
   .about__container {
+    max-width: 320px;
+    margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 127px 1fr 175px;
     grid-template-areas:
   "promo"
   "image"
   "qoute";
-    row-gap: 15px;
+    row-gap: 25px;
   }
 
   .about__block-text {
@@ -273,17 +268,14 @@
   }
 
   .about__text {
+    max-width: 266px;
     font-size: 12px;
     line-height: 16px;
   }
 
-  .about__image-block {
-    margin: 0 auto;
-  }
-
   .about__img {
     max-height: 380px;
-    max-width: 382px;
+    width: 100%;
   }
 
   .about__figure-boss {
@@ -307,20 +299,16 @@
   }
 
   .about__figure-boss {
-    justify-content: end;
+    justify-content: start;
   }
 
   .about__boss-description {
+    justify-content: start;
     gap: 11px;
   }
 }
 
-@media (max-width: 450px) {
-
-  .about__img {
-    max-height: 280px;
-    max-width: 280px;
-  }
+@media (max-width: 700px) {
 
   .about__boss-description {
     min-width: 280px;

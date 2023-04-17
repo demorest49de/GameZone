@@ -161,12 +161,6 @@
     padding: 23px 0 15px;
   }
 
-  .preview__subtitle {
-    max-width: 500px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .preview__list {
     gap: 10px;
   }
@@ -181,7 +175,12 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 700px) {
+  .preview__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   .preview__item:nth-child(5)
   .preview__text {
     max-width: 250px;

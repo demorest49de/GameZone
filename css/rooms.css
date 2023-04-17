@@ -1,5 +1,4 @@
 
-
 .rooms__list {
   display: flex;
   justify-content: center;
@@ -78,7 +77,12 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 700px) {
+  .rooms__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   .rooms {
     padding: 50px 0;
   }

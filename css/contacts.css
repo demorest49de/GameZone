@@ -206,7 +206,12 @@ a .contacts__text {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 700px) {
+  .contacts__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   .contacts__text {
     font-size: 14px;
     line-height: 18px;
@@ -223,7 +228,7 @@ a .contacts__text {
     align-items: center;
   }
 
-  .contacts__info{
+  .contacts__info {
     margin-bottom: 35px;
   }
 
@@ -239,9 +244,14 @@ a .contacts__text {
     margin-bottom: 5px;
   }
 
-  .contacts__block-text{
+  .contacts__block-text {
     justify-content: center;
     align-items: center;
+  }
+
+  .contacts__map {
+    width: 100%;
+    height: 100%;
   }
 }
 

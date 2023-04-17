@@ -309,10 +309,8 @@ export const createMain = () => {
     </section>
 
     <section class="about" id="about">
-      <div class="container">
         <h2 class="subtitle about__subtitle">О нас</h2>
-
-        <div class="about__container">
+        <div class="container about__container">
           <div class="about__image-block">
             <figure>
               <img class="about__img" src="img/about/about__prospect-image.jpg" alt="Виды развлечений">
@@ -343,13 +341,10 @@ export const createMain = () => {
             </div>
           </blockquote>
         </div>
-      </div>
     </section>
 
     <section class="reviews" id="reviews">
-      <div class="container">
-
-        <div class="reviews__container">
+        <div class="container reviews__container">
           <h2 class="subtitle reviews__subtitle">
             Отзывы посетителей
           </h2>
@@ -396,12 +391,10 @@ export const createMain = () => {
             </ul>
           </div>
         </div>
-
-      </div>
     </section>
 
     <section class="faq" id="faq">
-      <div class="container">
+      <div class="container faq__container">
         <h2 class="subtitle faq__subtitle">
           Частые вопросы
         </h2>
@@ -471,7 +464,7 @@ export const createFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('contacts');
   footer.insertAdjacentHTML('beforeend', `
-    <div class="container">
+    <div class="container contacts__container">
       <h2 class="subtitle contacts__subtitle">Контакты</h2>
 
       <div class="contacts__block">

@@ -4,17 +4,30 @@ export const burgerHandler = () => {
   const burgerOverlay = document.querySelector('.burger');
   const callBtn = document.querySelector('.header__call-button');
   const header = document.querySelector('.header');
+  const burgerVisible = document.querySelector('.burger-visible');
 
-  let startTime = NaN;
-  const durationOpening = 1500;
-  const durationOpacity = 300;
+  let opacity = 0;
+
+  burgerVisible.style.cssText = `
+    opacity: ${opacity};
+    visibility: visible;
+  `;
+
+
 
   const toggleMenu = () => {
     const visible = burgerOverlay.classList.toggle('burger-visible');
+
+    if(visible){
+      opacity += 0.03;
+      burgerVisible
+    }
+
     isBurgeMenuVisible();
   };
 
   const isBurgeMenuVisible = () => {
+
     const visible = burgerOverlay.classList.contains('burger-visible');
     burgerBtn.style.backgroundSize = `contain`;
     burgerBtn.style.backgroundRepeat = `no-repeat`;
@@ -27,6 +40,7 @@ export const burgerHandler = () => {
     } else {
       burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
     }
+
   };
 
   burgerBtn.addEventListener('click', toggleMenu);

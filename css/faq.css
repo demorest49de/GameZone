@@ -141,7 +141,12 @@
   }
 }
 
-@media (max-width: 650px) {
+
+@media (max-width: 700px) {
+  .faq__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 
   .faq__button {
     min-height: 46px;
