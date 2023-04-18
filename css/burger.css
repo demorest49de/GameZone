@@ -1,6 +1,6 @@
 .burger {
-  opacity: 0;
-  visibility: hidden;
+  /*opacity: 0;*/
+  /*visibility: hidden;*/
   display: none;
 }
 
@@ -17,10 +17,10 @@
     z-index: 2;
   }
 
-  .burger.burger-visible {
+  /*.burger.burger-visible {*/
     /*opacity: 1;*/
     /*visibility: visible;*/
-  }
+  /*}*/
 
   .burger__container {
     position: absolute;
