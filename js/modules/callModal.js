@@ -27,7 +27,6 @@ export const callModalHandler = ($) => {
   };
 
   callOverlay.addEventListener('click', ({target}) => {
-    console.log(' : ', closeBtn.className);
     if (!target.closest('.call') || target === closeBtn) {
       callOverlay.classList.remove('is-visible');
       toggleModalVisible(false);
