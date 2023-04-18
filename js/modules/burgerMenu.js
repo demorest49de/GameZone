@@ -9,13 +9,6 @@ const initBurgerMenuVars = () => {
 
 let {opacity, visibility} = initBurgerMenuVars();
 
-export const changeVisibility = ($) => {
-  visibility = !visibility;
-  $.burgerOverlay.style.visibility = `${visibility ? 'visible' : 'hidden'}`;
-};
-
-
-
 const isBurgeMenuVisible = ($) => {
   $.burgerBtn.style.backgroundSize = `contain`;
   $.burgerBtn.style.backgroundRepeat = `no-repeat`;
@@ -28,6 +21,12 @@ const isBurgeMenuVisible = ($) => {
   } else {
     $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
   }
+};
+
+export const changeVisibility = ($) => {
+  visibility = !visibility;
+  $.burgerOverlay.style.visibility = `${visibility ? 'visible' : 'hidden'}`;
+  isBurgeMenuVisible($);
 };
 
 export const toggleMenuHandler = ($) => {

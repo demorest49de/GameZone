@@ -14,7 +14,7 @@ import {vars} from './modules/mainVars.js';
     const $ = vars();
 
     accordionHelper();
-    callModalHandler();
+    callModalHandler($);
     burgerMenuClickHandler($);
     headerClickHandler($);
     toggleMenuHandler($);
