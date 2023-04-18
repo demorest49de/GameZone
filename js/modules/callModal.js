@@ -1,3 +1,5 @@
+import {changeVisibility} from './burgerMenu.js';
+
 export const callModalHandler = () => {
   const toggleModalVisible = (isActive) => {
     document.body.style.overflow = isActive ? 'hidden' : 'visible';
@@ -20,6 +22,7 @@ export const callModalHandler = () => {
 
   const handleCallBtns = () => {
     const isActive = callOverlay.classList.toggle('is-visible');
+    changeVisibility();
     toggleModalVisible(isActive && screen.width > screenWidthForScroll);
   };
 

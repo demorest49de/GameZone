@@ -6,10 +6,8 @@ import {
   createBurgerMenu,
 } from '../modules/create.js';
 
-export const renderGO = ($) => {
-  const app = document.querySelector($.selectorApp);
-
-
+export const renderGO = (selectorApp) => {
+  const app = document.querySelector(selectorApp);
   const header = createHeader();
   const main = createMain();
   const footer = createFooter();
