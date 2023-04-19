@@ -3,7 +3,7 @@ const initBurgerMenuVars = () => {
   let visibility = false;
   const opacityStep = 0.15;
   let startTime = NaN;
-  const durationOpacity = 1500;
+  const durationOpacity = 500;
   return {
     opacity, visibility, opacityStep, startTime, durationOpacity
   };
@@ -35,33 +35,27 @@ export const toggleMenuHandler = ($) => {
     changeVisibility($);
     let id = 0;
     const toggleHandler = (timestamp) => {
+      // startTime ||= timestamp; /// if visibility === false
+      // у меня почему startime здесь в перый раз становиться равным еденице, на след вызове рекурсии он выдает нормальное значение timestamp
       startTime ||= timestamp;
-
+      console.log(' : ',startTime);
       const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
 
-      console.log(' progress: ', progress);
       if (visibility && progress <= 1) {
         $.burgerOverlay.style.opacity = progress;
-        console.log(' startTime: ', startTime);
-        console.log(' timestamp: ', timestamp);
         id = requestAnimationFrame(toggleHandler);
       }
 
-      if (!visibility && progress > 0) {
-        startTime = $.burgerOverlay.style.opacity = 1 - progress;
-        console.log(' : ', 1 - progress);
+      if (!visibility && progress >= 0) {
+        $.burgerOverlay.style.opacity = 1 - progress;
         id = requestAnimationFrame(toggleHandler);
       }
 
-      if (progress >= 1 || progress < 0) {
+      if (progress > 1 || progress < 0) {
         startTime = NaN;
-        console.log(' : ', startTime);
         cancelAnimationFrame(id);
+        console.log(' : ', startTime);
       }
-
-      // setTimeout(() => {
-      //   visibility ? $.burgerOverlay.style.opacity = 1 : $.burgerOverlay.style.opacity = 0;
-      // }, durationOpacity);
     };
 
     requestAnimationFrame(toggleHandler);
