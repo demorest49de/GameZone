@@ -10,7 +10,7 @@ const initBurgerMenuVars = () => {
 };
 
 let {opacity, visibility, opacityStep, startTime, durationOpacity} = initBurgerMenuVars();
-
+console.log(' : ', visibility);
 const isBurgeMenuVisible = ($) => {
   $.burgerBtn.style.backgroundSize = `contain`;
   $.burgerBtn.style.backgroundRepeat = `no-repeat`;
@@ -20,8 +20,10 @@ const isBurgeMenuVisible = ($) => {
 //raf
   if (visibility) {
     $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
+    $.burgerBtn.classList.add('header__burger-close-btn');
   } else {
     $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
+    $.burgerBtn.classList.remove('header__burger-close-btn');
   }
 };
 
@@ -31,14 +33,12 @@ export const changeVisibility = ($) => {
 
 export const toggleMenuHandler = ($) => {
 
-  $.burgerBtn.addEventListener('click', () => {
+  $.burgerBtn.addEventListener("click", () => {
     changeVisibility($);
     let id = 0;
     const toggleHandler = (timestamp) => {
-      // startTime ||= timestamp; /// if visibility === false
-      // у меня почему startime здесь в перый раз становиться равным еденице, на след вызове рекурсии он выдает нормальное значение timestamp
       startTime ||= timestamp;
-      console.log(' : ',startTime);
+      console.log(' : ', startTime);
       const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
 
       if (visibility && progress <= 1) {
@@ -47,7 +47,7 @@ export const toggleMenuHandler = ($) => {
       }
 
       if (!visibility && progress >= 0) {
-        $.burgerOverlay.style.opacity = 1 - progress;
+        startTime = $.burgerOverlay.style.opacity = 1 - progress;
         id = requestAnimationFrame(toggleHandler);
       }
 
@@ -77,6 +77,26 @@ export const headerClickHandler = ($) => {
     if (target !== target.closest('.header__burger-button')) {
       changeVisibility($);
       isBurgeMenuVisible($);
+    }
+  });
+};
+
+export const mouseOverHandler = ($) => {
+  $.burgerBtn.addEventListener("mouseover", ({target}) => {
+    if (target.closest('.header__burger-close-btn')) {
+      $.burgerBtn.style.backgroundImage = `url(../img/header/close-hover.svg)`;
+    } else {
+      $.burgerBtn.style.backgroundImage = `url(../img/header/menu-hover.svg)`;
+    }
+  });
+};
+
+export const mouseOutHandler = ($) => {
+  $.burgerBtn.addEventListener("mouseout", ({target}) => {
+    if (target.closest('.header__burger-close-btn')) {
+      $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
+    } else {
+      $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
     }
   });
 };

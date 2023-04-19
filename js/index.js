@@ -4,7 +4,9 @@ import {callModalHandler} from './modules/callModal.js';
 import {
   headerClickHandler,
   burgerMenuClickHandler,
-  toggleMenuHandler
+  toggleMenuHandler,
+  mouseOverHandler,
+  mouseOutHandler,
 } from './modules/burgerMenu.js';
 import {vars} from './modules/mainVars.js';
 
@@ -18,6 +20,8 @@ import {vars} from './modules/mainVars.js';
     burgerMenuClickHandler($);
     headerClickHandler($);
     toggleMenuHandler($);
+    mouseOverHandler($);
+    mouseOutHandler($);
   };
 
   window.goInit = init;

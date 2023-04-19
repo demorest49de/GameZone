@@ -126,6 +126,26 @@
     transition: all .5s ease-in-out;
   }
 
+  /*.header__burger-button:hover{*/
+  /*  background-image: url("../img/header/menu-hover.svg");*/
+  /*}*/
+
+  .header__burger-button:active{
+    background-image: url("../img/header/menu-active.svg");
+  }
+
+  .header__burger-button:focus{
+    background-image: url("../img/header/menu-focus.svg");
+  }
+
+  .header__burger-close-btn-active{
+    background-image: url("../img/header/menu-active.svg");
+  }
+
+  .header__burger-close-btn-focus{
+    background-image: url("../img/header/menu-focus.svg");
+  }
+
   .header__menu {
     display: none;
   }
