@@ -5,11 +5,7 @@ const initBurgerMenuVars = () => {
   let startTime = NaN;
   const durationOpacity = 1500;
   return {
-    opacity,
-    visibility,
-    opacityStep,
-    startTime,
-    durationOpacity
+    opacity, visibility, opacityStep, startTime, durationOpacity
   };
 };
 
@@ -32,37 +28,40 @@ const isBurgeMenuVisible = ($) => {
 export const changeVisibility = ($) => {
   visibility = !visibility;
 };
-let endtime = NaN;
-let diff = NaN;
+
 export const toggleMenuHandler = ($) => {
-  // $.burgerOverlay.style.opacity = opacity;
 
   $.burgerBtn.addEventListener('click', () => {
     changeVisibility($);
-
+    let id = 0;
     const toggleHandler = (timestamp) => {
       startTime ||= timestamp;
-      endtime ||= startTime + 1000;
-      diff = (endtime -startTime)/1000;
-      console.log(' : ',endtime -startTime);
-      const progress = (timestamp - startTime) / durationOpacity;
+
+      const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
 
       console.log(' progress: ', progress);
-
-      if (visibility && progress < diff) {
+      if (visibility && progress <= 1) {
         $.burgerOverlay.style.opacity = progress;
-        requestAnimationFrame(toggleHandler);
-      } else if (!visibility && progress > 0) {
-        endtime = NaN;
-        diff = NaN;
-        $.burgerOverlay.style.opacity = (diff) - progress;
-
-        requestAnimationFrame(toggleHandler);
+        console.log(' startTime: ', startTime);
+        console.log(' timestamp: ', timestamp);
+        id = requestAnimationFrame(toggleHandler);
       }
 
-      setTimeout(() => {
-        visibility ? $.burgerOverlay.style.opacity = 1 : $.burgerOverlay.style.opacity = 0;
-      }, durationOpacity);
+      if (!visibility && progress > 0) {
+        startTime = $.burgerOverlay.style.opacity = 1 - progress;
+        console.log(' : ', 1 - progress);
+        id = requestAnimationFrame(toggleHandler);
+      }
+
+      if (progress >= 1 || progress < 0) {
+        startTime = NaN;
+        console.log(' : ', startTime);
+        cancelAnimationFrame(id);
+      }
+
+      // setTimeout(() => {
+      //   visibility ? $.burgerOverlay.style.opacity = 1 : $.burgerOverlay.style.opacity = 0;
+      // }, durationOpacity);
     };
 
     requestAnimationFrame(toggleHandler);
@@ -72,9 +71,7 @@ export const toggleMenuHandler = ($) => {
 
 export const burgerMenuClickHandler = ($) => {
   $.burgerOverlay.addEventListener('click', ({target}) => {
-    if (target === target.closest('.burger__link') ||
-      target === $.burgerOverlay ||
-      target === $.burgerCalllBtn) {
+    if (target === target.closest('.burger__link') || target === $.burgerOverlay || target === $.burgerCalllBtn) {
       changeVisibility($);
       isBurgeMenuVisible($);
     }
