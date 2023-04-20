@@ -11,7 +11,7 @@ const initBurgerMenuVars = () => {
 
 let {opacity, visibility, opacityStep, startTime, durationOpacity} = initBurgerMenuVars();
 
-const isBurgeMenuVisible = ($) => {
+const burgeMenuIconHandler = ($) => {
   $.burgerBtn.style.backgroundSize = `contain`;
   $.burgerBtn.style.backgroundRepeat = `no-repeat`;
   $.burgerBtn.style.backgroundPosition = `center`;
@@ -31,45 +31,50 @@ export const changeVisibility = ($) => {
   visibility = !visibility;
 };
 
-export const toggleMenuHandler = ($) => {
+const toggleMenuHandler = ($) => {
+  changeVisibility($);
+  let id = 0;
+  const toggleHandler = (timestamp) => {
+    startTime ||= timestamp;
+    console.log(' : ', startTime);
+    const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
 
-  $.burgerBtn.addEventListener("click", ({target}) => {
+    if (visibility && progress <= 1) {
+      $.burgerOverlay.style.opacity = progress;
+      id = requestAnimationFrame(toggleHandler);
+    }
 
-    changeVisibility($);
-    let id = 0;
-    const toggleHandler = (timestamp) => {
-      startTime ||= timestamp;
+    if (!visibility && progress >= 0) {
+      startTime = $.burgerOverlay.style.opacity = 1 - progress;
+      id = requestAnimationFrame(toggleHandler);
+    }
+
+    if (progress > 1 || progress < 0) {
+      startTime = NaN;
+      cancelAnimationFrame(id);
       console.log(' : ', startTime);
-      const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
+    }
+  };
 
-      if (visibility && progress <= 1) {
-        $.burgerOverlay.style.opacity = progress;
-        id = requestAnimationFrame(toggleHandler);
-      }
+  requestAnimationFrame(toggleHandler);
+  burgeMenuIconHandler($);
+};
 
-      if (!visibility && progress >= 0) {
-        startTime = $.burgerOverlay.style.opacity = 1 - progress;
-        id = requestAnimationFrame(toggleHandler);
-      }
 
-      if (progress > 1 || progress < 0) {
-        startTime = NaN;
-        cancelAnimationFrame(id);
-        console.log(' : ', startTime);
-      }
-    };
-
-    requestAnimationFrame(toggleHandler);
-    isBurgeMenuVisible($);
+export const burgerBtnClickHandler = ($) => {
+  $.burgerBtn.addEventListener("click", () => {
+    toggleMenuHandler($);
   });
 };
 
 
-export const burgerMenuClickHandler = ($) => {
+export const burgerMenuOutsideClickHandler = ($) => {
   $.burgerOverlay.addEventListener('click', ({target}) => {
     if (target === target.closest('.burger__link') || target === $.burgerOverlay || target === $.burgerCalllBtn) {
-      changeVisibility($);
-      isBurgeMenuVisible($);
+      console.log(' : ', target);
+      // changeVisibility($);
+      // burgeMenuIconHandler($);
+      toggleMenuHandler($);
     }
   });
 };
@@ -77,8 +82,9 @@ export const burgerMenuClickHandler = ($) => {
 export const headerClickHandler = ($) => {
   $.header.addEventListener('click', ({target}) => {
     if (target !== target.closest('.header__burger-button')) {
-      changeVisibility($);
-      isBurgeMenuVisible($);
+      // changeVisibility($);
+      // burgeMenuIconHandler($);
+      toggleMenuHandler($);
     }
   });
 };
