@@ -5,8 +5,7 @@ import {
   headerClickHandler,
   burgerMenuClickHandler,
   toggleMenuHandler,
-  mouseOverHandler,
-  mouseOutHandler,
+  mouseHoverActiveFocusHandler,
 } from './modules/burgerMenu.js';
 import {vars} from './modules/mainVars.js';
 
@@ -20,8 +19,7 @@ import {vars} from './modules/mainVars.js';
     burgerMenuClickHandler($);
     headerClickHandler($);
     toggleMenuHandler($);
-    mouseOverHandler($);
-    mouseOutHandler($);
+    mouseHoverActiveFocusHandler($);
   };
 
   window.goInit = init;
