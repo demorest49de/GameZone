@@ -1,15 +1,13 @@
 const initBurgerMenuVars = () => {
-  let opacity = 0;
   let visibility = false;
-  const opacityStep = 0.15;
   let startTime = NaN;
-  const durationOpacity = 500;
+  const durationOpacity = 300;
   return {
-    opacity, visibility, opacityStep, startTime, durationOpacity
+    visibility, startTime, durationOpacity
   };
 };
 
-let {opacity, visibility, opacityStep, startTime, durationOpacity} = initBurgerMenuVars();
+let {visibility, startTime, durationOpacity} = initBurgerMenuVars();
 
 const burgeMenuIconHandler = ($) => {
   $.burgerBtn.style.backgroundSize = `contain`;
@@ -60,33 +58,32 @@ const toggleMenuHandler = ($) => {
   burgeMenuIconHandler($);
 };
 
-
-export const burgerBtnClickHandler = ($) => {
-  $.burgerBtn.addEventListener("click", () => {
-    toggleMenuHandler($);
-  });
-};
-
-
-export const burgerMenuOutsideClickHandler = ($) => {
-  $.burgerOverlay.addEventListener('click', ({target}) => {
-    if (target === target.closest('.burger__link') || target === $.burgerOverlay || target === $.burgerCalllBtn) {
-      console.log(' : ', target);
-      // changeVisibility($);
-      // burgeMenuIconHandler($);
+export const burgerMenuClickHandler = ($) => {
+  const burgerBtnClickHandler = ($) => {
+    $.burgerBtn.addEventListener("click", () => {
       toggleMenuHandler($);
-    }
-  });
-};
+    });
+  };
 
-export const headerClickHandler = ($) => {
-  $.header.addEventListener('click', ({target}) => {
-    if (target !== target.closest('.header__burger-button')) {
-      // changeVisibility($);
-      // burgeMenuIconHandler($);
-      toggleMenuHandler($);
-    }
-  });
+
+  const burgerMenuOutsideClickHandler = ($) => {
+    $.burgerOverlay.addEventListener('click', ({target}) => {
+      if (target === target.closest('.burger__link') || target === $.burgerOverlay || target === $.burgerCalllBtn) {
+        toggleMenuHandler($);
+      }
+    });
+  };
+
+  const headerClickHandler = ($) => {
+    $.header.addEventListener('click', ({target}) => {
+      if (target !== target.closest('.header__burger-button')) {
+        toggleMenuHandler($);
+      }
+    });
+  };
+  burgerBtnClickHandler($);
+  burgerMenuOutsideClickHandler($);
+  headerClickHandler($);
 };
 
 
