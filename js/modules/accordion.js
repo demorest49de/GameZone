@@ -12,7 +12,6 @@ export const accordionHelper = () => {
         heightWrapper = heightNumber;
       }
     });
-    console.log(' : ', heightWrapper);
     return heightWrapper;
   };
 

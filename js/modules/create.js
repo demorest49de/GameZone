@@ -463,6 +463,7 @@ export const createMain = () => {
 export const createFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('contacts');
+  footer.id = 'contacts';
   footer.insertAdjacentHTML('beforeend', `
     <div class="container contacts__container">
       <h2 class="subtitle contacts__subtitle">Контакты</h2>

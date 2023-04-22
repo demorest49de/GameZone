@@ -25,16 +25,22 @@ const burgeMenuIconHandler = ($) => {
   }
 };
 
-export const changeVisibility = ($) => {
+const changeVisibility = ($, isVisibilityOff = null) => {
+  if (isVisibilityOff) {
+    visibility = false;
+    return;
+  }
   visibility = !visibility;
 };
 
-const toggleMenuHandler = ($) => {
-  changeVisibility($);
+const toggleMenuHandler = ($, isVisibilityOff = null) => {
+  if (isVisibilityOff && !visibility) return;
+  changeVisibility($, isVisibilityOff);
   let id = 0;
+
   const toggleHandler = (timestamp) => {
     startTime ||= timestamp;
-    console.log(' : ', startTime);
+    // console.log(' : ', startTime);
     const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
 
     if (visibility && progress <= 1) {
@@ -50,9 +56,19 @@ const toggleMenuHandler = ($) => {
     if (progress > 1 || progress < 0) {
       startTime = NaN;
       cancelAnimationFrame(id);
-      console.log(' : ', startTime);
+      // console.log(' : ', startTime);
     }
   };
+
+  if (!visibility) {
+    setTimeout(() => {
+      $.burgerOverlay.style.display = 'none';
+    }, durationOpacity);
+  } else {
+    setTimeout(() => {
+      $.burgerOverlay.style.display = 'block';
+    }, durationOpacity);
+  }
 
   requestAnimationFrame(toggleHandler);
   burgeMenuIconHandler($);
@@ -65,11 +81,10 @@ export const burgerMenuClickHandler = ($) => {
     });
   };
 
-
   const burgerMenuOutsideClickHandler = ($) => {
     $.burgerOverlay.addEventListener('click', ({target}) => {
       if (target === target.closest('.burger__link') || target === $.burgerOverlay || target === $.burgerCalllBtn) {
-        toggleMenuHandler($);
+        toggleMenuHandler($, true);
       }
     });
   };
@@ -77,7 +92,7 @@ export const burgerMenuClickHandler = ($) => {
   const headerClickHandler = ($) => {
     $.header.addEventListener('click', ({target}) => {
       if (target !== target.closest('.header__burger-button')) {
-        toggleMenuHandler($);
+        toggleMenuHandler($, true);
       }
     });
   };
@@ -139,8 +154,19 @@ export const mouseHoverActiveFocusHandler = ($) => {
     });
   };
 
+  //focus
+  const mouseBlurHandler = ($) => {
+    $.burgerBtn.addEventListener("blur", ({target}) => {
+      if (target.closest('.header__burger-close-btn')) {
+        target.style.backgroundImage = `url(../img/header/close.svg)`;
+      } else {
+        target.style.backgroundImage = `url(../img/header/menu.svg)`;
+      }
+    });
+  };
+
   mouseOutOverHandler($);
   mouseUpDownHandler($);
-  // TODO check focus handler
   mouseFocusHandler($);
+  mouseBlurHandler($);
 };
