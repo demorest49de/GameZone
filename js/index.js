@@ -16,7 +16,6 @@ import {vars} from './modules/mainVars.js';
     callModalHandler($);
     burgerMenuClickHandler($);
     mouseHoverActiveFocusHandler($);
-
   };
 
   window.goInit = init;

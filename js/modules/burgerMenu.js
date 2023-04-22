@@ -1,16 +1,16 @@
 const initBurgerMenuVars = () => {
-  let visibility = false;
-  let startTimeBurgerMenu = NaN;
-  let startTimeBurgerLink = NaN;
+  const visibility = false;
+  const startTimeBurgerMenu = NaN;
+  const startTimeBurgerLink = NaN;
   const durationOpacity = 400;
   return {
-    visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity
+    visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity,
   };
 };
 
 let {visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity} = initBurgerMenuVars();
 
-const burgeMenuIconHandler = ($) => {
+const burgerMenuIconHandler = ($) => {
   $.burgerBtn.style.backgroundSize = `contain`;
   $.burgerBtn.style.backgroundRepeat = `no-repeat`;
   $.burgerBtn.style.backgroundPosition = `center`;
@@ -46,12 +46,12 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
 
     if (visibility && progress <= 1) {
       // console.log(' progress: ', progress);
-      $.burgerOverlay.style.opacity = progress;
+      $.burgerOverlay.style.opacity = progress.toString();
       rafId = requestAnimationFrame(toggleHandler);
     }
 
     if (!visibility && progress >= 0) {
-      $.burgerOverlay.style.opacity = +(1 - progress).toFixed(1);
+      $.burgerOverlay.style.opacity = (1 - progress).toFixed(1);
       // console.log($.burgerOverlay.style.opacity);
       rafId = requestAnimationFrame(toggleHandler);
     }
@@ -72,29 +72,32 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
   }
 
   requestAnimationFrame(toggleHandler);
-  burgeMenuIconHandler($);
+  burgerMenuIconHandler($);
 };
 
 const blinkingDuration = 600;
 
 const animateBurgerLinkClick = ($, target) => {
   const burgerLink = target;
-  let rafId = 0;
+  const rafId = 0;
   let isBlinking = false;
   const colorNone = 'rgba(0, 0, 0, 0)';
-
+  burgerLink.style.transition = `all .3s ease-in-out`;
   const animateLinkHandler = (timestamp) => {
     startTimeBurgerLink ||= timestamp;
 
     const progress = +((timestamp - startTimeBurgerLink) / blinkingDuration).toFixed(2);
 
-    const backgrColorActive = '#CD06FF';
-    burgerLink.style.backgroundColor = backgrColorActive;
+    const backgroundColorActive = '#CD06FF';
+    burgerLink.style.backgroundColor = backgroundColorActive;
     isBlinking = !isBlinking;
 
     if (progress <= 1) {
-      isBlinking ? burgerLink.style.backgroundColor = colorNone : burgerLink.style.backgroundColor = backgrColorActive;
-      setTimeout(()=>{requestAnimationFrame(animateLinkHandler)}, 50);
+      isBlinking ? burgerLink.style.backgroundColor =
+        colorNone : burgerLink.style.backgroundColor = backgroundColorActive;
+      setTimeout(() => {
+        requestAnimationFrame(animateLinkHandler);
+      }, 70);
     }
 
     if (progress > 1) {
@@ -111,8 +114,8 @@ const animateBurgerLinkClick = ($, target) => {
 
 export const burgerMenuClickHandler = ($) => {
   const burgerBtnClickHandler = ($) => {
-    $.burgerBtn.addEventListener("click", () => {
-      toggleMenuHandler($,);
+    $.burgerBtn.addEventListener('click', () => {
+      toggleMenuHandler($);
     });
   };
 
@@ -133,7 +136,7 @@ export const burgerMenuClickHandler = ($) => {
         }, blinkingDuration);
       }
 
-      if (target === $.burgerOverlay || target === $.burgerCalllBtn) {
+      if (target === $.burgerOverlay || target === $.burgerCallBtn) {
         toggleMenuHandler($, true);
       }
     });
@@ -152,9 +155,9 @@ export const burgerMenuClickHandler = ($) => {
 };
 
 export const mouseHoverActiveFocusHandler = ($) => {
-//hover
+// hover
   const mouseOutOverHandler = ($) => {
-    $.burgerBtn.addEventListener("mouseover", ({target}) => {
+    $.burgerBtn.addEventListener('mouseover', ({target}) => {
       if (target.closest('.header__burger-close-btn')) {
         $.burgerBtn.style.backgroundImage = `url(../img/header/close-hover.svg)`;
       } else {
@@ -162,7 +165,7 @@ export const mouseHoverActiveFocusHandler = ($) => {
       }
     });
 
-    $.burgerBtn.addEventListener("mouseout", ({target}) => {
+    $.burgerBtn.addEventListener('mouseout', ({target}) => {
       if (target.closest('.header__burger-close-btn')) {
         $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
       } else {
@@ -171,10 +174,9 @@ export const mouseHoverActiveFocusHandler = ($) => {
     });
   };
 
-  //active
+  // active
   const mouseUpDownHandler = ($) => {
-
-    $.burgerBtn.addEventListener("mouseup", ({target}) => {
+    $.burgerBtn.addEventListener('mouseup', ({target}) => {
       if (target.closest('.header__burger-close-btn')) {
         $.burgerBtn.style.backgroundImage = `url(../img/header/close-active.svg)`;
       } else {
@@ -182,8 +184,7 @@ export const mouseHoverActiveFocusHandler = ($) => {
       }
     });
 
-    $.burgerBtn.addEventListener("mousedown", ({target}) => {
-
+    $.burgerBtn.addEventListener('mousedown', ({target}) => {
       if (target.closest('.header__burger-close-btn')) {
         $.burgerBtn.style.backgroundImage = `url(../img/header/close-active.svg)`;
       } else {
@@ -192,9 +193,9 @@ export const mouseHoverActiveFocusHandler = ($) => {
     });
   };
 
-  //focus
+  // focus
   const mouseFocusHandler = ($) => {
-    $.burgerBtn.addEventListener("focus", ({target}) => {
+    $.burgerBtn.addEventListener('focus', ({target}) => {
       if (target.closest('.header__burger-close-btn')) {
         target.style.backgroundImage = `url(../img/header/close-focus.svg)`;
       } else {
@@ -203,9 +204,9 @@ export const mouseHoverActiveFocusHandler = ($) => {
     });
   };
 
-  //focus
+  // focus
   const mouseBlurHandler = ($) => {
-    $.burgerBtn.addEventListener("blur", ({target}) => {
+    $.burgerBtn.addEventListener('blur', ({target}) => {
       if (target.closest('.header__burger-close-btn')) {
         target.style.backgroundImage = `url(../img/header/close.svg)`;
       } else {

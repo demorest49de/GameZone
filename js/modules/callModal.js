@@ -12,11 +12,11 @@ export const callModalHandler = ($) => {
   const closeBtn = callOverlay.querySelector('.call__close-btn');
   const screenWidthForScroll = 1024;
 
-  modalCalllBtn.addEventListener("click", () => {
+  modalCalllBtn.addEventListener('click', () => {
     handleCallBtns();
   });
 
-  burgerCalllBtn.addEventListener("click", () => {
+  burgerCalllBtn.addEventListener('click', () => {
     handleCallBtns();
   });
 

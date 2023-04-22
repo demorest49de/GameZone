@@ -1,12 +1,12 @@
 export const accordionHelper = () => {
-
   const updateHeightWrapper = () => {
     let heightWrapper = 0;
     const textWrapper = document.querySelectorAll('.faq__item-wrapper');
 
 
     textWrapper.forEach(item => {
-      const itemHeight = getComputedStyle(item.querySelector('.faq__text'), "").height;
+      const itemHeight = getComputedStyle(item.querySelector('.faq__text'),
+          '').height;
       const heightNumber = +(itemHeight.slice(0, -2));
       if (heightNumber > heightWrapper) {
         heightWrapper = heightNumber;
@@ -20,7 +20,8 @@ export const accordionHelper = () => {
     window.addEventListener('resize', () => {
       const heightWrapper = updateHeightWrapper();
       if (itemActive[0]) {
-        itemActive[0].querySelector('.faq__item-wrapper').style.height = `${heightWrapper}px`;
+        itemActive[0].querySelector('.faq__item-wrapper')
+            .style.height = `${heightWrapper}px`;
       }
     });
   };
@@ -29,7 +30,6 @@ export const accordionHelper = () => {
     const list = document.querySelector('.faq__list');
     const itemActive = document.getElementsByClassName('faq__item_active');
     list.addEventListener('click', ({target}) => {
-
       if (itemActive[0] && itemActive[0] !== target.closest('.faq__item')) {
         itemActive[0].querySelector('.faq__item-wrapper').style.height = '0';
 
@@ -37,7 +37,6 @@ export const accordionHelper = () => {
       }
 
       if (target.closest('.faq__button')) {
-
         const item = target.closest('.faq__item');
         const isActive = item.classList.toggle('faq__item_active');
         const txtWrapper = item.querySelector('.faq__item-wrapper');
@@ -58,21 +57,5 @@ export const accordionHelper = () => {
   faqWrapperResize();
   accordionClick();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
