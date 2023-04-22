@@ -75,7 +75,7 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
   burgeMenuIconHandler($);
 };
 
-const blinkingDuration = 800;
+const blinkingDuration = 600;
 
 const animateBurgerLinkClick = ($, target) => {
   const burgerLink = target;
@@ -94,7 +94,7 @@ const animateBurgerLinkClick = ($, target) => {
 
     if (progress <= 1) {
       isBlinking ? burgerLink.style.backgroundColor = colorNone : burgerLink.style.backgroundColor = backgrColorActive;
-      setTimeout(()=>{requestAnimationFrame(animateLinkHandler)}, 100);
+      setTimeout(()=>{requestAnimationFrame(animateLinkHandler)}, 50);
     }
 
     if (progress > 1) {
