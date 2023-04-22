@@ -1,7 +1,7 @@
 const initBurgerMenuVars = () => {
   let visibility = false;
   let startTime = NaN;
-  const durationOpacity = 300;
+  const durationOpacity = 700;
   return {
     visibility, startTime, durationOpacity
   };
@@ -40,23 +40,28 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
 
   const toggleHandler = (timestamp) => {
     startTime ||= timestamp;
-    // console.log(' : ', startTime);
+    console.log(' startTime: ', startTime);
     const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
 
     if (visibility && progress <= 1) {
+      console.log(' timestamp: ', timestamp);
+      console.log(' progress: ', progress);
       $.burgerOverlay.style.opacity = progress;
       id = requestAnimationFrame(toggleHandler);
     }
 
     if (!visibility && progress >= 0) {
-      startTime = $.burgerOverlay.style.opacity = 1 - progress;
+      console.log(' timestamp: ', timestamp);
+      console.log(' progress: ', progress);
+      console.log('1 - progress: ', 1 - progress);
+      $.burgerOverlay.style.opacity = 1 - progress;
       id = requestAnimationFrame(toggleHandler);
     }
 
     if (progress > 1 || progress < 0) {
       startTime = NaN;
       cancelAnimationFrame(id);
-      // console.log(' : ', startTime);
+      console.log(' NaN startTime: ', startTime);
     }
   };
 
@@ -65,9 +70,7 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
       $.burgerOverlay.style.display = 'none';
     }, durationOpacity);
   } else {
-    setTimeout(() => {
       $.burgerOverlay.style.display = 'block';
-    }, durationOpacity);
   }
 
   requestAnimationFrame(toggleHandler);
