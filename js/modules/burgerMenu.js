@@ -83,11 +83,12 @@ const animateBurgerLinkClick = ($, target) => {
   let rafId = 0;
   let isBlinking = false;
   const colorNone = 'rgba(0, 0, 0, 0)';
+
   const animateLinkHandler = (timestamp) => {
     startTimeBurgerLink ||= timestamp;
 
     const progress = +((timestamp - startTimeBurgerLink) / blinkingDuration).toFixed(2);
-    console.log(' : ', progress);
+    // console.log(' : ', progress);
 
     const backgrColorActive = '#CD06FF';
     burgerLink.style.backgroundColor = backgrColorActive;
@@ -121,13 +122,17 @@ export const burgerMenuClickHandler = ($) => {
     $.burgerOverlay.addEventListener('click', (ev) => {
       const target = ev.target;
       ev.stopPropagation();
+      const targetHref = target.href;
       target.href = `#`;
       if (target === target.closest('.burger__link')) {
         animateBurgerLinkClick($, target);
-        setTimeout(()=>{
+        setTimeout(() => {
           toggleMenuHandler($, true);
-        }, blinkingDuration)
-
+          target.href = targetHref;
+          const elemId = targetHref.slice((targetHref.lastIndexOf('#')), targetHref.length);
+          const elem = document.querySelector(`${elemId}`);
+          elem.scrollIntoView();
+        }, blinkingDuration);
       }
 
       if (target === $.burgerOverlay || target === $.burgerCalllBtn) {
