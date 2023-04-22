@@ -1,13 +1,14 @@
 const initBurgerMenuVars = () => {
   let visibility = false;
-  let startTime = NaN;
-  const durationOpacity = 500;
+  let startTimeBurgerMenu = NaN;
+  let startTimeBurgerLink = NaN;
+  const durationOpacity = 400;
   return {
-    visibility, startTime, durationOpacity
+    visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity
   };
 };
 
-let {visibility, startTime, durationOpacity} = initBurgerMenuVars();
+let {visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity} = initBurgerMenuVars();
 
 const burgeMenuIconHandler = ($) => {
   $.burgerBtn.style.backgroundSize = `contain`;
@@ -36,55 +37,100 @@ const changeVisibility = ($, isVisibilityOff = null) => {
 const toggleMenuHandler = ($, isVisibilityOff = null) => {
   if (isVisibilityOff && !visibility) return;
   changeVisibility($, isVisibilityOff);
-  let id = 0;
+  let rafId = 0;
 
   const toggleHandler = (timestamp) => {
-    startTime ||= timestamp;
-        const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
-    console.log(' progress before if condition enter: ',progress);
+    startTimeBurgerMenu ||= timestamp;
+    const progress = +((timestamp - startTimeBurgerMenu) / durationOpacity).toFixed(2);
+    // console.log(' progress before if condition enter: ', progress);
+
     if (visibility && progress <= 1) {
-      // console.log(' timestamp: ', timestamp);
-      console.log(' progress: ', progress);
+      // console.log(' progress: ', progress);
       $.burgerOverlay.style.opacity = progress;
-      id = requestAnimationFrame(toggleHandler);
+      rafId = requestAnimationFrame(toggleHandler);
     }
 
     if (!visibility && progress >= 0) {
-      // console.log(' timestamp: ', timestamp);
-      console.log('1 - progress: ', 1 - progress);
-      $.burgerOverlay.style.opacity = 1 - progress;
-      id = requestAnimationFrame(toggleHandler);
+      $.burgerOverlay.style.opacity = +(1 - progress).toFixed(1);
+      // console.log($.burgerOverlay.style.opacity);
+      rafId = requestAnimationFrame(toggleHandler);
     }
 
     if (progress > 1 || progress < 0) {
-      startTime = NaN;
-      cancelAnimationFrame(id);
-      console.log(' NaN startTime: ', startTime);
+      startTimeBurgerMenu = NaN;
+      cancelAnimationFrame(rafId);
+      // console.log(' NaN startTime: ', startTime);
     }
   };
 
   if (!visibility) {
     setTimeout(() => {
       $.burgerOverlay.style.display = 'none';
-    }, durationOpacity);
+    }, durationOpacity * 2);
   } else {
-      $.burgerOverlay.style.display = 'block';
+    $.burgerOverlay.style.display = 'block';
   }
 
   requestAnimationFrame(toggleHandler);
   burgeMenuIconHandler($);
 };
 
+const blinkingDuration = 1500;
+const blinkingRate = 100;
+
+const animateBurgerLinkClick = ($, target) => {
+  const burgerLink = target;
+  let rafId = 0;
+  let isBlinking = false;
+  const colorNone = 'rgba(0, 0, 0, 0)';
+  const animateLinkHandler = (timestamp) => {
+    startTimeBurgerLink ||= timestamp;
+
+    const progress = +((timestamp - startTimeBurgerLink) / blinkingDuration).toFixed(2);
+    console.log(' : ', progress);
+
+    const backgrColorActive = '#CD06FF';
+    burgerLink.style.backgroundColor = backgrColorActive;
+    isBlinking = !isBlinking;
+
+    if (progress <= 1) {
+      isBlinking ? burgerLink.style.backgroundColor = colorNone : burgerLink.style.backgroundColor = backgrColorActive;
+      rafId = requestAnimationFrame(animateLinkHandler);
+    }
+
+    if (progress > 1) {
+      startTimeBurgerLink = NaN;
+      cancelAnimationFrame(rafId);
+    }
+
+    setTimeout(() => {
+      burgerLink.style.backgroundColor = colorNone;
+    }, blinkingDuration * 2);
+  };
+  requestAnimationFrame(animateLinkHandler);
+};
+
 export const burgerMenuClickHandler = ($) => {
   const burgerBtnClickHandler = ($) => {
     $.burgerBtn.addEventListener("click", () => {
-      toggleMenuHandler($);
+      toggleMenuHandler($,);
     });
   };
 
   const burgerMenuOutsideClickHandler = ($) => {
-    $.burgerOverlay.addEventListener('click', ({target}) => {
-      if (target === target.closest('.burger__link') || target === $.burgerOverlay || target === $.burgerCalllBtn) {
+    $.burgerOverlay.addEventListener('click', (ev) => {
+      const target = ev.target;
+      ev.stopPropagation();
+      target.href = `#`;
+      if (target === target.closest('.burger__link')) {
+        animateBurgerLinkClick($, target);
+        setTimeout(()=>{
+          toggleMenuHandler($, true);
+        }, blinkingDuration)
+
+      }
+
+      if (target === $.burgerOverlay || target === $.burgerCalllBtn) {
         toggleMenuHandler($, true);
       }
     });
@@ -101,7 +147,6 @@ export const burgerMenuClickHandler = ($) => {
   burgerMenuOutsideClickHandler($);
   headerClickHandler($);
 };
-
 
 export const mouseHoverActiveFocusHandler = ($) => {
 //hover
