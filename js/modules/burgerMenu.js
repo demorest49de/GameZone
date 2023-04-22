@@ -75,8 +75,7 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
   burgeMenuIconHandler($);
 };
 
-const blinkingDuration = 1500;
-const blinkingRate = 100;
+const blinkingDuration = 800;
 
 const animateBurgerLinkClick = ($, target) => {
   const burgerLink = target;
@@ -88,7 +87,6 @@ const animateBurgerLinkClick = ($, target) => {
     startTimeBurgerLink ||= timestamp;
 
     const progress = +((timestamp - startTimeBurgerLink) / blinkingDuration).toFixed(2);
-    // console.log(' : ', progress);
 
     const backgrColorActive = '#CD06FF';
     burgerLink.style.backgroundColor = backgrColorActive;
@@ -96,7 +94,7 @@ const animateBurgerLinkClick = ($, target) => {
 
     if (progress <= 1) {
       isBlinking ? burgerLink.style.backgroundColor = colorNone : burgerLink.style.backgroundColor = backgrColorActive;
-      rafId = requestAnimationFrame(animateLinkHandler);
+      setTimeout(()=>{requestAnimationFrame(animateLinkHandler)}, 100);
     }
 
     if (progress > 1) {
