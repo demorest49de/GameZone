@@ -1,7 +1,7 @@
 const initBurgerMenuVars = () => {
   let visibility = false;
   let startTime = NaN;
-  const durationOpacity = 700;
+  const durationOpacity = 500;
   return {
     visibility, startTime, durationOpacity
   };
@@ -40,19 +40,17 @@ const toggleMenuHandler = ($, isVisibilityOff = null) => {
 
   const toggleHandler = (timestamp) => {
     startTime ||= timestamp;
-    console.log(' startTime: ', startTime);
-    const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
-
+        const progress = +((timestamp - startTime) / durationOpacity).toFixed(2);
+    console.log(' progress before if condition enter: ',progress);
     if (visibility && progress <= 1) {
-      console.log(' timestamp: ', timestamp);
+      // console.log(' timestamp: ', timestamp);
       console.log(' progress: ', progress);
       $.burgerOverlay.style.opacity = progress;
       id = requestAnimationFrame(toggleHandler);
     }
 
     if (!visibility && progress >= 0) {
-      console.log(' timestamp: ', timestamp);
-      console.log(' progress: ', progress);
+      // console.log(' timestamp: ', timestamp);
       console.log('1 - progress: ', 1 - progress);
       $.burgerOverlay.style.opacity = 1 - progress;
       id = requestAnimationFrame(toggleHandler);
