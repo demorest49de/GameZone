@@ -1,3 +1,5 @@
+import {closeCallModal} from './callModal.js';
+
 const initBurgerMenuVars = () => {
   const visibility = false;
   const startTimeBurgerMenu = NaN;
@@ -34,7 +36,7 @@ const changeVisibility = ($, isVisibilityOff = null) => {
   visibility = !visibility;
 };
 
-const toggleMenuHandler = ($, isVisibilityOff = null) => {
+export const toggleBurgerMenuHandler = ($, isVisibilityOff = null) => {
   if (isVisibilityOff && !visibility) return;
   changeVisibility($, isVisibilityOff);
   let rafId = 0;
@@ -115,7 +117,8 @@ const animateBurgerLinkClick = ($, target) => {
 export const burgerMenuClickHandler = ($) => {
   const burgerBtnClickHandler = ($) => {
     $.burgerBtn.addEventListener('click', () => {
-      toggleMenuHandler($);
+      toggleBurgerMenuHandler($);
+      closeCallModal($);
     });
   };
 
@@ -128,7 +131,7 @@ export const burgerMenuClickHandler = ($) => {
       if (target === target.closest('.burger__link')) {
         animateBurgerLinkClick($, target);
         setTimeout(() => {
-          toggleMenuHandler($, true);
+          toggleBurgerMenuHandler($, true);
           target.href = targetHref;
           const elemId = targetHref.slice((targetHref.lastIndexOf('#')), targetHref.length);
           const elem = document.querySelector(`${elemId}`);
@@ -137,7 +140,7 @@ export const burgerMenuClickHandler = ($) => {
       }
 
       if (target === $.burgerOverlay || target === $.burgerCallBtn) {
-        toggleMenuHandler($, true);
+        toggleBurgerMenuHandler($, true);
       }
     });
   };
@@ -145,7 +148,7 @@ export const burgerMenuClickHandler = ($) => {
   const headerClickHandler = ($) => {
     $.header.addEventListener('click', ({target}) => {
       if (target !== target.closest('.header__burger-button')) {
-        toggleMenuHandler($, true);
+        toggleBurgerMenuHandler($, true);
       }
     });
   };

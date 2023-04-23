@@ -5,11 +5,22 @@ export const vars = () => {
   const burgerCallBtn = document.querySelector('.burger__call-button');
   const callBtn = document.querySelector('.header__call-button');
 
+  const modalCalllBtn = document.querySelector('.header__call-button');
+  const burgerCalllBtn = document.querySelector('.burger__call-button');
+
+  const callOverlay = document.querySelector('.call-overlay');
+  const closeBtn = callOverlay.querySelector('.call__close-btn');
+
+
   return {
     burgerBtn,
     burgerOverlay,
     header,
     burgerCallBtn,
     callBtn,
+    modalCalllBtn,
+    burgerCalllBtn,
+    callOverlay,
+    closeBtn,
   };
 };
