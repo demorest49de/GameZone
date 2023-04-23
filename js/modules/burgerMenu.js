@@ -13,19 +13,19 @@ const initBurgerMenuVars = () => {
 let {visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity} = initBurgerMenuVars();
 
 const burgerMenuIconHandler = ($) => {
-  $.burgerBtn.style.backgroundSize = `contain`;
-  $.burgerBtn.style.backgroundRepeat = `no-repeat`;
-  $.burgerBtn.style.backgroundPosition = `center`;
-
-  $.burgerBtn.style.transition = `all .3s ease-in-out`;
-
-  if (visibility) {
-    $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
-    $.burgerBtn.classList.add('header__burger-close-btn');
-  } else {
-    $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
-    $.burgerBtn.classList.remove('header__burger-close-btn');
-  }
+  // $.burgerBtn.style.backgroundSize = `contain`;
+  // $.burgerBtn.style.backgroundRepeat = `no-repeat`;
+  // $.burgerBtn.style.backgroundPosition = `center`;
+  //
+  // $.burgerBtn.style.transition = `all .3s ease-in-out`;
+  //
+  // if (visibility) {
+  //   $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
+  //   $.burgerBtn.classList.add('header__burger-close-btn');
+  // } else {
+  //   $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
+  //   $.burgerBtn.classList.remove('header__burger-close-btn');
+  // }
 };
 
 const changeVisibility = ($, isVisibilityOff = null) => {
@@ -44,24 +44,20 @@ export const toggleBurgerMenuHandler = ($, isVisibilityOff = null) => {
   const toggleHandler = (timestamp) => {
     startTimeBurgerMenu ||= timestamp;
     const progress = +((timestamp - startTimeBurgerMenu) / durationOpacity).toFixed(2);
-    // console.log(' progress before if condition enter: ', progress);
 
     if (visibility && progress <= 1) {
-      // console.log(' progress: ', progress);
       $.burgerOverlay.style.opacity = progress.toString();
       rafId = requestAnimationFrame(toggleHandler);
     }
 
     if (!visibility && progress >= 0) {
       $.burgerOverlay.style.opacity = (1 - progress).toFixed(1);
-      // console.log($.burgerOverlay.style.opacity);
       rafId = requestAnimationFrame(toggleHandler);
     }
 
     if (progress > 1 || progress < 0) {
       startTimeBurgerMenu = NaN;
       cancelAnimationFrame(rafId);
-      // console.log(' NaN startTime: ', startTime);
     }
   };
 
