@@ -3,7 +3,7 @@ export const createHeader = () => {
   header.classList.add('header');
   header.insertAdjacentHTML('beforeend', `
     <div class="container header__container">
-      <button class="header__burger-button" tabindex="1"></button>
+      <button class="header__burger-button" tabindex="1" rel="noreferrer"></button>
       <a href="#" class="header__link"><img class="header__logo" src="img/header/logo.svg"
                                             alt=лого></a>
       <nav class="header__navigation">
