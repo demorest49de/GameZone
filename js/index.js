@@ -15,7 +15,7 @@ import {vars} from './modules/mainVars.js';
     accordionHelper();
     callModalHandler($);
     burgerMenuClickHandler($);
-    mouseHoverActiveFocusHandler($);
+    // mouseHoverActiveFocusHandler($);
   };
 
   window.goInit = init;
