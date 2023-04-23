@@ -3,7 +3,7 @@ export const createHeader = () => {
   header.classList.add('header');
   header.insertAdjacentHTML('beforeend', `
     <div class="container header__container">
-      <button class="header__burger-button"></button>
+      <button class="header__burger-button" tabindex="1"></button>
       <a href="#" class="header__link"><img class="header__logo" src="img/header/logo.svg"
                                             alt=лого></a>
       <nav class="header__navigation">
@@ -15,7 +15,7 @@ export const createHeader = () => {
           <li class="header__item"><a href="#contacts" class="header__link">контакты</a></li>
         </ul>
       </nav>
-      <button type="button" class="header__call-button">заказать звонок</button>
+      <button type="button" class="header__call-button" tabindex="2">заказать звонок</button>
     </div>
   `);
   return header;
@@ -588,23 +588,23 @@ export const createBurgerMenu = () => {
         <nav class="burger__nav">
           <ul class="burger__list">
             <li class="burger__item">
-              <a class="burger__link" href="#rooms">Залы</a>
+              <a class="burger__link" href="#rooms" tabindex="3">Залы</a>
             </li>
             <li class="burger__item">
-              <a class="burger__link" href="#about">О нас</a>
+              <a class="burger__link" href="#about" tabindex="4">О нас</a>
             </li>
             <li class="burger__item">
-              <a class="burger__link" href="#booking">Бронь</a>
+              <a class="burger__link" href="#booking" tabindex="5">Бронь</a>
             </li>
             <li class="burger__item">
-              <a class="burger__link" href="#reviews">Отзывы</a>
+              <a class="burger__link" href="#reviews" tabindex="6">Отзывы</a>
             </li>
             <li class="burger__item">
-              <a class="burger__link" href="#contacts">Контакты</a>
+              <a class="burger__link" href="#contacts" tabindex="7">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button class="burger__call-button">Заказать звонок</button>
+        <button class="burger__call-button" tabindex="8">Заказать звонок</button>
       </div>
   `);
   return burger;
