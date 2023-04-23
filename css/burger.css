@@ -29,7 +29,6 @@
   .burger__list {
     display: flex;
     flex-direction: column;
-    gap: 39px;
   }
 
   .burger__item {
