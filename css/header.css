@@ -194,6 +194,10 @@
     height: 29px;
   }
 
+  .header__burger-button:focus {
+    outline-offset: 2.5px;
+  }
+
   .header__menu {
     display: none;
   }

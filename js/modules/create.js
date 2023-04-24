@@ -7,7 +7,7 @@ export const createHeader = () => {
         <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg">
           <use class="header__icon-menu" href="./img/header/menu.svg#menu"></use>
         </svg>
-        <svg class="header__button-icon " data-close="close" xmlns="http://www.w3.org/2000/svg">
+        <svg class="header__button-icon " xmlns="http://www.w3.org/2000/svg">
           <use class="header__icon-menu" href="./img/header/menu.svg#close"></use>
         </svg>
       </button>
