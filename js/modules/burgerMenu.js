@@ -14,20 +14,15 @@ const initBurgerMenuVars = () => {
 let {visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity, blinkingDuration} = initBurgerMenuVars();
 
 const burgerMenuIconHandler = ($) => {
-  // if (visibility) {
-  //   const isHide = $.menuAsBurger.classList.toggle('header__icon-hide');
-  //   console.log(' : ', isHide);
-  //   $.menuAsBurger.classList.toggle('header__icon-hide', !isHide);
-  // } else {
-  //   const isHide = $.menuAsClose.classList.toggle('header__icon-hide');
-  //   console.log(' : ',isHide);
-  //   $.menuAsBurger.classList.toggle('header__icon-hide', !isHide);
-  // }
   if ($.menuAsClose.classList.toggle('header__icon-hide')) {//true - cross is off
     $.menuAsBurger.classList.remove('header__icon-hide');
   } else {//false = cross is on
     $.menuAsBurger.classList.add('header__icon-hide');
   }
+
+  $.header.querySelector('.header__icon-hide').style.cssText = `
+
+  `;
 };
 
 const changeVisibility = ($, isVisibilityOff = null) => {
@@ -158,71 +153,4 @@ export const burgerMenuClickHandler = ($) => {
   burgerBtnClickHandler($);
   burgerMenuOutsideClickHandler($);
   headerClickHandler($);
-};
-
-const mouseHoverActiveFocusHandler = ($) => {
-// hover
-  const mouseOutOverHandler = ($) => {
-    $.burgerBtn.addEventListener('mouseover', ({target}) => {
-      if (target.closest('.header__burger-close-btn')) {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/close-hover.svg)`;
-      } else {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/menu-hover.svg)`;
-      }
-    });
-
-    $.burgerBtn.addEventListener('mouseout', ({target}) => {
-      if (target.closest('.header__burger-close-btn')) {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
-      } else {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
-      }
-    });
-  };
-
-  // active
-  const mouseUpDownHandler = ($) => {
-    $.burgerBtn.addEventListener('mouseup', ({target}) => {
-      if (target.closest('.header__burger-close-btn')) {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/close-active.svg)`;
-      } else {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/menu-active.svg)`;
-      }
-    });
-
-    $.burgerBtn.addEventListener('mousedown', ({target}) => {
-      if (target.closest('.header__burger-close-btn')) {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/close-active.svg)`;
-      } else {
-        $.burgerBtn.style.backgroundImage = `url(../img/header/menu-active.svg)`;
-      }
-    });
-  };
-
-  // focus
-  const mouseFocusHandler = ($) => {
-    $.burgerBtn.addEventListener('focus', ({target}) => {
-      if (target.closest('.header__burger-close-btn')) {
-        target.style.backgroundImage = `url(../img/header/close-focus.svg)`;
-      } else {
-        target.style.backgroundImage = `url(../img/header/menu-focus.svg)`;
-      }
-    });
-  };
-
-  // focus
-  const mouseBlurHandler = ($) => {
-    $.burgerBtn.addEventListener('blur', ({target}) => {
-      if (target.closest('.header__burger-close-btn')) {
-        target.style.backgroundImage = `url(../img/header/close.svg)`;
-      } else {
-        target.style.backgroundImage = `url(../img/header/menu.svg)`;
-      }
-    });
-  };
-
-  mouseOutOverHandler($);
-  mouseUpDownHandler($);
-  mouseFocusHandler($);
-  mouseBlurHandler($);
 };

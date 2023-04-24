@@ -117,9 +117,8 @@
     display: block;
     border-style: none;
     background-color: transparent;
-    width: 42px;
-    height: 42px;
-    transition: all .5s ease-in-out;
+    width: 52px;
+    height: 48px;
   }
 
   .header__button-icon {
@@ -128,21 +127,36 @@
     fill: #6C0287;
   }
 
-  .header__icon-hide{
+  .header__icon-hide {
     display: none;
+  }
+
+  .header__burger-button:focus {
+    outline-offset: 5px;
+    outline: 1px solid #CD06FF;
   }
 
   .header__burger-button:hover
   [href="./img/header/menu.svg#menu"],
   .header__burger-button:hover
-  [href="./img/header/menu.svg#close"]
-  {
-      fill: #CD06FF;
+  [href="./img/header/menu.svg#close"] {
+    fill: #CD06FF;
   }
 
-  .header__burger-button:focus {
-    outline: none;
+  .header__burger-button:active
+  [href="./img/header/menu.svg#menu"],
+  .header__burger-button:active
+  [href="./img/header/menu.svg#close"] {
+    fill: #840AA3;
   }
+
+  .header__burger-button:focus
+  [href="./img/header/menu.svg#menu"],
+  .header__burger-button:focus
+  [href="./img/header/menu.svg#close"] {
+  }
+
+
 
   .header__menu {
     display: none;
