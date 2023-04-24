@@ -3,7 +3,7 @@ import {renderGO} from './modules/renderGO.js';
 import {callModalHandler} from './modules/callModal.js';
 import {
   burgerMenuClickHandler,
-  mouseHoverActiveFocusHandler,
+  initBurgerMenu,
 } from './modules/burgerMenu.js';
 import {vars} from './modules/mainVars.js';
 
@@ -15,7 +15,7 @@ import {vars} from './modules/mainVars.js';
     accordionHelper();
     callModalHandler($);
     burgerMenuClickHandler($);
-    // mouseHoverActiveFocusHandler($);
+    initBurgerMenu($);
   };
 
   window.goInit = init;

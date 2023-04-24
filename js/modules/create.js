@@ -3,7 +3,14 @@ export const createHeader = () => {
   header.classList.add('header');
   header.insertAdjacentHTML('beforeend', `
     <div class="container header__container">
-      <button class="header__burger-button" tabindex="1"></button>
+      <button class="header__burger-button" tabindex="1">
+        <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg">
+          <use class="header__icon-menu" href="./img/header/menu.svg#menu"></use>
+        </svg>
+        <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg">
+          <use class="header__icon-menu" href="./img/header/menu.svg#close"></use>
+        </svg>
+      </button>
       <a href="#" class="header__link"><img class="header__logo" src="img/header/logo.svg"
                                             alt=лого></a>
       <nav class="header__navigation">

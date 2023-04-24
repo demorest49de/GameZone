@@ -11,7 +11,8 @@ export const vars = () => {
   const callOverlay = document.querySelector('.call-overlay');
   const closeBtn = callOverlay.querySelector('.call__close-btn');
 
-
+  const menuAsClose = burgerBtn.querySelector(`[href="./img/header/menu.svg#close"]`).parentElement;
+  const menuAsBurger = burgerBtn.querySelector(`[href="./img/header/menu.svg#menu"]`).parentElement;
   return {
     burgerBtn,
     burgerOverlay,
@@ -22,5 +23,7 @@ export const vars = () => {
     burgerCalllBtn,
     callOverlay,
     closeBtn,
+    menuAsClose,
+    menuAsBurger,
   };
 };

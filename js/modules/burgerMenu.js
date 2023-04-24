@@ -5,27 +5,29 @@ const initBurgerMenuVars = () => {
   const startTimeBurgerMenu = NaN;
   const startTimeBurgerLink = NaN;
   const durationOpacity = 400;
+  const blinkingDuration = 600;
   return {
-    visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity,
+    visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity, blinkingDuration
   };
 };
 
-let {visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity} = initBurgerMenuVars();
+let {visibility, startTimeBurgerMenu, startTimeBurgerLink, durationOpacity, blinkingDuration} = initBurgerMenuVars();
 
 const burgerMenuIconHandler = ($) => {
-  // $.burgerBtn.style.backgroundSize = `contain`;
-  // $.burgerBtn.style.backgroundRepeat = `no-repeat`;
-  // $.burgerBtn.style.backgroundPosition = `center`;
-  //
-  // $.burgerBtn.style.transition = `all .3s ease-in-out`;
-  //
   // if (visibility) {
-  //   $.burgerBtn.style.backgroundImage = `url(../img/header/close.svg)`;
-  //   $.burgerBtn.classList.add('header__burger-close-btn');
+  //   const isHide = $.menuAsBurger.classList.toggle('header__icon-hide');
+  //   console.log(' : ', isHide);
+  //   $.menuAsBurger.classList.toggle('header__icon-hide', !isHide);
   // } else {
-  //   $.burgerBtn.style.backgroundImage = `url(../img/header/menu.svg)`;
-  //   $.burgerBtn.classList.remove('header__burger-close-btn');
+  //   const isHide = $.menuAsClose.classList.toggle('header__icon-hide');
+  //   console.log(' : ',isHide);
+  //   $.menuAsBurger.classList.toggle('header__icon-hide', !isHide);
   // }
+  if ($.menuAsClose.classList.toggle('header__icon-hide')) {//true - cross is off
+    $.menuAsBurger.classList.remove('header__icon-hide');
+  } else {//false = cross is on
+    $.menuAsBurger.classList.add('header__icon-hide');
+  }
 };
 
 const changeVisibility = ($, isVisibilityOff = null) => {
@@ -73,14 +75,18 @@ export const toggleBurgerMenuHandler = ($, isVisibilityOff = null) => {
   burgerMenuIconHandler($);
 };
 
-const blinkingDuration = 600;
+export const initBurgerMenu = ($) => {
+  burgerMenuIconHandler($);
+};
 
 const animateBurgerLinkClick = ($, target) => {
   const burgerLink = target;
   const rafId = 0;
   let isBlinking = false;
   const colorNone = 'rgba(0, 0, 0, 0)';
+
   burgerLink.style.transition = `all .3s ease-in-out`;
+
   const animateLinkHandler = (timestamp) => {
     startTimeBurgerLink ||= timestamp;
 
@@ -112,7 +118,8 @@ const animateBurgerLinkClick = ($, target) => {
 
 export const burgerMenuClickHandler = ($) => {
   const burgerBtnClickHandler = ($) => {
-    $.burgerBtn.addEventListener('click', () => {
+    $.burgerBtn.addEventListener('click', (ev) => {
+      ev.stopPropagation();
       toggleBurgerMenuHandler($);
       closeCallModal($);
     });
@@ -153,7 +160,7 @@ export const burgerMenuClickHandler = ($) => {
   headerClickHandler($);
 };
 
-export const mouseHoverActiveFocusHandler = ($) => {
+const mouseHoverActiveFocusHandler = ($) => {
 // hover
   const mouseOutOverHandler = ($) => {
     $.burgerBtn.addEventListener('mouseover', ({target}) => {

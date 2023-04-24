@@ -1,5 +1,13 @@
-<svg width="54" height="29" viewBox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="54" height="5" rx="2" fill="#6C0287"/>
-<rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
-<rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <symbol id="menu" viewBox="0 0 54 29">
+    <rect width="54" height="5" rx="2"/>
+    <rect y="12" width="54" height="5" rx="2"/>
+    <rect y="24" width="31" height="5" rx="2"/>
+  </symbol>
+
+  <symbol id="close" viewBox="0 0 41.72 41.72">
+    <rect y="38.1838" width="54" height="5" rx="2" transform="rotate(-45 0 38.1838)"/>
+    <rect x="3.53564" width="54" height="5" rx="2" transform="rotate(45 3.53564 0)"/>
+  </symbol>
 </svg>
