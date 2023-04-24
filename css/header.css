@@ -127,7 +127,7 @@
     max-width: 100%;
     max-height: 100%;
     fill: #6C0287;
-    transition: all 2.3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 
   .header__icon-menu {
