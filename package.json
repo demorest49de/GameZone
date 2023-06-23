@@ -1,0 +1,8 @@
+{
+  "name": "gamezone",
+  "author": "shevchenko andrey",
+  "homepage": "https://github.com/demorest49de/GameZone#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
