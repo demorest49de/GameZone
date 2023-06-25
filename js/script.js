@@ -1,5 +1,5 @@
-
-new Swiper('.swiper', {slidesPerView: 3,
+new Swiper('.swiper', {
+  slidesPerView: 1,
   loop: true,
   autoplay: {
     delay: 3000
@@ -16,3 +16,4 @@ new Swiper('.swiper', {slidesPerView: 3,
   mousewheel: true,
   keyboard: true,
 });
+

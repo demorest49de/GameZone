@@ -137,31 +137,31 @@ export const createMain = () => {
             <!--                         <a class="swiper__link" href="/">-->
             <img class="swiper__img" src='../../img/swiper/80s.jpg' alt="80s">
             <!--                          </a>-->
-            <div>
-              <div class="swiper-slide">
-                <!--                       <a class="swiper__link" href="/">-->
-                <img class="swiper__img" src='../../img/swiper/starwars.jpg' alt="starwars">
-                <!--                       </a>-->
-              </div>
-              <div class="swiper-slide">
-                <!--                       <a class="swiper__link" href="/">-->
-                <img class="swiper__img" src='../../img/swiper/wildwest.jpg' alt="wildwest">
-                <!--                       </a>-->
-              </div>
-              <div class="swiper-slide">
-                <!--                       <a class="swiper__link" href="/">-->
-                <img class="swiper__img" src='../../img/swiper/neon.jpg' alt="neon">
-                <!--                       </a>-->
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
+
+          <div class="swiper-slide">
+            <!--                       <a class="swiper__link" href="/">-->
+            <img class="swiper__img" src='../../img/swiper/starwars.jpg' alt="starwars">
+            <!--                       </a>-->
+          </div>
+          <div class="swiper-slide">
+            <!--                       <a class="swiper__link" href="/">-->
+            <img class="swiper__img" src='../../img/swiper/wildwest.jpg' alt="wildwest">
+            <!--                       </a>-->
+          </div>
+          <div class="swiper-slide">
+            <!--                       <a class="swiper__link" href="/">-->
+            <img class="swiper__img" src='../../img/swiper/neon.jpg' alt="neon">
+            <!--                       </a>-->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
   </section>
+
 
 <!--        <ul class="rooms__list">-->
 <!--          <li class="rooms__item">-->
