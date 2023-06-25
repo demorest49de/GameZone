@@ -1,13 +1,12 @@
-// import '../swiper-bundle.min.js';
 import Swiper from "../../node_modules/swiper/swiper-bundle.esm.browser.min.js";
 
-export const initsw=()=> {
-  const sw = new Swiper('.swiper', {
+export const initSwiper=()=> {
+new Swiper('.swiper', {
     slidesPerView: 1,
     loop: true,
-    autoplay: {
-      delay: 3000
-    },
+    // autoplay: {
+    //   delay: 2000
+    // },
 
     pagination: {
       el: '.swiper-pagination',
@@ -20,6 +19,6 @@ export const initsw=()=> {
     mousewheel: true,
     keyboard: true,
   });
-  console.log(' : ', sw);
+
 }
 

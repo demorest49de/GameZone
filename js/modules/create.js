@@ -134,9 +134,9 @@ export const createMain = () => {
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <!--                         <a class="swiper__link" href="/">-->
+                                     <a class="swiper__link" href="/">
             <img class="swiper__img" src='img/swiper/80s.jpg' alt="80s">
-            <!--                          </a>-->
+                                      </a>
           </div>
 
           <div class="swiper-slide">
