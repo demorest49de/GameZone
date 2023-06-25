@@ -16,8 +16,6 @@ import {vars} from './modules/mainVars.js';
     callModalHandler($);
     burgerMenuClickHandler($);
     initBurgerMenu($);
-    //swiperjs;
-    //justValidatejs
   };
 
   window.goInit = init;

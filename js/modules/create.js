@@ -127,26 +127,56 @@ export const createMain = () => {
       </div>
     </section>
 
-    <section class="rooms" id="rooms">
-      <div class="container rooms__container">
-        <h2 class="subtitle rooms__subtitle">Наши залы</h2>
-        <ul class="rooms__list">
-          <li class="rooms__item">
-            <p class="rooms__text">80's vibes</p>
-          </li>
-          <li class="rooms__item">
-            <p class="rooms__text">Star wars</p>
-          </li>
-          <li class="rooms__item">
-            <p class="rooms__text">Wild west</p>
-          </li>
-          <li class="rooms__item">
-            <p class="rooms__text">Neon style</p>
-          </li>
-        </ul>
-      </div>
-    </section>
 
+  <section class="rooms" id="rooms">
+    <div class="container rooms__container">
+      <h2 class="subtitle rooms__subtitle">Наши залы</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!--                         <a class="swiper__link" href="/">-->
+            <img class="swiper__img" src='/img/swiper/80s.jpg' alt="80s">
+            <!--                          </a>-->
+            <div>
+              <div class="swiper-slide">
+                <!--                       <a class="swiper__link" href="/">-->
+                <img class="swiper__img" src='/img/swiper/starwars.jpg' alt="starwars">
+                <!--                       </a>-->
+              </div>
+              <div class="swiper-slide">
+                <!--                       <a class="swiper__link" href="/">-->
+                <img class="swiper__img" src='/img/swiper/wildwest.jpg' alt="wildwest">
+                <!--                       </a>-->
+              </div>
+              <div class="swiper-slide">
+                <!--                       <a class="swiper__link" href="/">-->
+                <img class="swiper__img" src='/img/swiper/neon.jpg' alt="neon">
+                <!--                       </a>-->
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--        <ul class="rooms__list">-->
+<!--          <li class="rooms__item">-->
+<!--            <p class="rooms__text">80's vibes</p>-->
+<!--          </li>-->
+<!--          <li class="rooms__item">-->
+<!--            <p class="rooms__text">Star wars</p>-->
+<!--          </li>-->
+<!--          <li class="rooms__item">-->
+<!--            <p class="rooms__text">Wild west</p>-->
+<!--          </li>-->
+<!--          <li class="rooms__item">-->
+<!--            <p class="rooms__text">Neon style</p>-->
+<!--          </li>-->
+<!--        </ul>-->
     <section class="booking" id="booking">
       <div class="container booking__container">
         <h2 class="subtitle booking__subtitle">Забронировать зал просто</h2>

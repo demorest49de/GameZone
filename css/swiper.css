@@ -1,0 +1,16 @@
+.swiper {
+  display: flex;
+  max-width: 1180px;
+  height: 590px;
+}
+
+.swiper__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper__img {
+  height: 100%;
+  width: 100%;
+}
