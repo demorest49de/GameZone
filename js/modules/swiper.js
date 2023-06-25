@@ -1,4 +1,6 @@
-import '../swiper-bundle.min.js';
+// import '../swiper-bundle.min.js';
+import Swiper from "../../node_modules/swiper/swiper-bundle.esm.browser.min.js";
+
 export const initsw=()=> {
   const sw = new Swiper('.swiper', {
     slidesPerView: 1,

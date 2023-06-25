@@ -4,5 +4,8 @@
   "homepage": "https://github.com/demorest49de/GameZone#readme",
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "swiper": "^9.4.1"
   }
 }
