@@ -6,6 +6,7 @@ import {
   initBurgerMenu,
 } from './modules/burgerMenu.js';
 import {vars} from './modules/mainVars.js';
+import {initsw} from './modules/swiper.js';
 
 {
   const init = (selectorApp) => {
@@ -21,4 +22,4 @@ import {vars} from './modules/mainVars.js';
   window.goInit = init;
 }
 
-
+initsw();
