@@ -41,11 +41,12 @@ export const ValidateForm = () => {
         console.log(' : ', event);
         const target = event.target;
         axios.post('https://jsonplaceholder.typicode.com/posts', {
-          call__name: target.call__name,
-          call__phone: target.call__phone,
+          call__name: target.call__name.value,
+          call__phone: target.call__phone.value,
         })
           .then(response => {
             console.log(' : ',response);
+            modalTitle.textContent = `Спасибо! Ваша заявка принята. Номер вашей заявки ${response.data.id}`;
           })
         ;
       })
