@@ -50,17 +50,19 @@
   text-align: center;
 }
 
-.call__input {
-  margin-bottom: 39px;
-}
-
 .call_fieldset {
   min-width: 280px;
+  height: 288px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
+.call__subblock{
+  max-width: fit-content;
+  height: 93px;
+}
 
 .call__block:nth-child(1) {
   margin-bottom: 40px;

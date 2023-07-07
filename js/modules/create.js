@@ -606,12 +606,16 @@ export const createCallModal = () => {
           <h2 class="call__title">заказать звонок</h2>
           <form class="call__form" name="call__form" id="call__form" method="post">
             <fieldset class="call_fieldset">
+            <div class="call__subblock">
               <label class="call__label">имя</label>
-              <input class="call__input" name="call__name" id="call__name" required type="text">
+              <input class="call__input call__input-name" name="call__name" id="call__name" required type="text">
+            </div>
+            <div class="call__subblock">
               <label class="call__label">телефон</label>
-              <input class="call__input" name="call__phone" id="call__phone" required type="tel">
-            </fieldset>
+              <input class="call__input call__input-phone" name="call__phone" id="call__phone" required type="tel">
+            </div>
             <button class="call__submit" type="submit" form="call__form">позвонить мне</button>
+            </fieldset>
           </form>
           <button type="button" class="call__close-btn"></button>
         </div>
