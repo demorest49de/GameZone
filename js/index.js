@@ -7,6 +7,7 @@ import {
 } from './modules/burgerMenu.js';
 import {vars} from './modules/mainVars.js';
 import {initSwiper} from "./swiper.js";
+import {ValidateCallModal, ValidateFormInput} from "./modules/validate.js";
 
 {
   const init = (selectorApp) => {
@@ -18,6 +19,8 @@ import {initSwiper} from "./swiper.js";
     burgerMenuClickHandler($);
     initBurgerMenu($);
     initSwiper();
+    ValidateCallModal();
+    ValidateFormInput()
   };
 
   window.goInit = init;
