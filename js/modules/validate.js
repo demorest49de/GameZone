@@ -7,55 +7,53 @@ export const ValidateForm = () => {
   const ValidateFormInput = () => {
     const justValidate = new JustValidate('.call__form');
     justValidate
-      .addField('.call__input-name', [
-        {
-          rule: 'required',
-          errorMessage: 'укажите ваше имя'
-        },
-        {
-          rule: 'minLength',
-          value: 3,
-          errorMessage: 'не короче 3 символов',
-        },
-        {
-          rule: 'maxLength',
-          value: 30,
-          errorMessage: 'слишком длинное имя',
-        }
-      ])
-      .addField('.call__input-phone', [
-        {
-          rule: 'required',
-          errorMessage: 'укажите номер телефона'
-        },
-        {
-          validator(value) {
-            const phone = inputPhone.inputmask.unmaskedvalue();
-            console.log(' : ', phone);
-            return !!(Number(phone) && phone.length === 10);
+        .addField('.call__input-name', [
+          {
+            rule: 'required',
+            errorMessage: 'укажите ваше имя',
           },
-          errorMessage: 'Телефон не корректный'
-        }
-      ])
-      .onSuccess(event => {
-        console.log(' : ', event);
-        const target = event.target;
-        axios.post('https://jsonplaceholder.typicode.com/posts', {
-          call__name: target.call__name.value,
-          call__phone: target.call__phone.value,
-        })
-          .then(response => {
-            console.log(' : ',response);
-            modalTitle.textContent = `Спасибо! Ваша заявка принята. Номер вашей заявки ${response.data.id}`;
+          {
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'не короче 3 символов',
+          },
+          {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'слишком длинное имя',
+          },
+        ])
+        .addField('.call__input-phone', [
+          {
+            rule: 'required',
+            errorMessage: 'укажите номер телефона',
+          },
+          {
+            validator(value) {
+              const phone = inputPhone.inputmask.unmaskedvalue();
+              console.log(' : ', phone);
+              return !!(Number(phone) && phone.length === 10);
+            },
+            errorMessage: 'Телефон не корректный',
+          },
+        ])
+        .onSuccess(event => {
+          console.log(' : ', event);
+          const target = event.target;
+          axios.post('https://jsonplaceholder.typicode.com/posts', {
+            call__name: target.call__name.value,
+            call__phone: target.call__phone.value,
           })
-        ;
-      })
+              .then(response => {
+                console.log(' : ', response);
+                modalTitle.textContent = `Спасибо! Ваша заявка принята. Номер вашей заявки ${response.data.id}`;
+              })
+          ;
+        })
     ;
   };
 
   ValidateFormInput();
 };
-
-
 
 

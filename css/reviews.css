@@ -48,25 +48,62 @@
   max-width: 680px;
 }
 
-@media (max-width: 1230px){
-  .reviews__item{
+.reviews__container {
+  position: relative;
+}
+.reviews__button-prev,
+.reviews__button-next {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: calc(50% - 45px);
+  z-index: 3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.reviews__button-prev{
+  left: -27px;
+}
+.reviews__button-next {
+  right: -27px;
+}
+
+
+@media (max-width: 1430px) {
+  .reviews__item {
     flex-direction: column;
   }
 
-  .reviews__figure{
+  .reviews__figure {
     margin-right: 0;
     margin-bottom: 31px;
   }
-  .reviews__block-img{
+
+  .reviews__block-img {
     margin-bottom: 20px;
   }
 
   .reviews__text {
     padding-bottom: 0px;
   }
+
+  .reviews__button-prev{
+    left: 258px;
+    top: 89px;
+  }
+  .reviews__button-next {
+    right: 258px;
+    top: 89px;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .reviews__figure {
     margin-right: 38px;
   }
@@ -93,6 +130,26 @@
 
   .reviews__item:not(:nth-last-child(1)) {
     margin-bottom: 40px;
+  }
+
+  .reviews__button-prev{
+    left: 250px;
+    top: 47px;
+  }
+  .reviews__button-next {
+    right: 287px;
+    top: 47px;
+  }
+}
+
+@media (max-width: 1025px){
+  .reviews__button-prev{
+    left: 170px;
+    top: 44px;
+  }
+  .reviews__button-next {
+    right: 210px;
+    top: 44px;
   }
 }
 
@@ -123,6 +180,20 @@
 
   .reviews__item:not(:nth-last-child(1)) {
     margin-bottom: 30px;
+  }
+
+  .reviews__button-prev,
+  .reviews__button-next {
+    width: 45px;
+    height: 45px;
+  }
+  .reviews__button-prev{
+    left: 201px;
+    top: 58px;
+  }
+  .reviews__button-next {
+    right: 214px;
+    top: 58px;
   }
 }
 
@@ -167,5 +238,14 @@
 
   .reviews__item:not(:nth-last-child(1)) {
     margin-bottom: 20px;
+  }
+
+  .reviews__button-prev{
+    left: 40px;
+    top: 25px;
+  }
+  .reviews__button-next {
+    right: 40px;
+    top: 25px;
   }
 }
