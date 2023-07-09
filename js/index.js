@@ -6,7 +6,7 @@ import {
   initBurgerMenu,
 } from './modules/burgerMenu.js';
 import {vars} from './modules/mainVars.js';
-import {initSwiperRooms} from "./swiper.js";
+import {initSwiperReviews, initSwiperRooms} from "./swiper.js";
 import {ValidateForm} from "./modules/validate.js";
 
 {
@@ -19,6 +19,7 @@ import {ValidateForm} from "./modules/validate.js";
     burgerMenuClickHandler($);
     initBurgerMenu($);
     initSwiperRooms();
+    initSwiperReviews();
     ValidateForm()
   };
 

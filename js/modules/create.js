@@ -330,56 +330,6 @@ export const createMain = () => {
         </div>
     </section>
 
-    <section class="reviews" id="reviews">
-        <div class="container reviews__container">
-          <h2 class="subtitle reviews__subtitle">
-            Отзывы посетителей
-          </h2>
-
-          <div class="reviews__block-container">
-            <ul class="reviews__list">
-              <li class="reviews__item">
-                <figure class="reviews__figure">
-                  <div class="reviews__block-img">
-                    <img class="reviews__img" src="img/reviews/person_1.png" width="150" alt="Имя">
-                  </div>
-                  <figcaption class="reviews__text-size">Макс Самойлов
-                  </figcaption>
-                </figure>
-                <p class="reviews__text reviews__text-size">
-                  Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
-                  никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
-                </p>
-              </li>
-              <li class="reviews__item">
-                <figure class="reviews__figure">
-                  <div class="reviews__block-img">
-                    <img class="reviews__img" src="img/reviews/person_2.png" width="150" alt="Имя">
-                  </div>
-                  <figcaption class="reviews__text-size">Оксана Григорьева</figcaption>
-                </figure>
-                <p class="reviews__text reviews__text-size">
-                  Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
-                  больше нет подобных заведений
-                </p>
-              </li>
-              <li class="reviews__item">
-                <figure class="reviews__figure">
-                  <div class="reviews__block-img">
-                    <img class="reviews__img" src="img/reviews/person_3.png" width="150" alt="Имя">
-                  </div>
-                  <figcaption class="reviews__text-size">Никита Ященко</figcaption>
-                </figure>
-                <p class="reviews__text reviews__text-size">
-                  Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
-                  попал в атмосферу космоса
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
     <section class="faq" id="faq">
       <div class="container faq__container">
         <h2 class="subtitle faq__subtitle">
@@ -623,3 +573,54 @@ export const createCallModal = () => {
   `);
   return modal;
 };
+
+
+// <section className="reviews" id="reviews">
+//   <div className="container reviews__container">
+//     <h2 className="subtitle reviews__subtitle">
+//       Отзывы посетителей
+//     </h2>
+//
+//     <div className="reviews__block-container">
+//       <ul className="reviews__list">
+//         <li className="reviews__item">
+//           <figure className="reviews__figure">
+//             <div className="reviews__block-img">
+//               <img className="reviews__img" src="img/reviews/person_1.png" width="150" alt="Имя">
+//             </div>
+//             <figcaption className="reviews__text-size">Макс Самойлов
+//             </figcaption>
+//           </figure>
+//           <p className="reviews__text reviews__text-size">
+//             Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
+//             никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+//           </p>
+//         </li>
+//         <li className="reviews__item">
+//           <figure className="reviews__figure">
+//             <div className="reviews__block-img">
+//               <img className="reviews__img" src="img/reviews/person_2.png" width="150" alt="Имя">
+//             </div>
+//             <figcaption className="reviews__text-size">Оксана Григорьева</figcaption>
+//           </figure>
+//           <p className="reviews__text reviews__text-size">
+//             Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
+//             больше нет подобных заведений
+//           </p>
+//         </li>
+//         <li className="reviews__item">
+//           <figure className="reviews__figure">
+//             <div className="reviews__block-img">
+//               <img className="reviews__img" src="img/reviews/person_3.png" width="150" alt="Имя">
+//             </div>
+//             <figcaption className="reviews__text-size">Никита Ященко</figcaption>
+//           </figure>
+//           <p className="reviews__text reviews__text-size">
+//             Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
+//             попал в атмосферу космоса
+//           </p>
+//         </li>
+//       </ul>
+//     </div>
+//   </div>
+// </section>

@@ -106,7 +106,7 @@ const createSectionReviews = () => {
 
 export const initSwiperRooms = () => {
   const preview = document.querySelector('#preview');
-  preview.append(createSectionRooms());
+  preview.after(createSectionRooms());
 
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
@@ -129,5 +129,25 @@ export const initSwiperRooms = () => {
       scale: 0.4,
       slideShadows: true,
     }
+  });
+};
+
+export const initSwiperReviews = () => {
+  const about = document.querySelector('#about');
+  about.after(createSectionReviews());
+
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    // autoplay: {
+    //   delay: 2000
+    // },
+    speed: 500,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    mousewheel: true,
+    keyboard: true,
   });
 };

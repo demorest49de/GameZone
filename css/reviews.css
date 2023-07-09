@@ -25,6 +25,8 @@
 
 .reviews__item {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews__item:not(:nth-last-child(1)) {
@@ -42,8 +44,26 @@
 }
 
 .reviews__text {
-  padding-top: 53px;
+  padding-bottom: 138px;
   max-width: 680px;
+}
+
+@media (max-width: 1230px){
+  .reviews__item{
+    flex-direction: column;
+  }
+
+  .reviews__figure{
+    margin-right: 0;
+    margin-bottom: 31px;
+  }
+  .reviews__block-img{
+    margin-bottom: 20px;
+  }
+
+  .reviews__text {
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 1024px) {
