@@ -183,7 +183,7 @@ export const createMain = () => {
           </fieldset>
 
           <fieldset class="booking__game-set">
-            <legend class="booking__legend">Собери наборы развлечений</legend>
+            <legend class="booking__legend">Собери набор развлечений</legend>
 
             <div class="booking__above-set">
 
@@ -193,7 +193,7 @@ export const createMain = () => {
                 <label class="booking__set-label">
                   <input class="booking__input" type="radio"
                          name="console-type" value="Playstation" checked>
-                  <span class="booking__icon booking__icon_radio">Playstation</span>
+                  <span class="booking__icon booking__icon_radio">PlayStation 5</span>
                 </label>
                 <label class="booking__set-label">
                   <input class="booking__input" type="radio"
@@ -328,8 +328,9 @@ export const createMain = () => {
               <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
                 реальности в центральной части города.
               </p>
-              <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и
-                радовать Вас топовыми игровыми разработками со всего мира.
+              <p class="about__text">Каждый день мы стараемся создавать
+для вас самую лучшую игровую атмосферу
+и радовать Вас топовыми игровыми разработками со всего мира.
               </p>
             </div>
           </div>

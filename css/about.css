@@ -9,6 +9,10 @@
   gap: 68px 80px;
 }
 
+.about__subtitle {
+  margin-bottom: 46px;
+}
+
 .about__text {
   font-weight: 400;
   font-size: 20px;
@@ -16,7 +20,12 @@
 }
 
 .about__text:not(:nth-last-child(1)) {
-  padding-bottom: 35px;
+  padding-bottom: 30px;
+}
+
+.about__text:nth-last-child(1) {
+  max-width: 484px;
+  white-space: break-spaces;
 }
 
 .about__img {
