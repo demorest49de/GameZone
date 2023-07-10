@@ -156,13 +156,13 @@
 
 @media (max-width: 1024px) {
   .reviews__button-prev {
-    left: 170px;
+    left: 0px;
     top: 44px;
   }
 
   .reviews__button-next {
-    right: 210px;
-    top: 44px;
+    right: -62px;
+    top: 41px;
   }
 
   .reviews__item {
