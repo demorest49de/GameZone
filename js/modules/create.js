@@ -319,9 +319,7 @@ export const createMain = () => {
         <h2 class="subtitle about__subtitle">О нас</h2>
         <div class="container about__container">
           <div class="about__image-block">
-            <figure>
               <img class="about__img" src="img/about/about__prospect-image.jpg" alt="Виды развлечений">
-            </figure>
           </div>
           <div class="about__content-block-promo">
             <div class="about__block-text">

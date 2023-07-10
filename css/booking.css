@@ -431,6 +431,7 @@
   .booking__reg-block {
     display: flex;
     gap: 51px;
+    margin-bottom: 30px;
   }
 
   .booking__reg-subset.subset-name {
@@ -450,6 +451,15 @@
   .booking__reg-name .booking__reg-input,
   .booking__reg-comm .booking__reg-input{
     min-width: 250px;
+  }
+
+  .booking__submit-button {
+    min-width: unset;
+    min-height: unset;
+    line-height: 24px;
+    padding: 13px 45px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

@@ -180,6 +180,24 @@
 
 }
 
+@media (max-width: 1024px) {
+  .about__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .about__image-block {
+    max-width: fit-content;
+    height: fit-content;
+  }
+
+  .about__container {
+    gap: 16px 15px;
+  }
+  .about__text:not(:nth-last-child(1)) {
+    padding-bottom: 21px;
+  }
+}
+
 @media (max-width: 960px) {
 
   .about__container {
