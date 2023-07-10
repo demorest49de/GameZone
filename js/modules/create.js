@@ -342,8 +342,8 @@ export const createMain = () => {
             <div class="about__figure-boss">
               <div class="about__boss-description">
                 <p class="about__text-boss">Аркадий Абакшин,&nbsp;
-                  создатель игровой&nbsp;
-                  территории GAME OVER
+создатель игровой&nbsp;
+территории GAME OVER
                 </p>
               </div>
             </div>

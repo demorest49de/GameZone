@@ -6,7 +6,7 @@
   grid-template-areas:
   "image promo"
   "image qoute";
-  gap: 68px 80px;
+  gap: 27px 80px;
 }
 
 .about__subtitle {
@@ -48,8 +48,8 @@
 }
 
 .about__quotes {
-  margin-bottom: 40px;
-  padding-left: 31px;
+  margin-bottom: 31px;
+  padding-left: 30px;
   position: relative;
 }
 
@@ -109,11 +109,13 @@
   min-width: 80px;
   min-height: 80px;
   border-radius: 50%;
+  margin-bottom: 32px;
 }
 
 .about__text-boss {
   text-align: left;
   max-width: 280px;
+  white-space: break-spaces;
 }
 
 @media (max-width: 1436px) {
