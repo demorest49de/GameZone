@@ -41,7 +41,7 @@ export const createMain = () => {
         <div class="hero__block">
           <div class="hero__underblock-number">
             <p class="hero__big-number">4</p>
-            <p class="hero__text-block">Тематических зала</p>
+            <p class="hero__text-block hero__text-block-padding">Тематических зала</p>
           </div>
           <div class="hero__underblock-text">
             <p class="hero__big-text">new</p>
