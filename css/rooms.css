@@ -64,9 +64,13 @@
 }
 
 
-@media (max-width: 1040px) {
-  .rooms {
-    padding: 50px 0;
+@media (max-width: 1024px) {
+  #rooms {
+    padding: 30px 0;
+  }
+
+  .rooms__subtitle {
+    margin-bottom: 37px;
   }
 
   .rooms__list {
@@ -74,13 +78,8 @@
   }
 
   .rooms__item {
-    min-width: 335px;
-    min-height: 200px;
-  }
-
-  .rooms__text {
-    font-size: 40px;
-    line-height: 50px;
+    min-width: 442px;
+    min-height: 267px;
   }
 }
 
@@ -108,4 +107,3 @@
     line-height: 34px;
   }
 }
-

@@ -74,7 +74,7 @@
   padding-right: 4px;
 }
 
-.hero__text-block-padding{
+.hero__text-block-padding {
   padding-right: 18px;
 }
 
@@ -141,6 +141,7 @@
     font-size: 120px;
     line-height: 120px;
     letter-spacing: -12px;
+    margin-bottom: 21px;
   }
 
   .hero__container:after {
@@ -157,7 +158,8 @@
   }
 
   .hero__block {
-    margin-bottom: 80px;
+    margin-bottom: 96px;
+    gap: 28px;
   }
 
   .hero__underblock-number {
@@ -167,6 +169,7 @@
   .hero__big-number {
     font-size: 80px;
     line-height: 113px;
+    padding-right: 2px;
   }
 
   .hero__big-text {
@@ -177,12 +180,14 @@
   .hero__text-block {
     font-size: 26px;
     line-height: 30px;
+    padding-right: 2px;
   }
 
   .hero__button {
     font-size: 22px;
     line-height: 30px;
-    padding: 17px 48px;
+    padding: 20px 48px;
+    margin-left: 39px;
   }
 
   .hero__button:hover {
@@ -208,7 +213,7 @@
 }
 
 @media (max-width: 1024px) {
-  .hero__link{
+  .hero__link {
     display: none;
   }
 }
@@ -370,7 +375,7 @@
 }
 
 @media (max-width: 700px) {
-  .hero__container{
+  .hero__container {
     max-width: 320px;
     margin: 0 auto;
   }
