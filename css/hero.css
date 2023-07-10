@@ -146,7 +146,8 @@
   .hero__container:after {
     min-width: 453px;
     min-height: 520px;
-    right: 72px;
+    right: 61px;
+    top: 72px;
   }
 
   .hero__text {
