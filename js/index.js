@@ -18,7 +18,7 @@ import {ValidateForm} from './modules/validate.js';
     callModalHandler($);
     burgerMenuClickHandler($);
     initBurgerMenu($);
-    initSwiperRooms();
+    // initSwiperRooms();
     initSwiperReviews();
     ValidateForm();
   };

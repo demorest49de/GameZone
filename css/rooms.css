@@ -1,5 +1,9 @@
-#rooms{
+#rooms {
   padding-top: 46px;
+}
+
+.rooms__subtitle {
+  margin-bottom: 44px;
 }
 
 .rooms__list {
