@@ -51,10 +51,6 @@ section#about {
 
 @media (max-width: 1430px) {
 
-  .contacts__subtitle {
-    margin-bottom: 26px;
-  }
-
   section:not(:nth-child(1)) {
     padding: 35px 0;
   }

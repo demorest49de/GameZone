@@ -433,9 +433,9 @@ export const createFooter = () => {
 
             <div class="contacts__location">
               <p class="contacts__text ">г. Москва</p>
-              <p class="contacts__text ">ул. Аквамарина, 16</p>
+              <p class="contacts__text ">ул. Усачёва, 29 к3</p>
             </div>
-            <a class="contacts__text contacts__phone contacts-effects" href="tel:+79509302893">8(950)930-28-93</a>
+            <a class="contacts__text contacts__phone contacts-effects" href="tel:+79509302893">8 (950) 930 - 28 - 93</a>
             <a class="contacts__text contacts__email contacts-effects"
                href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
           </address>
@@ -527,8 +527,8 @@ export const createFooter = () => {
         <p class="contacts__text-small">
           © Game Over, 2022</p>
         <div class="contacts__block-text">
-          <p class="contacts__text-small">Design by Andrey Shevchenko</p>
-          <p class="contacts__text-small"><a class="contacts__link-small" href="mailto:GameOver@gmail.com">demorest49de@gmail.com</a>
+          <p class="contacts__text-small">Design by Anastasia Ilina</p>
+          <p class="contacts__text-small"><a class="contacts__link-small" href="mailto:GameOver@gmail.com">ilina9825@gmail.com</a>
           </p>
         </div>
       </div>

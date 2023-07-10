@@ -1,6 +1,14 @@
+#reviews {
+  padding-top: 21px;
+}
+
+.reviews__subtitle {
+  margin-bottom: 50px;
+}
+
 .reviews__block-img {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   border-radius: 50%;
   width: 280px;
   height: 280px;
@@ -51,6 +59,7 @@
 .reviews__container {
   position: relative;
 }
+
 .reviews__button-prev,
 .reviews__button-next {
   position: absolute;
@@ -67,9 +76,10 @@
   border: 0;
 }
 
-.reviews__button-prev{
+.reviews__button-prev {
   left: -27px;
 }
+
 .reviews__button-next {
   right: -27px;
 }
@@ -93,10 +103,11 @@
     padding-bottom: 0px;
   }
 
-  .reviews__button-prev{
+  .reviews__button-prev {
     left: 258px;
     top: 89px;
   }
+
   .reviews__button-next {
     right: 258px;
     top: 89px;
@@ -132,21 +143,23 @@
     margin-bottom: 40px;
   }
 
-  .reviews__button-prev{
+  .reviews__button-prev {
     left: 250px;
     top: 47px;
   }
+
   .reviews__button-next {
     right: 287px;
     top: 47px;
   }
 }
 
-@media (max-width: 1025px){
-  .reviews__button-prev{
+@media (max-width: 1025px) {
+  .reviews__button-prev {
     left: 170px;
     top: 44px;
   }
+
   .reviews__button-next {
     right: 210px;
     top: 44px;
@@ -187,10 +200,12 @@
     width: 45px;
     height: 45px;
   }
-  .reviews__button-prev{
+
+  .reviews__button-prev {
     left: 201px;
     top: 58px;
   }
+
   .reviews__button-next {
     right: 214px;
     top: 58px;
@@ -240,10 +255,11 @@
     margin-bottom: 20px;
   }
 
-  .reviews__button-prev{
+  .reviews__button-prev {
     left: 40px;
     top: 25px;
   }
+
   .reviews__button-next {
     right: 40px;
     top: 25px;

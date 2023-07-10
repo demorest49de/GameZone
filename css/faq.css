@@ -1,5 +1,9 @@
+.faq__subtitle{
+  margin-bottom: 44px;
+}
+
 .faq__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .faq__button {
@@ -24,6 +28,7 @@
 .faq__item:nth-child(odd) {
   background-color: var(--color-FFFFFF);
   color: var(--color-1C1A1A);
+
 }
 
 .faq__item:nth-child(even) {
