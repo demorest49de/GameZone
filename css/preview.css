@@ -3,8 +3,10 @@
 }
 
 .preview__subtitle {
-  margin-left: 160px;
+  margin-left: 149px;
   margin-right: 160px;
+  line-height: 48px;
+  margin-bottom: 45px;
 }
 
 .preview__list {
@@ -24,11 +26,11 @@
 }
 
 .preview__item:nth-child(5) {
-  margin-top: 40px;
+  margin-top: 34px;
 }
 
 .preview__item:nth-child(2n + 4) {
-  margin-top: -30px;
+  margin-top: -36px;
 }
 
 .preview__content {
@@ -43,7 +45,7 @@
 .preview__text {
   position: absolute;
   left: 40px;
-  bottom: 35px;
+  bottom: 42px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;

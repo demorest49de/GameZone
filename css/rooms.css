@@ -1,3 +1,6 @@
+#rooms{
+  padding-top: 46px;
+}
 
 .rooms__list {
   display: flex;
