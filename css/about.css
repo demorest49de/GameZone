@@ -193,6 +193,7 @@
   .about__container {
     gap: 16px 15px;
   }
+
   .about__text:not(:nth-last-child(1)) {
     padding-bottom: 21px;
   }
@@ -271,6 +272,17 @@
     min-width: 70px;
     min-height: 70px;
   }
+}
+
+@media (max-width: 768px) {
+  .about__container {
+    gap: 40px 15px;
+  }
+
+  .about__quotes {
+    margin-bottom: 38px;
+  }
+
 }
 
 @media (max-width: 700px) {

@@ -56,7 +56,7 @@ const createSectionReviews = () => {
                   <div class="reviews__block-img">
                     <img class="reviews__img" src="img/reviews/person_1.png" width="150" alt="Имя">
                   </div>
-                  <figcaption class="reviews__text-size">Макс Самойлов
+                  <figcaption class="reviews__text-size reviews__text-size-figcaption">Макс Самойлов
                   </figcaption>
                 </figure>
                 <p class="reviews__text reviews__text-size">

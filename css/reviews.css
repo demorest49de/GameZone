@@ -87,8 +87,7 @@
 }
 
 .reviews__next-icon,
-.reviews__prev-icon
-{
+.reviews__prev-icon {
   width: 34px;
   height: 66px;
 }
@@ -175,8 +174,7 @@
   }
 
   .reviews__next-icon,
-  .reviews__prev-icon
-  {
+  .reviews__prev-icon {
     width: 27px;
     height: 51px;
   }
@@ -203,7 +201,7 @@
 
 @media (max-width: 768px) {
   .reviews__figure {
-    margin-right: 15px;
+    margin-right: 16px;
   }
 
   .reviews__text {
@@ -224,6 +222,13 @@
   .reviews__text-size {
     font-size: 16px;
     line-height: 22px;
+    padding-left: 0;
+    padding-top: 31px;
+  }
+
+  .reviews__text-size-figcaption {
+    font-size: 14px;
+    padding-top: 1px;
   }
 
   .reviews__item:not(:nth-last-child(1)) {
