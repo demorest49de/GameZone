@@ -576,6 +576,18 @@
   .booking__reg-above-subset {
     gap: 108px;
   }
+
+  .booking__reg-block{
+    margin-bottom: 51px;
+  }
+
+  .booking__submit-button {
+    line-height: 24px;
+    padding: 16px 51px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 730px) {
