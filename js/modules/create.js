@@ -398,17 +398,6 @@ export const createMain = () => {
               </p>
             </div>
           </li>
-          <li class="faq__item">
-            <button class="faq__button">
-              Какая комната самая популярная?
-            </button>
-            <div class="faq__item-wrapper">
-              <p class="faq__text">Да, забронировать комнату вы можете онлайн,
-                заполнив форму на нашем сайте. Также вы можете забронировать
-                комнату позвонив по телефону <span class="faq__text_bold">8 (999) 958 - 48 - 38</span>
-              </p>
-            </div>
-          </li>
         </ul>
       </div>
     </section>

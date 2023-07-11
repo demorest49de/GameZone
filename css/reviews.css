@@ -77,11 +77,20 @@
 }
 
 .reviews__button-prev {
-  left: -27px;
+  left: -1px;
+  top: 91px;
 }
 
 .reviews__button-next {
-  right: -27px;
+  right: -56px;
+  top: 91px;
+}
+
+.reviews__next-icon,
+.reviews__prev-icon
+{
+  width: 34px;
+  height: 66px;
 }
 
 
@@ -163,6 +172,13 @@
   .reviews__button-next {
     right: -62px;
     top: 41px;
+  }
+
+  .reviews__next-icon,
+  .reviews__prev-icon
+  {
+    width: 27px;
+    height: 51px;
   }
 
   .reviews__item {
