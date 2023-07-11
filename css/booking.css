@@ -449,7 +449,7 @@
   }
 
   .booking__reg-name .booking__reg-input,
-  .booking__reg-comm .booking__reg-input{
+  .booking__reg-comm .booking__reg-input {
     min-width: 250px;
   }
 
@@ -481,6 +481,16 @@
 
   .booking__game-set {
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking__reg-block{
+    flex-direction: column;
+  }
+
+  .booking__room-label {
+    min-width: 149px;
   }
 }
 
