@@ -463,7 +463,11 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
+  .booking__reg-block {
+    flex-direction: column;
+  }
+
   .booking__room {
     justify-content: space-around;
     column-gap: 29px;
@@ -484,8 +488,8 @@
   }
 }
 
-@media (max-width: 768px) {
-  .booking__reg-block{
+@media (max-width: 891px) {
+  .booking__reg-block {
     flex-direction: column;
   }
 

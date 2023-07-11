@@ -272,6 +272,18 @@ a .contacts__text {
   }
 }
 
+@media (max-width: 768px) {
+  .contacts__block {
+    flex-direction: column;
+  }
+
+  .contacts__block-map {
+    max-width: 688px;
+    max-height: 337px;
+    height: 100%;
+    width: 100%;
+  }
+}
 @media (max-width: 700px) {
   .contacts__container {
     max-width: 320px;

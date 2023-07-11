@@ -133,6 +133,11 @@
 }
 
 @media (max-width: 960px) {
+
+  .header__container {
+    padding-left: 40px;
+  }
+
   .header__link {
     width: 87px;
     height: 55px;

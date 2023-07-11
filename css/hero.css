@@ -292,6 +292,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero__title {
+    letter-spacing: -8.3px;
+  }
+}
+
 @media (max-width: 750px) {
   .hero {
     padding-bottom: 23px;
