@@ -124,6 +124,12 @@ section#about {
   }
 }
 
+@media (max-width: 768px) {
+  section:not(:nth-child(1)) {
+    padding: 38px 0;
+  }
+}
+
 @media (max-width: 900px) {
   section#booking {
     padding: 50px 0;

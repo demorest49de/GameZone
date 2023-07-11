@@ -45,7 +45,7 @@ export const createMain = () => {
           </div>
           <div class="hero__underblock-text">
             <p class="hero__big-text">new</p>
-            <p class="hero__text-block">Новейшая аппаратура</p>
+            <p class="hero__text-block hero__text-block-left-padding">Новейшая аппаратура</p>
           </div>
         </div>
         <a class="hero__button" href="#booking">забронировать</a>

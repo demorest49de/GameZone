@@ -295,6 +295,36 @@
 @media (max-width: 768px) {
   .hero__title {
     letter-spacing: -8.3px;
+    margin-bottom: 19px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 50px 70px;
+  }
+
+  .hero__underblock-text {
+    text-align: left;
+  }
+
+  .hero__block {
+    gap: 30px;
+  }
+
+  .hero__text-block-left-padding {
+    padding-left: 6px;
+  }
+
+  .hero__button {
+    padding: 15px 35px;
+    margin-left: 0;
+  }
+
+  .hero__block {
+    margin-bottom: 110px;
   }
 }
 
@@ -311,7 +341,6 @@
     font-size: 35px;
     line-height: 35px;
     letter-spacing: -0.08em;
-    margin-bottom: 6px;
   }
 
   .hero__container:after {
