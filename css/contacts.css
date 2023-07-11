@@ -273,8 +273,13 @@ a .contacts__text {
 }
 
 @media (max-width: 768px) {
+  .contacts__subtitle {
+    margin-bottom: 30px;
+  }
+
   .contacts__block {
     flex-direction: column;
+    align-items: center;
   }
 
   .contacts__block-map {
@@ -283,7 +288,18 @@ a .contacts__text {
     height: 100%;
     width: 100%;
   }
+
+  .contacts__block-info {
+    margin-bottom: 30px;
+    padding-left: 114px;
+  }
+
+  .contacts__location::before {
+    left: -37px;
+    top: 4px;
+  }
 }
+
 @media (max-width: 700px) {
   .contacts__container {
     max-width: 320px;

@@ -242,13 +242,17 @@
   }
 
   .reviews__button-prev {
-    left: 201px;
-    top: 58px;
+    left: 0px;
+    top: 80px;
   }
 
   .reviews__button-next {
-    right: 214px;
-    top: 58px;
+    right: -18px;
+    top: 80px;
+  }
+
+  #reviews {
+    padding-bottom: 5px;
   }
 }
 
