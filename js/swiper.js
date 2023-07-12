@@ -71,7 +71,7 @@ const createSectionReviews = () => {
                   <div class="reviews__block-img">
                     <img class="reviews__img" src="img/reviews/person_2.png" width="150" alt="Имя">
                   </div>
-                  <figcaption class="reviews__text-size">Оксана Григорьева</figcaption>
+                  <figcaption class="reviews__text-size reviews__text-size-figcaption">Оксана Григорьева</figcaption>
                 </figure>
                 <p class="reviews__text reviews__text-size">
                   Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
@@ -85,7 +85,7 @@ const createSectionReviews = () => {
                   <div class="reviews__block-img">
                     <img class="reviews__img" src="img/reviews/person_3.png" width="150" alt="Имя">
                   </div>
-                  <figcaption class="reviews__text-size">Никита Ященко</figcaption>
+                  <figcaption class="reviews__text-size reviews__text-size-figcaption">Никита Ященко</figcaption>
                 </figure>
                 <p class="reviews__text reviews__text-size">
                   Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,

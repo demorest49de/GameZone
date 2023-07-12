@@ -171,13 +171,22 @@
 }
 
 @media (max-width: 700px) {
+  section#faq {
+    padding-top: 29px;
+  }
+
   .faq__container {
     max-width: 320px;
     margin: 0 auto;
   }
 
+  .faq__subtitle {
+    margin-bottom: 17px;
+  }
+
   .faq__button {
-    min-height: 46px;
+    min-height: unset;
+    height: 43px;
     font-size: 12px;
     line-height: 16px;
     background-size: 30px;
@@ -191,5 +200,9 @@
     font-size: 12px;
     line-height: 16px;
     padding: 25px 43px 50px 10px;
+  }
+
+  .faq__item:not(:last-child) {
+    margin-bottom: 12.5px;
   }
 }

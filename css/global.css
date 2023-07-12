@@ -16,8 +16,8 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background-color: chocolate;
-  /*background-color: var(--color-1B1A1B);*/
+  /*background-color: chocolate;*/
+  background-color: var(--color-1B1A1B);
   color: var(--color-FFFFFF);
 }
 
