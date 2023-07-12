@@ -347,6 +347,7 @@
     min-width: 161px;
     min-height: 179px;
     right: 20px;
+    top: 23px;
   }
 
   .hero__text {
@@ -413,5 +414,9 @@
   .hero__container {
     max-width: 320px;
     margin: 0 auto;
+  }
+
+  .hero__title{
+    margin-bottom: 6px;
   }
 }

@@ -91,6 +91,14 @@
 }
 
 @media (max-width: 700px) {
+  section#rooms {
+    padding-top: 0;
+  }
+
+  .rooms__subtitle {
+    margin-bottom: 2px;
+  }
+
   .rooms__container {
     max-width: 320px;
     margin: 0 auto;
@@ -101,7 +109,7 @@
   }
 
   .rooms__list {
-    gap: 10px
+    gap: 14px;
   }
 
   .rooms__item {

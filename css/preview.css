@@ -196,7 +196,9 @@
   }
 
   .preview__subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
+    line-height: 19px;
+    padding-right: 0;
   }
 
   .preview__list {
@@ -215,6 +217,11 @@
 }
 
 @media (max-width: 700px) {
+  section#preview{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
   .preview__container {
     max-width: 320px;
     margin: 0 auto;

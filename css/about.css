@@ -291,11 +291,11 @@
     max-width: 320px;
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 127px 1fr 175px;
+    grid-template-rows: 267px 1fr 172px;
     grid-template-areas:
-  "promo"
-  "image"
-  "qoute";
+        "promo"
+        "image"
+        "qoute";
     row-gap: 25px;
   }
 
@@ -346,12 +346,7 @@
   .about__boss-description {
     justify-content: start;
     gap: 11px;
-  }
-}
-
-@media (max-width: 700px) {
-
-  .about__boss-description {
     min-width: 280px;
   }
 }
+
