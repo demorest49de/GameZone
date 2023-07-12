@@ -615,6 +615,7 @@
   .booking__subtitle {
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 14px;
   }
 
   .booking__room {
@@ -632,10 +633,28 @@
     padding: 6px 20px;
   }
 
+  .booking__game-set .booking__legend {
+    margin-bottom: 15px;
+  }
+
   .booking__legend {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 15px;
+  }
+
+  .booking__input + .booking__icon:before {
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .booking__input:focus + .booking__icon_radio:after {
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .booking__subset:nth-child(1) .booking__legend {
+    margin-bottom: 23px;
   }
 
   .booking__game-set {
