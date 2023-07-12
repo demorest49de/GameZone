@@ -263,6 +263,20 @@
     margin: 0 auto;
   }
 
+  #reviews {
+    padding-top: 1px;
+  }
+
+  .reviews__subtitle {
+    margin-bottom: 14px;
+  }
+
+  .reviews__next-icon, .reviews__prev-icon {
+    width: 14px;
+    height: 27px;
+  }
+
+
   .reviews__item {
     flex-direction: column;
     align-items: center;
@@ -300,12 +314,12 @@
   }
 
   .reviews__button-prev {
-    left: 40px;
-    top: 25px;
+    left: 30px;
+    top: 4px;
   }
 
   .reviews__button-next {
-    right: 40px;
-    top: 25px;
+    right: -1px;
+    top: 4px;
   }
 }

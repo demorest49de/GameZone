@@ -288,15 +288,26 @@
 @media (max-width: 700px) {
 
   .about__container {
-    max-width: 320px;
-    margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 267px 1fr 172px;
+    grid-template-rows: 118px 280px 172px;
     grid-template-areas:
         "promo"
         "image"
         "qoute";
-    row-gap: 25px;
+    row-gap: 23px;
+  }
+
+  .about__boss-description:before {
+    min-width: 56px;
+    min-height: 56px;
+  }
+
+  .about__quotes {
+    margin-bottom: 15px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 14px;
   }
 
   .about__block-text {
@@ -308,10 +319,14 @@
     line-height: 26px;
   }
 
-  .about__text {
-    max-width: 266px;
+  .about__content-block-promo .about__block-text .about__text {
     font-size: 12px;
+    font-weight: 400;
     line-height: 16px;
+  }
+
+  .about__content-block-promo .about__block-text .about__text:nth-child(1) {
+    padding-bottom: 17px;
   }
 
   .about__img {
@@ -328,7 +343,12 @@
   .about__text-boss {
     font-size: 12px;
     line-height: 16px;
-    max-width: 163px;
+    max-width: 183px;
+    width: 100%;
+  }
+
+  section#about {
+    padding-bottom: 0;
   }
 
   .about__quotes {
@@ -345,6 +365,7 @@
 
   .about__boss-description {
     justify-content: start;
+    align-items: start;
     gap: 11px;
     min-width: 280px;
   }

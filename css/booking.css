@@ -618,6 +618,10 @@
     margin-bottom: 14px;
   }
 
+  .booking__reg-block {
+    margin-bottom: 35px;
+  }
+
   .booking__room {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -654,8 +658,42 @@
   }
 
   .booking__subset:nth-child(1) .booking__legend {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
   }
+
+  .booking__subset {
+    row-gap: 11px;
+  }
+
+  .booking__above-set {
+    row-gap: 21px;
+  }
+
+  .booking__subset:nth-last-child(2) {
+    row-gap: 13px;
+  }
+
+  .booking__subset:nth-child(3) .booking__legend {
+    margin-bottom: 16px;
+  }
+
+  .booking__game-set {
+    margin-bottom: 30px;
+  }
+
+  .booking__reg .booking__legend {
+    margin-bottom: 25px;
+  }
+
+  .booking__reg-subblock {
+    gap: 15px;
+    margin-bottom: 5px;
+  }
+
+  .booking__reg-subset {
+    gap: 17px;
+  }
+
 
   .booking__game-set {
     justify-content: center;
@@ -714,6 +752,7 @@
     line-height: 26px;
     padding: 17px 59px;
     min-width: 280px;
+    border-radius: 4px;
   }
 
   .booking__set-label {
@@ -733,6 +772,6 @@
   }
 
   .booking__reg-above-subset {
-    row-gap: 35px;
+    row-gap: 57px;
   }
 }
