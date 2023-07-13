@@ -191,13 +191,13 @@
 }
 
 @media (max-width: 768px) {
-  .preview {
-    padding: 23px 0 15px;
+  section#preview {
+    padding: 57px 0 15px;
   }
 
   .preview__subtitle {
     margin-bottom: 13px;
-    line-height: 19px;
+    line-height: 28px;
     padding-right: 0;
   }
 

@@ -588,21 +588,6 @@
     font-weight: 700;
     line-height: 28px;
   }
-
-  .about__block-text {
-    padding-top: 66px;
-  }
-
-  .about__content-block-promo
-  .about__block-text .about__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-  }
-
-  .about__content-block-promo .about__block-text .about__text {
-    padding-bottom: 22px;
-   }
 }
 
 @media (max-width: 730px) {

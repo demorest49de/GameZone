@@ -94,18 +94,20 @@ const createSectionReviews = () => {
               </li>
               </swiper-slide>
             </div>
-            <button class="reviews__button-prev">
-                          <svg class="reviews__prev-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 27 51" fill="none">
-            <path d="M25.4558 0L26.5626 1.10678L1.10674 26.5626L-3.31402e-05 25.4558L25.4558 0Z" fill="#6C0287"/>
-            <path d="M-3.31402e-05 25.4558L1.10674 24.3491L26.5626 49.8049L25.4558 50.9117L-3.31402e-05 25.4558Z" fill="#6C0287"/>
-            </svg>
-            </button>
-            <button class="reviews__button-next">
+            <div class="reviews__nav-buttons">
+                <button class="reviews__button-prev">
+                              <svg class="reviews__prev-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 27 51" fill="none">
+                <path d="M25.4558 0L26.5626 1.10678L1.10674 26.5626L-3.31402e-05 25.4558L25.4558 0Z" fill="#6C0287"/>
+                <path d="M-3.31402e-05 25.4558L1.10674 24.3491L26.5626 49.8049L25.4558 50.9117L-3.31402e-05 25.4558Z" fill="#6C0287"/>
+                </svg>
+                </button>
+                <button class="reviews__button-next">
                     <svg class="reviews__next-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 51" fill="none">
                     <path d="M1.45581 0L0.349035 1.10678L25.8049 26.5626L26.9117 25.4558L1.45581 0Z" fill="#6C0287"/>
                     <path d="M26.9117 25.4558L25.8049 24.3491L0.349036 49.8049L1.45581 50.9117L26.9117 25.4558Z" fill="#6C0287"/>
                     </svg>
                 </button>
+            </div>
           </div>
     </div>
   `);

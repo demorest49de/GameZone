@@ -283,18 +283,32 @@
     margin-bottom: 38px;
   }
 
+  .about__block-text {
+    padding-top: 66px;
+  }
+
+  .about__content-block-promo
+  .about__block-text .about__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 700px) {
 
   .about__container {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 118px 280px 172px;
+    grid-template-rows: min-content min-content 172px;
     grid-template-areas:
         "promo"
         "image"
         "qoute";
-    row-gap: 23px;
+    row-gap: 10px;
+  }
+
+  .about__image-block {
+    justify-self: center;
   }
 
   .about__boss-description:before {
@@ -317,6 +331,16 @@
   .about__big-text {
     font-size: 18px;
     line-height: 26px;
+  }
+
+  .about__content-block-promo {
+    max-width: 382px;
+    justify-self: center;
+  }
+
+
+  .about__blockquote {
+    justify-self: center;
   }
 
   .about__content-block-promo .about__block-text .about__text {
@@ -371,3 +395,9 @@
   }
 }
 
+
+@media (max-width: 420px) {
+  .about__blockquote {
+    justify-self: start;
+  }
+}
