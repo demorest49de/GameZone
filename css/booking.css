@@ -468,6 +468,32 @@
     flex-direction: column;
   }
 
+  .booking__reg-subblock {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .booking__reg-above-subset {
+    justify-content: space-between;
+    max-width: unset;
+  }
+
+  .booking__reg-subset.subset-comm {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .booking__reg-subset.subset-name {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .booking__reg-people {
+    max-width: 300px;
+    width: 100%;
+  }
+
   .booking__room {
     justify-content: space-around;
     column-gap: 29px;
@@ -489,10 +515,6 @@
 }
 
 @media (max-width: 891px) {
-  .booking__reg-block {
-    flex-direction: column;
-  }
-
   .booking__room-label {
     min-width: 149px;
   }
@@ -555,10 +577,12 @@
   }
 
   .booking__reg-subblock {
-    flex-direction: row;
-    gap: 103px;
     margin-bottom: 13px;
-    justify-content: center;
+  }
+
+  .booking__reg-subset.subset-name {
+    max-width: 280px;
+    width: 100%;
   }
 
   .booking__reg-people .booking__reg-input {
